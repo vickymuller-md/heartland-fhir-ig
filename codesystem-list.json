@@ -1,0 +1,34 @@
+{
+  "codeSystems" : [{
+    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandEvidenceLevel",
+    "title" : "HEARTLAND Evidence Level",
+    "description" : "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."
+  },
+  {
+    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandImplementationTier",
+    "title" : "HEARTLAND Implementation Tier",
+    "description" : "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."
+  },
+  {
+    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandMonitoringTrack",
+    "title" : "HEARTLAND Monitoring Track",
+    "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."
+  },
+  {
+    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandRiskTier",
+    "title" : "HEARTLAND Risk Tier",
+    "description" : "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk."
+  }]
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="heartland-monitoring-track"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-monitoring-track</b></p><a name="heartland-monitoring-track"> </a><a name="hcheartland-monitoring-track"> </a><p>Este case-sensitive sistema de código <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">digital-track-a<a name="heartland-monitoring-track-digital-track-a"> </a></td><td>Digital Track A</td><td>App-based symptom tracking, Bluetooth-enabled devices, automated data transmission.</td></tr><tr><td style="white-space:nowrap">analog-track-b<a name="heartland-monitoring-track-analog-track-b"> </a></td><td>Analog Track B</td><td>Voice telephone calls, paper symptom diaries, manual data entry by staff.</td></tr></table></div>
+  </text>
+  <url value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"/>
+  <version value="0.1.0"/>
+  <name value="HeartlandMonitoringTrack"/>
+  <title value="HEARTLAND Monitoring Track"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-16T15:03:58-04:00"/>
+  <publisher value="Vicky Muller Ferreira, MD"/>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <description value="Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY 4.0"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="digital-track-a"/>
+    <display value="Digital Track A"/>
+    <definition value="App-based symptom tracking, Bluetooth-enabled devices, automated data transmission."/>
+  </concept>
+  <concept>
+    <code value="analog-track-b"/>
+    <display value="Analog Track B"/>
+    <definition value="Voice telephone calls, paper symptom diaries, manual data entry by staff."/>
+  </concept>
+</CodeSystem>

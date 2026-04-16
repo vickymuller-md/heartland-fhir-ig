@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Background - HEARTLAND Protocol FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HEARTLAND Protocol FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="risk-assessment.html">Risk Assessment</a>
+  </li>
+  <li>
+    <a href="implementation.html">Tiers and Tracks</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Background</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HEARTLAND Protocol FHIR Implementation Guide - Compilação de desenvolvimento local (v0.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://heartlandprotocol.org/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <h2>Background</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="background--why-heartland">Background — Why HEARTLAND</h3>
+
+<h4 id="the-rural-heart-failure-gap">The Rural Heart Failure Gap</h4>
+
+<p>Heart failure (HF) affects approximately 6.7 million US adults, with rural populations bearing a disproportionate burden. Patients living in rural counties face:</p>
+
+<ul>
+  <li><strong>Distance:</strong> Mean distance to cardiology care reaches <strong>87 miles</strong> in counties without a cardiologist, compared to 16 miles in counties with one.</li>
+  <li><strong>Mortality:</strong> One-year mortality after HF hospitalization is approximately <strong>21% in rural HF patients</strong> versus 17% in urban — a gap that has widened over the past decade.</li>
+  <li><strong>Readmission:</strong> <strong>23% 30-day readmission rates</strong> persist in rural HF cohorts despite national quality improvement programs.</li>
+  <li><strong>Workforce:</strong> Critical Access Hospitals frequently operate with <strong>one to two nurses</strong> and no on-site cardiologist, pharmacist, or dedicated HF program.</li>
+  <li><strong>GDMT optimization:</strong> Fewer than 1% of US HF patients simultaneously achieve target doses of all four guideline-directed medical therapy (GDMT) classes — and the proportion is even lower in rural settings.</li>
+</ul>
+
+<h4 id="the-implementation-gap">The Implementation Gap</h4>
+
+<blockquote>
+  <p>No published implementation protocol provides a comprehensive, operational framework for primary care-led HF management specifically designed for rural and resource-limited settings in the United States.</p>
+</blockquote>
+
+<p>Existing tools fill adjacent but distinct roles:</p>
+
+<ul>
+  <li><strong>Get With The Guidelines-HF (GWTG-HF)</strong> — quality benchmarking platform; not an operational protocol.</li>
+  <li><strong>ESC-HF-LT</strong> — European registry; not designed for US rural workflows.</li>
+  <li><strong>MAGGIC, GWTG-HF Risk Score, SHFM</strong> — risk scores that omit distance-to-care and social support despite robust evidence of prognostic relevance.</li>
+</ul>
+
+<p>HEARTLAND closes this gap with a tiered protocol explicitly designed around the realities of low-resource US care delivery.</p>
+
+<h4 id="three-pillars">Three Pillars</h4>
+
+<p><strong>1. Tiered Implementation.</strong> Three facility tiers (Minimal / Standard / Advanced) match protocol intensity to available staffing and technology. A Critical Access Hospital with 1-2 nurses can begin at Tier 1 with realistic targets; a regional referral center can operate Tier 3 with rapid-sequence GDMT and full RPM.</p>
+
+<p><strong>2. Two Monitoring Tracks.</strong> Track A (digital, app-based) and Track B (analog, telephone) follow identical clinical algorithms. The Hozho Trial validated that voice telephone optimization is not a fallback but a primary effective intervention, achieving substantial absolute increases in GDMT class addition.</p>
+
+<p><strong>3. Pragmatic Risk Stratification.</strong> The HEARTLAND 10-input risk score (0-18 points) explicitly includes distance-to-cardiology and limited social support — variables omitted from MAGGIC, GWTG-HF, and SHFM despite a 3.74-fold mortality increase associated with perceived social isolation in HF cohorts.</p>
+
+<h4 id="evidence-levels">Evidence Levels</h4>
+
+<p>Recommendations are labeled to help clinicians calibrate confidence:</p>
+
+<ul>
+  <li><strong>Established</strong> — strong guideline support (e.g., SGLT2i for all HF phenotypes per 2022 AHA/ACC/HFSA guideline).</li>
+  <li><strong>Emerging</strong> — recent trials not yet fully incorporated into guidelines (e.g., finerenone for HFpEF per FINEARTS-HF).</li>
+  <li><strong>Pragmatic</strong> — tools developed for clinical utility without formal statistical validation (e.g., the HEARTLAND Risk Score itself).</li>
+</ul>
+
+<h4 id="operational-principles">Operational Principles</h4>
+
+<ul>
+  <li><strong>Generic Bridge.</strong> Generic ACE-I/ARB, beta-blocker, and spironolactone cost approximately $15/month. Generic therapy is superior to no therapy. Never delay treatment while waiting for paperwork.</li>
+  <li><strong>Human Filter.</strong> All non-emergency monitoring alerts pass through licensed clinician telephone assessment before emergency department referral. Avoids false-positive cascades from raw device alerts.</li>
+  <li><strong>Task-Shifting.</strong> Clinical decisions remain with licensed clinicians; data collection and education delivery distribute across available workforce (RN/MA, family caregivers, IVR systems).</li>
+</ul>
+
+<h4 id="citation">Citation</h4>
+
+<p>HEARTLAND Protocol v3.2. <em>Cureus</em>, 2026. Zenodo DOI 10.5281/zenodo.18566403.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 15:03-0400">2026-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

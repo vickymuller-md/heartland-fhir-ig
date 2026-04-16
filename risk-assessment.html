@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Risk Assessment - HEARTLAND Protocol FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HEARTLAND Protocol FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="risk-assessment.html">Risk Assessment</a>
+  </li>
+  <li>
+    <a href="implementation.html">Tiers and Tracks</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Risk Assessment</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HEARTLAND Protocol FHIR Implementation Guide - Compilação de desenvolvimento local (v0.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://heartlandprotocol.org/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <h2>Risk Assessment</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="risk-assessment-workflow">Risk Assessment Workflow</h3>
+
+<p>The HEARTLAND risk score stratifies HF patients at discharge into three tiers using ten binary inputs.</p>
+
+<h4 id="inputs-heartland-v32-risk-score">Inputs (HEARTLAND v3.2 Risk Score)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>linkId</th>
+      <th>Item text</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>age-75</td>
+      <td>Age &gt;=75 years</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>hf-hosp-6mo</td>
+      <td>Prior heart failure hospitalization within 6 months</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>egfr-low</td>
+      <td>eGFR &lt;45 mL/min/1.73m^2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>natriuretic-high</td>
+      <td>BNP &gt;=500 pg/mL or NT-proBNP &gt;=1500 pg/mL</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>sbp-low</td>
+      <td>Systolic BP &lt;100 mmHg at admission</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>Diabetes mellitus</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lvef-low</td>
+      <td>LVEF &lt;30%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ckm-stage</td>
+      <td>Cardiovascular-kidney-metabolic Stage 3 or 4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>distance-far</td>
+      <td>Distance to cardiology care &gt;50 miles</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>social-support</td>
+      <td>Lives alone or limited social support</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Total possible</strong></td>
+      <td> </td>
+      <td><strong>18</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="tier-cutoffs">Tier Cutoffs</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Total score</th>
+      <th>Tier</th>
+      <th>Recommended bundle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0-4</td>
+      <td>Low</td>
+      <td>Standard monitoring</td>
+    </tr>
+    <tr>
+      <td>5-8</td>
+      <td>Moderate</td>
+      <td>Enhanced monitoring bundle</td>
+    </tr>
+    <tr>
+      <td>&gt;=9</td>
+      <td>High</td>
+      <td>Intensive monitoring bundle</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-workflow">FHIR Workflow</h4>
+
+<ol>
+  <li><strong>Capture inputs</strong> as a <a href="StructureDefinition-heartland-questionnaire-response.html"><code class="language-plaintext highlighter-rouge">HeartlandQuestionnaireResponse</code></a> instance referencing the <a href="Questionnaire-heartland-risk-input-questionnaire.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskInputQuestionnaire</code></a> canonical URL.</li>
+  <li><strong>Compute total score</strong> by summing the point values of items answered <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li><strong>Map score to tier</strong> using the cutoff table above.</li>
+  <li><strong>Create a <a href="StructureDefinition-heartland-risk-assessment.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskAssessment</code></a></strong> with:
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td><code class="language-plaintext highlighter-rouge">prediction.qualitativeRisk</code> bound to the resulting <a href="CodeSystem-heartland-risk-tier.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskTier</code></a> code (<code class="language-plaintext highlighter-rouge">low</code></td>
+              <td><code class="language-plaintext highlighter-rouge">moderate</code></td>
+              <td><code class="language-plaintext highlighter-rouge">high</code>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">prediction.probabilityDecimal</code> set to the integer total (0-18).</li>
+      <li><code class="language-plaintext highlighter-rouge">basis</code> referencing the <code class="language-plaintext highlighter-rouge">HeartlandQuestionnaireResponse</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">method.text</code> exactly <code class="language-plaintext highlighter-rouge">"HEARTLAND Protocol v3.2 Risk Score"</code>.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="patient-extensions">Patient Extensions</h4>
+
+<p>Two HEARTLAND-specific Patient extensions surface the score's social determinants:</p>
+
+<ul>
+  <li><a href="StructureDefinition-heartland-distance-to-cardiology.html"><code class="language-plaintext highlighter-rouge">heartland-distance-to-cardiology</code></a> — Quantity in miles (<code class="language-plaintext highlighter-rouge">[mi_us]</code> UCUM)</li>
+  <li><a href="StructureDefinition-heartland-social-support-score.html"><code class="language-plaintext highlighter-rouge">heartland-social-support-score</code></a> — boolean (true = limited social support)</li>
+</ul>
+
+<p>Use the <a href="StructureDefinition-heartland-patient.html"><code class="language-plaintext highlighter-rouge">HeartlandPatient</code></a> profile to bundle both.</p>
+
+<h4 id="worked-example">Worked Example</h4>
+
+<p><a href="Patient-PatientExampleRural.html"><code class="language-plaintext highlighter-rouge">PatientExampleRural</code></a> is a 78-year-old female in rural Montana, 87 miles from the nearest cardiologist, living alone.</p>
+
+<p><a href="QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html"><code class="language-plaintext highlighter-rouge">QuestionnaireResponseExampleRiskInputs</code></a> records six of ten items as <code class="language-plaintext highlighter-rouge">true</code>:</p>
+
+<ul>
+  <li>age-75 (+2)</li>
+  <li>hf-hosp-6mo (+3)</li>
+  <li>sbp-low (+2)</li>
+  <li>ckm-stage (+2)</li>
+  <li>distance-far (+1)</li>
+  <li>social-support (+1)</li>
+</ul>
+
+<p>Total = <strong>11 points</strong> -&gt; <strong>High Risk</strong> tier -&gt; <strong>Intensive monitoring bundle</strong>.</p>
+
+<p><a href="RiskAssessment-RiskAssessmentExampleHigh.html"><code class="language-plaintext highlighter-rouge">RiskAssessmentExampleHigh</code></a> records this result and references the questionnaire response as basis.</p>
+
+<h4 id="evidence-note">Evidence Note</h4>
+
+<p>The HEARTLAND Risk Score is labeled <code class="language-plaintext highlighter-rouge">pragmatic</code> per the <a href="CodeSystem-heartland-evidence-level.html"><code class="language-plaintext highlighter-rouge">HeartlandEvidenceLevel</code></a> code system: developed for clinical utility without formal external statistical validation. It is intended as a triage tool to assign monitoring intensity, not as a survival predictor like MAGGIC. Programs using HEARTLAND should consider concurrent validation in their local population.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 15:03-0400">2026-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

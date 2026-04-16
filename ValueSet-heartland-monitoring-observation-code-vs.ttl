@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heartland-monitoring-observation-code-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-monitoring-observation-code-vs</b></p><a name=\"heartland-monitoring-observation-code-vs\"> </a><a name=\"hcheartland-monitoring-observation-code-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Body weight</td></tr><tr><td><a href=\"https://loinc.org/8480-6/\">8480-6</a></td><td>Systolic blood pressure</td></tr><tr><td><a href=\"https://loinc.org/8481-4/\">8481-4</a></td><td>Diastolic blood pressure</td></tr><tr><td><a href=\"https://loinc.org/59408-5/\">59408-5</a></td><td>Oxygen saturation in Arterial blood by Pulse oximetry</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs"^^xsd:anyURI ;
+     fhir:l <https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartlandMonitoringObservationCodeVS"] ; # 
+  fhir:title [ fhir:v "HEARTLAND Monitoring Observation Code Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-16T15:03:58-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "LOINC codes for the four observations captured by the HEARTLAND remote monitoring kit per Module 5: body weight (digital scale), systolic and diastolic blood pressure (BP monitor), and oxygen saturation (pulse oximeter, when indicated)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] [
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] [
+         fhir:code [ fhir:v "8481-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] [
+         fhir:code [ fhir:v "59408-5" ] ;
+         fhir:display [ fhir:v "Oxygen saturation in Arterial blood by Pulse oximetry" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

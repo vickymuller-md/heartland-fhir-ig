@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="heartland-evidence-level"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-evidence-level</b></p><a name="heartland-evidence-level"> </a><a name="hcheartland-evidence-level"> </a><p>Este case-sensitive sistema de código <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">established<a name="heartland-evidence-level-established"> </a></td><td>Established Evidence</td><td>Interventions with strong guideline support, such as SGLT2i for all HF phenotypes endorsed by the 2022 AHA/ACC/HFSA guideline.</td></tr><tr><td style="white-space:nowrap">emerging<a name="heartland-evidence-level-emerging"> </a></td><td>Emerging Evidence</td><td>Recent trial findings not yet fully incorporated into guidelines, such as finerenone for HFpEF based on the FINEARTS-HF trial.</td></tr><tr><td style="white-space:nowrap">pragmatic<a name="heartland-evidence-level-pragmatic"> </a></td><td>Pragmatic Heuristic</td><td>Tools developed for clinical utility without formal statistical validation, such as the HEARTLAND Risk Score itself.</td></tr></table></div>
+  </text>
+  <url value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"/>
+  <version value="0.1.0"/>
+  <name value="HeartlandEvidenceLevel"/>
+  <title value="HEARTLAND Evidence Level"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-16T15:03:58-04:00"/>
+  <publisher value="Vicky Muller Ferreira, MD"/>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <description value="Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY 4.0"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="established"/>
+    <display value="Established Evidence"/>
+    <definition value="Interventions with strong guideline support, such as SGLT2i for all HF phenotypes endorsed by the 2022 AHA/ACC/HFSA guideline."/>
+  </concept>
+  <concept>
+    <code value="emerging"/>
+    <display value="Emerging Evidence"/>
+    <definition value="Recent trial findings not yet fully incorporated into guidelines, such as finerenone for HFpEF based on the FINEARTS-HF trial."/>
+  </concept>
+  <concept>
+    <code value="pragmatic"/>
+    <display value="Pragmatic Heuristic"/>
+    <definition value="Tools developed for clinical utility without formal statistical validation, such as the HEARTLAND Risk Score itself."/>
+  </concept>
+</CodeSystem>

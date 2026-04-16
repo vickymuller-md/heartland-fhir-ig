@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://heartlandprotocol.org/fhir/RiskAssessment/RiskAssessmentExampleHigh> a fhir:RiskAssessment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RiskAssessmentExampleHigh"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"^^xsd:anyURI ;
+       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: RiskAssessment RiskAssessmentExampleHigh</b></p><a name=\"RiskAssessmentExampleHigh\"> </a><a name=\"hcRiskAssessmentExampleHigh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-heartland-risk-assessment.html\">HEARTLAND Risk Assessment</a></p></div><p><b>status</b>: Final</p><p><b>method</b>: <span title=\"Códigos:\">HEARTLAND Protocol v3.2 Risk Score</span></p><p><b>subject</b>: <a href=\"Patient-PatientExampleRural.html\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)</a></p><p><b>occurrence</b>: 2026-04-16 14:30:00-0500</p><p><b>basis</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html\">Resposta ao questionário '-&gt;HEARTLAND Risk Input Questionnaire' sobre '-&gt;Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)'</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Probability[x]</b></td><td><b>QualitativeRisk</b></td></tr><tr><td style=\"display: none\">*</td><td>11</td><td><span title=\"Códigos:{https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier high}\">High Risk</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:method [
+     fhir:text [ fhir:v "HEARTLAND Protocol v3.2 Risk Score" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://heartlandprotocol.org/fhir/Patient/PatientExampleRural> ;
+     fhir:reference [ fhir:v "Patient/PatientExampleRural" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2026-04-16T14:30:00-05:00"^^xsd:dateTime
+  ] ; # 
+  fhir:basis ( [
+     fhir:l <https://heartlandprotocol.org/fhir/QuestionnaireResponse/QuestionnaireResponseExampleRiskInputs> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseExampleRiskInputs" ]
+  ] ) ; # 
+  fhir:prediction ( [
+     fhir:probability [
+       a fhir:Decimal ;
+       fhir:v "11"^^xsd:decimal
+     ] ;
+     fhir:qualitativeRisk [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"^^xsd:anyURI ;
+           fhir:l <https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier>
+         ] ;
+         fhir:code [ fhir:v "high" ] ;
+         fhir:display [ fhir:v "High Risk" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

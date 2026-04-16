@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "heartland-risk-tier",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-risk-tier</b></p><a name=\"heartland-risk-tier\"> </a><a name=\"hcheartland-risk-tier\"> </a><p>Este case-sensitive sistema de código <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">low<a name=\"heartland-risk-tier-low\"> </a></td><td>Low Risk</td><td>Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2.</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"heartland-risk-tier-moderate\"> </a></td><td>Moderate Risk</td><td>Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2.</td></tr><tr><td style=\"white-space:nowrap\">high<a name=\"heartland-risk-tier-high\"> </a></td><td>High Risk</td><td>High Risk (&gt;=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2.</td></tr></table></div>"
+  },
+  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+  "version" : "0.1.0",
+  "name" : "HeartlandRiskTier",
+  "title" : "HEARTLAND Risk Tier",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-16T15:03:58-04:00",
+  "publisher" : "Vicky Muller Ferreira, MD",
+  "contact" : [{
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    },
+    {
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org"
+    }]
+  },
+  {
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org",
+      "use" : "work"
+    },
+    {
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    }]
+  }],
+  "description" : "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "CC-BY 4.0",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "low",
+    "display" : "Low Risk",
+    "definition" : "Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2."
+  },
+  {
+    "code" : "moderate",
+    "display" : "Moderate Risk",
+    "definition" : "Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2."
+  },
+  {
+    "code" : "high",
+    "display" : "High Risk",
+    "definition" : "High Risk (>=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2."
+  }]
+}
