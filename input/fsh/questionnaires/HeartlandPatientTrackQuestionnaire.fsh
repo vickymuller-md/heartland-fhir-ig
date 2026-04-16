@@ -4,7 +4,7 @@ Title: "HEARTLAND Patient Track Assignment Questionnaire"
 Description: "Three boolean items derived from HEARTLAND Protocol v3.2 Table 4 (Track Assignment Form) to determine whether a patient should be enrolled in Track A (digital, app-based) or Track B (analog, telephone) remote monitoring. Decision logic: smartphone with reliable connectivity AND comfortable using apps -> Track A; reliable telephone access only -> Track B; smartphone without app comfort -> Hybrid. Both tracks follow identical clinical algorithms per Module 3."
 Usage: #definition
 
-* url = "https://heartlandprotocol.org/fhir/Questionnaire/heartland-patient-track-questionnaire"
+* url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire"
 * version = "0.1.0"
 * name = "HeartlandPatientTrackQuestionnaire"
 * status = #active

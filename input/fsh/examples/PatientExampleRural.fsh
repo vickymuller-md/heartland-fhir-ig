@@ -11,7 +11,7 @@ Usage: #example
 
 * extension[socialSupportScore].valueBoolean = true
 
-* identifier[0].system = "https://heartlandprotocol.org/fhir/sid/example-mrn"
+* identifier[0].system = "https://fhir.heartlandprotocol.org/sid/example-mrn"
 * identifier[0].value = "EXAMPLE-001"
 * active = true
 * name[0].family = "Example"

@@ -4,7 +4,7 @@ Title: "Example: Risk Input Questionnaire Response (score 11)"
 Description: "Responses to the HeartlandRiskInputQuestionnaire for PatientExampleRural. Six items answered true (age >=75, prior HF hosp 6mo, SBP <100, CKM Stage 3-4, distance >50 mi, limited social support) totaling 11 points -> High Risk tier. Referenced by RiskAssessmentExampleHigh.basis[0]."
 Usage: #example
 
-* questionnaire = "https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire|0.1.0"
+* questionnaire = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire|0.1.0"
 * status = #completed
 * subject = Reference(PatientExampleRural)
 * authored = "2026-04-16T14:25:00-05:00"

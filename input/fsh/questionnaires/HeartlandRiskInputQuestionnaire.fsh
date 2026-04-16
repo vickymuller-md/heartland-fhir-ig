@@ -4,7 +4,7 @@ Title: "HEARTLAND Risk Input Questionnaire"
 Description: "Captures the 10 binary inputs to the HEARTLAND Protocol v3.2 risk score. Each item carries an itemWeight extension with its point contribution. Total score (0-18) maps to qualitative tiers: low (0-4), moderate (5-8), high (>=9). Item text is verbatim from manuscript/tables.R Table 1 (HEARTLAND v3.2)."
 Usage: #definition
 
-* url = "https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire"
+* url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire"
 * version = "0.1.0"
 * name = "HeartlandRiskInputQuestionnaire"
 * status = #active

@@ -3,7 +3,7 @@ Parent: RiskAssessment
 Id: heartland-risk-assessment
 Title: "HEARTLAND Risk Assessment"
 Description: "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables."
-* ^url = "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"
+* ^url = "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

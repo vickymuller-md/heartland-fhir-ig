@@ -2,7 +2,7 @@ Extension: HeartlandFacilityTier
 Id: heartland-facility-tier
 Title: "HEARTLAND Facility Implementation Tier"
 Description: "Identifies the HEARTLAND Protocol v3.2 implementation tier (1 Minimal, 2 Standard, 3 Advanced) at which a facility, organization, or care plan operates. Drives which protocol activities (monitoring, GDMT cadence, education, follow-up) are operationally feasible."
-* ^url = "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier"
+* ^url = "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

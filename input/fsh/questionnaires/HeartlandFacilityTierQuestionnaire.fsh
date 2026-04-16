@@ -4,7 +4,7 @@ Title: "HEARTLAND Facility Tier Questionnaire"
 Description: "Five categorical items derived from HEARTLAND Protocol v3.2 Table 2 to support facility self-assessment for implementation tier assignment (Tier 1 Minimal / Tier 2 Standard / Tier 3 Advanced). Items cover staffing model, PharmD availability, CHW program, monitoring technology, and financial navigation capacity. Tier assignment is qualitative: predominance of 'minimal' answers maps to Tier 1; 'standard' to Tier 2; 'advanced' to Tier 3. This is an operational instrument derived from Table 2; the source protocol does not provide a formal scored tool."
 Usage: #definition
 
-* url = "https://heartlandprotocol.org/fhir/Questionnaire/heartland-facility-tier-questionnaire"
+* url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire"
 * version = "0.1.0"
 * name = "HeartlandFacilityTierQuestionnaire"
 * status = #active

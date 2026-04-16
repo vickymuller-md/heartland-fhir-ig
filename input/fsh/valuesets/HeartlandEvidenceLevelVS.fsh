@@ -2,7 +2,7 @@ ValueSet: HeartlandEvidenceLevelVS
 Id: heartland-evidence-level-vs
 Title: "HEARTLAND Evidence Level Value Set"
 Description: "All evidence level codes (established | emerging | pragmatic)."
-* ^url = "https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs"
+* ^url = "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

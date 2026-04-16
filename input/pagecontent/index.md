@@ -1,51 +1,112 @@
-### HEARTLAND Protocol FHIR Implementation Guide
+# HEARTLAND Protocol FHIR Implementation Guide
 
-This Implementation Guide (IG) provides FHIR R4 conformance resources for the **HEARTLAND Protocol v3.2** — a clinical implementation toolkit for primary care-led heart failure (HF) management in rural and resource-limited settings in the United States.
+**Interoperability Specification for Rural Heart Failure Management**
 
-**HEARTLAND** stands for *Heart failure Evidence-based Access in Rural Treatment, Linking Advanced Network Delivery*.
+A FHIR R4 Implementation Guide that operationalizes the HEARTLAND Protocol — *Heart failure Evidence-based Access in Rural Treatment, Linking Advanced Network Delivery* — as a set of EHR-implementable conformance resources for primary care-led heart failure management in rural and resource-limited settings across the United States.
 
-#### Scope
+> **Source protocol**: Muller Ferreira V. *HEARTLAND Protocol: An Implementation Framework for Primary Care-Led Heart Failure Management in Rural Settings.* Published in Cureus (Springer Nature), indexed in PubMed, PubMed Central, Scopus, and Google Scholar.
 
-The IG defines the FHIR artifacts EHR vendors and rural HF programs need to:
+---
 
-- **Stratify HF risk** at discharge using the HEARTLAND 10-input score (low / moderate / high tiers).
-- **Assign facility implementation tier** (1 Minimal / 2 Standard / 3 Advanced) based on staffing, technology, and financial navigation capacity.
-- **Assign patient monitoring track** (A digital / B analog / Hybrid) based on access to smartphone and telephone.
-- **Structure the care plan** with tier-appropriate GDMT initiation cadence, follow-up schedule, and discharge education.
-- **Capture remote monitoring observations** (weight, blood pressure, oxygen saturation) with red-flag thresholds that pass through the human filter (clinician telephone assessment) before ED referral.
+### Disclaimers (read first)
 
-#### Conformance
+> *"This Implementation Guide is a clinical decision support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only."*
 
-- **FHIR version:** R4 (4.0.1)
-- **Dependencies:** [US Core 6.1.0](http://hl7.org/fhir/us/core/STU6.1)
-- **Jurisdiction:** United States
-- **Status:** Draft (v0.1.0)
+> *"The HEARTLAND Risk Stratification Framework is a proposed tool under development. It has not been validated against clinical outcomes data. Formal validation through registry data is a defined research objective."*
 
-#### Audience
+This IG is **not a medical device**, **not FDA-cleared**, and **not HIPAA-certified**. Examples contain **synthetic data only** — no patient health information is included.
 
-- EHR vendors implementing HEARTLAND in rural and Critical Access Hospital settings
-- Federally Qualified Health Centers (FQHCs) and community hospitals adopting the protocol
-- Health IT analysts integrating heart failure risk stratification with care planning
-- Researchers extending the HEARTLAND evidence base
+---
 
-#### Source of Truth
+### Purpose
 
-- **Clinical content:** HEARTLAND Protocol v3.2 (Cureus, 2026)
-- **Repositories:** [Zenodo DOI 10.5281/zenodo.18566403](https://doi.org/10.5281/zenodo.18566403) | [OSF DOI 10.17605/OSF.IO/YUSGH](https://doi.org/10.17605/OSF.IO/YUSGH)
+Heart failure affects over 6.7 million Americans and drives more than 1 million hospitalizations annually. Rural populations bear a 53% higher mortality rate, exacerbated by limited cardiology access — 86% of rural U.S. counties have no cardiologist. Despite strong clinical evidence for guideline-directed medical therapy (GDMT), fewer than 20% of eligible patients receive all four recommended medication classes simultaneously.
 
-#### Author
+This IG translates the eight HEARTLAND Protocol modules into FHIR R4 conformance resources — profiles, extensions, value sets, code systems, and questionnaires — that EHR vendors and rural HF programs can implement to exchange HEARTLAND-structured clinical data.
 
-**Vicky Muller Ferreira, MD** — vickymuller@heartlandprotocol.org | ORCID 0009-0009-1099-5690
+### Features
 
-#### License
+| # | Module | FHIR Artifact |
+|-|-|-|
+| 1 | Risk Stratification | [`HeartlandRiskAssessment`](StructureDefinition-heartland-risk-assessment.html) + [`HeartlandRiskInputQuestionnaire`](Questionnaire-heartland-risk-input-questionnaire.html) |
+| 2 | GDMT Optimization | [`HeartlandCarePlan`](StructureDefinition-heartland-careplan.html) (activity rules per tier) |
+| 3 | Telephone Titration | [`HeartlandMonitoringTrack`](CodeSystem-heartland-monitoring-track.html) (Track A/B) |
+| 4 | Discharge Transitions | [`HeartlandCarePlan`](StructureDefinition-heartland-careplan.html) (8 AHA education domains) |
+| 5 | Remote Monitoring Track | [`HeartlandPatientTrackQuestionnaire`](Questionnaire-heartland-patient-track-questionnaire.html) |
+| 6 | Comorbidity Context | [`HeartlandPatient`](StructureDefinition-heartland-patient.html) extensions (distance, social support) |
+| 7 | Primary Care Linkage | *Phase 2* |
+| 8 | Implementation Tier Selector | [`HeartlandFacilityTierQuestionnaire`](Questionnaire-heartland-facility-tier-questionnaire.html) + [`HeartlandFacilityTier`](StructureDefinition-heartland-facility-tier.html) extension |
 
-- IG content: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- Generated FHIR resources: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- Companion code (heartland-app): MIT
+Cross-cutting:
 
-#### Navigation
+- [`HeartlandRemoteMonitoringObservation`](StructureDefinition-heartland-remote-monitoring-observation.html) — weight, BP, SpO2 with red-flag thresholds (`Observation.referenceRange`)
+- 4 CodeSystems labeling risk tier, implementation tier, monitoring track, evidence level
+- Generic Bridge pathway encoded in CarePlan activities
+- Human Filter principle (clinician triage before ED escalation)
+- 4 narrative pages: [Background](background.html), [Risk Assessment](risk-assessment.html), [Tiers and Tracks](implementation.html)
 
-- [Background](background.html) — why HEARTLAND, the rural HF gap, evidence base
-- [Risk Assessment](risk-assessment.html) — how to capture risk inputs and produce a tiered RiskAssessment
-- [Implementation Tiers and Tracks](implementation.html) — facility tier assignment, patient track assignment, care plan structure
-- **Artifacts** — full list of profiles, extensions, value sets, code systems, and examples (see sidebar)
+### Status
+
+| Stream | State |
+|-|-|
+| Cureus manuscript | Published; peer-review response in progress |
+| HEARTLAND Protocol | v3.2 (February 2026) — authoritative |
+| FHIR IG | v0.1.0 — initial draft, ready for vendor review |
+| Zenodo IG DOI | Pending — minted at first public release via `.zenodo.json` |
+| Pilot site EHR validation | Phase 3 — not yet started |
+| FHIR IG Registry submission | Deferred to v0.2.0 |
+
+### Stack
+
+- FHIR R4 (4.0.1) — most widely adopted version in US healthcare
+- Depends on [US Core 6.1.0](http://hl7.org/fhir/us/core/STU6.1)
+- Authored in [FHIR Shorthand (FSH)](https://hl7.org/fhir/uv/shorthand/) compiled via [SUSHI](https://github.com/FHIR/sushi)
+- Built into navigable HTML via the [HL7 IG Publisher](https://github.com/HL7/fhir-ig-publisher)
+- Template: `fhir.base.template#current` (independent IG, not HL7-balloted)
+- Hosting: GitHub Pages on `gh-pages` branch
+- Source: [github.com/vickymuller-md/heartland-fhir-ig](https://github.com/vickymuller-md/heartland-fhir-ig)
+
+### Local development
+
+```bash
+# Install toolchain (one-time)
+brew install openjdk@17    # for IG Publisher
+npm install -g fsh-sushi   # FSH compiler
+
+# Compile FSH to FHIR JSON
+sushi .
+
+# Build navigable IG (HTML)
+./_updatePublisher.sh
+./_genonce.sh
+
+# Open output/index.html in a browser
+```
+
+Tests / validation: 0 errors, 0 warnings on SUSHI; 0 errors, 7 cosmetic warnings on IG Publisher (US Core newer version available, fragment XHTMLs unused, observation performer best practice — all reviewed and accepted).
+
+### Open science
+
+This IG is deposited to Zenodo and OSF alongside the source protocol:
+
+- **Cureus** (peer-reviewed, indexed PubMed/PMC/Scopus)
+- **Zenodo** (protocol): [`10.5281/zenodo.18566403`](https://doi.org/10.5281/zenodo.18566403)
+- **Zenodo** (FHIR IG): pending — will be minted at first public release via [`.zenodo.json`](https://github.com/vickymuller-md/heartland-fhir-ig/blob/main/.zenodo.json)
+- **OSF**: [`10.17605/OSF.IO/YUSGH`](https://doi.org/10.17605/OSF.IO/YUSGH)
+- **medRxiv**: three complementary systematic reviews registered in PROSPERO
+
+### License
+
+- IG narrative content + generated FHIR resources: [**CC-BY 4.0**](https://creativecommons.org/licenses/by/4.0/)
+- Build scripts and tooling: **MIT**
+
+The IG is free to use, modify, and redistribute for research, education, and professional clinical decision support — subject to the disclaimers above. Not a medical device.
+
+### Author
+
+**Vicky Muller Ferreira, MD**
+Cardiologist · Implementation Science Researcher
+
+- Email: vickymuller@heartlandprotocol.org
+- ORCID: [0009-0009-1099-5690](https://orcid.org/0009-0009-1099-5690)
+- Web: https://heartlandprotocol.org

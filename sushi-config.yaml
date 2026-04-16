@@ -1,5 +1,5 @@
 id: heartland.fhir.us.protocol
-canonical: https://heartlandprotocol.org/fhir
+canonical: https://fhir.heartlandprotocol.org
 name: HeartlandProtocolIG
 title: HEARTLAND Protocol FHIR Implementation Guide
 description: >-
