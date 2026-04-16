@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="heartland-implementation-tier"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-implementation-tier</b></p><a name="heartland-implementation-tier"> </a><a name="hcheartland-implementation-tier"> </a><p>Este case-sensitive sistema de código <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">tier-1-minimal<a name="heartland-implementation-tier-tier-1-minimal"> </a></td><td>Tier 1 - Minimal</td><td>Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation.</td></tr><tr><td style="white-space:nowrap">tier-2-standard<a name="heartland-implementation-tier-tier-2-standard"> </a></td><td>Tier 2 - Standard</td><td>Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days.</td></tr><tr><td style="white-space:nowrap">tier-3-advanced<a name="heartland-implementation-tier-tier-3-advanced"> </a></td><td>Tier 3 - Advanced</td><td>Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-implementation-tier</b></p><a name="heartland-implementation-tier"> </a><a name="hcheartland-implementation-tier"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">tier-1-minimal<a name="heartland-implementation-tier-tier-1-minimal"> </a></td><td>Tier 1 - Minimal</td><td>Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation.</td></tr><tr><td style="white-space:nowrap">tier-2-standard<a name="heartland-implementation-tier-tier-2-standard"> </a></td><td>Tier 2 - Standard</td><td>Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days.</td></tr><tr><td style="white-space:nowrap">tier-3-advanced<a name="heartland-implementation-tier-tier-3-advanced"> </a></td><td>Tier 3 - Advanced</td><td>Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation.</td></tr></table></div>
   </text>
-  <url value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"/>
+  <url value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
   <version value="0.1.0"/>
   <name value="HeartlandImplementationTier"/>
   <title value="HEARTLAND Implementation Tier"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-04-16T15:03:58-04:00"/>
+  <date value="2026-04-16T15:20:02-04:00"/>
   <publisher value="Vicky Muller Ferreira, MD"/>
   <contact>
     <name value="Vicky Muller Ferreira, MD"/>

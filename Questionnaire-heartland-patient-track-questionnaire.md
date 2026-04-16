@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/Questionnaire/heartland-patient-track-questionnaire | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandPatientTrackQuestionnaire |
 
  
@@ -25,7 +25,7 @@ Operationalize the Track A/B/Hybrid assignment so that remote monitoring choice 
 {
   "resourceType" : "Questionnaire",
   "id" : "heartland-patient-track-questionnaire",
-  "url" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-patient-track-questionnaire",
+  "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire",
   "version" : "0.1.0",
   "name" : "HeartlandPatientTrackQuestionnaire",
   "title" : "HEARTLAND Patient Track Assignment Questionnaire",

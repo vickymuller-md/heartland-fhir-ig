@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandRiskTier |
 | **Copyright/Legal**: CC-BY 4.0 | |
 
@@ -27,13 +27,13 @@ Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk scor
 {
   "resourceType" : "CodeSystem",
   "id" : "heartland-risk-tier",
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
   "version" : "0.1.0",
   "name" : "HeartlandRiskTier",
   "title" : "HEARTLAND Risk Tier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

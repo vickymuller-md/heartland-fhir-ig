@@ -3,15 +3,15 @@
   "id" : "heartland-implementation-tier-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-implementation-tier-vs</b></p><a name=\"heartland-implementation-tier-vs\"> </a><a name=\"hcheartland-implementation-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-implementation-tier.html\"><code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-implementation-tier-vs</b></p><a name=\"heartland-implementation-tier-vs\"> </a><a name=\"hcheartland-implementation-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-implementation-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
   },
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
   "version" : "0.1.0",
   "name" : "HeartlandImplementationTierVS",
   "title" : "HEARTLAND Implementation Tier Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -45,7 +45,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"
+      "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"
     }]
   }
 }

@@ -130,7 +130,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HEARTLAND Protocol FHIR Implementation Guide - Compilação de desenvolvimento local (v0.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://heartlandprotocol.org/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HEARTLAND Protocol FHIR Implementation Guide - Compilação de desenvolvimento local (v0.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.heartlandprotocol.org/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -142,10 +142,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol|0.1.0"/></span>
       </td>
     </tr>
 
@@ -185,87 +185,216 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="heartland-protocol-fhir-implementation-guide">HEARTLAND Protocol FHIR Implementation Guide</h3>
-
-<p>This Implementation Guide (IG) provides FHIR R4 conformance resources for the <strong>HEARTLAND Protocol v3.2</strong> — a clinical implementation toolkit for primary care-led heart failure (HF) management in rural and resource-limited settings in the United States.</p>
-
-<p><strong>HEARTLAND</strong> stands for <em>Heart failure Evidence-based Access in Rural Treatment, Linking Advanced Network Delivery</em>.</p>
-
-<h4 id="scope">Scope</h4>
-
-<p>The IG defines the FHIR artifacts EHR vendors and rural HF programs need to:</p>
-
-<ul>
-  <li><strong>Stratify HF risk</strong> at discharge using the HEARTLAND 10-input score (low / moderate / high tiers).</li>
-  <li><strong>Assign facility implementation tier</strong> (1 Minimal / 2 Standard / 3 Advanced) based on staffing, technology, and financial navigation capacity.</li>
-  <li><strong>Assign patient monitoring track</strong> (A digital / B analog / Hybrid) based on access to smartphone and telephone.</li>
-  <li><strong>Structure the care plan</strong> with tier-appropriate GDMT initiation cadence, follow-up schedule, and discharge education.</li>
-  <li><strong>Capture remote monitoring observations</strong> (weight, blood pressure, oxygen saturation) with red-flag thresholds that pass through the human filter (clinician telephone assessment) before ED referral.</li>
-</ul>
-
-<h4 id="conformance">Conformance</h4>
-
-<ul>
-  <li><strong>FHIR version:</strong> R4 (4.0.1)</li>
-  <li><strong>Dependencies:</strong> <a href="http://hl7.org/fhir/us/core/STU6.1">US Core 6.1.0</a></li>
-  <li><strong>Jurisdiction:</strong> United States</li>
-  <li><strong>Status:</strong> Draft (v0.1.0)</li>
-</ul>
-
-<h4 id="audience">Audience</h4>
-
-<ul>
-  <li>EHR vendors implementing HEARTLAND in rural and Critical Access Hospital settings</li>
-  <li>Federally Qualified Health Centers (FQHCs) and community hospitals adopting the protocol</li>
-  <li>Health IT analysts integrating heart failure risk stratification with care planning</li>
-  <li>Researchers extending the HEARTLAND evidence base</li>
-</ul>
-
-<h4 id="source-of-truth">Source of Truth</h4>
-
-<ul>
-  <li><strong>Clinical content:</strong> HEARTLAND Protocol v3.2 (Cureus, 2026)</li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>Repositories:</strong> <a href="https://doi.org/10.5281/zenodo.18566403">Zenodo DOI 10.5281/zenodo.18566403</a></td>
-          <td><a href="https://doi.org/10.17605/OSF.IO/YUSGH">OSF DOI 10.17605/OSF.IO/YUSGH</a></td>
-        </tr>
-      </tbody>
-    </table>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#heartland-protocol-fhir-implementation-guide" id="markdown-toc-heartland-protocol-fhir-implementation-guide">HEARTLAND Protocol FHIR Implementation Guide</a>    <ul>
+      <li><a href="#disclaimers-read-first" id="markdown-toc-disclaimers-read-first">Disclaimers (read first)</a></li>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#features" id="markdown-toc-features">Features</a></li>
+      <li><a href="#status" id="markdown-toc-status">Status</a></li>
+      <li><a href="#stack" id="markdown-toc-stack">Stack</a></li>
+      <li><a href="#local-development" id="markdown-toc-local-development">Local development</a></li>
+      <li><a href="#open-science" id="markdown-toc-open-science">Open science</a></li>
+      <li><a href="#license" id="markdown-toc-license">License</a></li>
+      <li><a href="#author" id="markdown-toc-author">Author</a></li>
+    </ul>
   </li>
 </ul>
 
-<h4 id="author">Author</h4>
+</div>
+<h1 id="heartland-protocol-fhir-implementation-guide">HEARTLAND Protocol FHIR Implementation Guide</h1>
+
+<p><strong>Interoperability Specification for Rural Heart Failure Management</strong></p>
+
+<p>A FHIR R4 Implementation Guide that operationalizes the HEARTLAND Protocol — <em>Heart failure Evidence-based Access in Rural Treatment, Linking Advanced Network Delivery</em> — as a set of EHR-implementable conformance resources for primary care-led heart failure management in rural and resource-limited settings across the United States.</p>
+
+<blockquote>
+  <p><strong>Source protocol</strong>: Muller Ferreira V. <em>HEARTLAND Protocol: An Implementation Framework for Primary Care-Led Heart Failure Management in Rural Settings.</em> Published in Cureus (Springer Nature), indexed in PubMed, PubMed Central, Scopus, and Google Scholar.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="disclaimers-read-first">Disclaimers (read first)</h3>
+
+<blockquote>
+  <p><em>"This Implementation Guide is a clinical decision support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only."</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>"The HEARTLAND Risk Stratification Framework is a proposed tool under development. It has not been validated against clinical outcomes data. Formal validation through registry data is a defined research objective."</em></p>
+</blockquote>
+
+<p>This IG is <strong>not a medical device</strong>, <strong>not FDA-cleared</strong>, and <strong>not HIPAA-certified</strong>. Examples contain <strong>synthetic data only</strong> — no patient health information is included.</p>
+
+<hr />
+
+<h3 id="purpose">Purpose</h3>
+
+<p>Heart failure affects over 6.7 million Americans and drives more than 1 million hospitalizations annually. Rural populations bear a 53% higher mortality rate, exacerbated by limited cardiology access — 86% of rural U.S. counties have no cardiologist. Despite strong clinical evidence for guideline-directed medical therapy (GDMT), fewer than 20% of eligible patients receive all four recommended medication classes simultaneously.</p>
+
+<p>This IG translates the eight HEARTLAND Protocol modules into FHIR R4 conformance resources — profiles, extensions, value sets, code systems, and questionnaires — that EHR vendors and rural HF programs can implement to exchange HEARTLAND-structured clinical data.</p>
+
+<h3 id="features">Features</h3>
 
 <table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Module</th>
+      <th>FHIR Artifact</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td><strong>Vicky Muller Ferreira, MD</strong> — vickymuller@heartlandprotocol.org</td>
-      <td>ORCID 0009-0009-1099-5690</td>
+      <td>1</td>
+      <td>Risk Stratification</td>
+      <td><a href="StructureDefinition-heartland-risk-assessment.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskAssessment</code></a> + <a href="Questionnaire-heartland-risk-input-questionnaire.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskInputQuestionnaire</code></a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GDMT Optimization</td>
+      <td><a href="StructureDefinition-heartland-careplan.html"><code class="language-plaintext highlighter-rouge">HeartlandCarePlan</code></a> (activity rules per tier)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Telephone Titration</td>
+      <td><a href="CodeSystem-heartland-monitoring-track.html"><code class="language-plaintext highlighter-rouge">HeartlandMonitoringTrack</code></a> (Track A/B)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Discharge Transitions</td>
+      <td><a href="StructureDefinition-heartland-careplan.html"><code class="language-plaintext highlighter-rouge">HeartlandCarePlan</code></a> (8 AHA education domains)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Remote Monitoring Track</td>
+      <td><a href="Questionnaire-heartland-patient-track-questionnaire.html"><code class="language-plaintext highlighter-rouge">HeartlandPatientTrackQuestionnaire</code></a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Comorbidity Context</td>
+      <td><a href="StructureDefinition-heartland-patient.html"><code class="language-plaintext highlighter-rouge">HeartlandPatient</code></a> extensions (distance, social support)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Primary Care Linkage</td>
+      <td><em>Phase 2</em></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Implementation Tier Selector</td>
+      <td><a href="Questionnaire-heartland-facility-tier-questionnaire.html"><code class="language-plaintext highlighter-rouge">HeartlandFacilityTierQuestionnaire</code></a> + <a href="StructureDefinition-heartland-facility-tier.html"><code class="language-plaintext highlighter-rouge">HeartlandFacilityTier</code></a> extension</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="license">License</h4>
+<p>Cross-cutting:</p>
 
 <ul>
-  <li>IG content: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></li>
-  <li>Generated FHIR resources: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></li>
-  <li>Companion code (heartland-app): MIT</li>
+  <li><a href="StructureDefinition-heartland-remote-monitoring-observation.html"><code class="language-plaintext highlighter-rouge">HeartlandRemoteMonitoringObservation</code></a> — weight, BP, SpO2 with red-flag thresholds (<code class="language-plaintext highlighter-rouge">Observation.referenceRange</code>)</li>
+  <li>4 CodeSystems labeling risk tier, implementation tier, monitoring track, evidence level</li>
+  <li>Generic Bridge pathway encoded in CarePlan activities</li>
+  <li>Human Filter principle (clinician triage before ED escalation)</li>
+  <li>4 narrative pages: <a href="background.html">Background</a>, <a href="risk-assessment.html">Risk Assessment</a>, <a href="implementation.html">Tiers and Tracks</a></li>
 </ul>
 
-<h4 id="navigation">Navigation</h4>
+<h3 id="status">Status</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stream</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cureus manuscript</td>
+      <td>Published; peer-review response in progress</td>
+    </tr>
+    <tr>
+      <td>HEARTLAND Protocol</td>
+      <td>v3.2 (February 2026) — authoritative</td>
+    </tr>
+    <tr>
+      <td>FHIR IG</td>
+      <td>v0.1.0 — initial draft, ready for vendor review</td>
+    </tr>
+    <tr>
+      <td>Zenodo IG DOI</td>
+      <td>Pending — minted at first public release via <code class="language-plaintext highlighter-rouge">.zenodo.json</code></td>
+    </tr>
+    <tr>
+      <td>Pilot site EHR validation</td>
+      <td>Phase 3 — not yet started</td>
+    </tr>
+    <tr>
+      <td>FHIR IG Registry submission</td>
+      <td>Deferred to v0.2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="stack">Stack</h3>
 
 <ul>
-  <li><a href="background.html">Background</a> — why HEARTLAND, the rural HF gap, evidence base</li>
-  <li><a href="risk-assessment.html">Risk Assessment</a> — how to capture risk inputs and produce a tiered RiskAssessment</li>
-  <li><a href="implementation.html">Implementation Tiers and Tracks</a> — facility tier assignment, patient track assignment, care plan structure</li>
-  <li><strong>Artifacts</strong> — full list of profiles, extensions, value sets, code systems, and examples (see sidebar)</li>
+  <li>FHIR R4 (4.0.1) — most widely adopted version in US healthcare</li>
+  <li>Depends on <a href="http://hl7.org/fhir/us/core/STU6.1">US Core 6.1.0</a></li>
+  <li>Authored in <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a> compiled via <a href="https://github.com/FHIR/sushi">SUSHI</a></li>
+  <li>Built into navigable HTML via the <a href="https://github.com/HL7/fhir-ig-publisher">HL7 IG Publisher</a></li>
+  <li>Template: <code class="language-plaintext highlighter-rouge">fhir.base.template#current</code> (independent IG, not HL7-balloted)</li>
+  <li>Hosting: GitHub Pages on <code class="language-plaintext highlighter-rouge">gh-pages</code> branch</li>
+  <li>Source: <a href="https://github.com/vickymuller-md/heartland-fhir-ig">github.com/vickymuller-md/heartland-fhir-ig</a></li>
+</ul>
+
+<h3 id="local-development">Local development</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install toolchain (one-time)</span>
+brew <span class="nb">install </span>openjdk@17    <span class="c"># for IG Publisher</span>
+npm <span class="nb">install</span> <span class="nt">-g</span> fsh-sushi   <span class="c"># FSH compiler</span>
+
+<span class="c"># Compile FSH to FHIR JSON</span>
+sushi <span class="nb">.</span>
+
+<span class="c"># Build navigable IG (HTML)</span>
+./_updatePublisher.sh
+./_genonce.sh
+
+<span class="c"># Open output/index.html in a browser</span>
+</code></pre></div></div>
+
+<p>Tests / validation: 0 errors, 0 warnings on SUSHI; 0 errors, 7 cosmetic warnings on IG Publisher (US Core newer version available, fragment XHTMLs unused, observation performer best practice — all reviewed and accepted).</p>
+
+<h3 id="open-science">Open science</h3>
+
+<p>This IG is deposited to Zenodo and OSF alongside the source protocol:</p>
+
+<ul>
+  <li><strong>Cureus</strong> (peer-reviewed, indexed PubMed/PMC/Scopus)</li>
+  <li><strong>Zenodo</strong> (protocol): <a href="https://doi.org/10.5281/zenodo.18566403"><code class="language-plaintext highlighter-rouge">10.5281/zenodo.18566403</code></a></li>
+  <li><strong>Zenodo</strong> (FHIR IG): pending — will be minted at first public release via <a href="https://github.com/vickymuller-md/heartland-fhir-ig/blob/main/.zenodo.json"><code class="language-plaintext highlighter-rouge">.zenodo.json</code></a></li>
+  <li><strong>OSF</strong>: <a href="https://doi.org/10.17605/OSF.IO/YUSGH"><code class="language-plaintext highlighter-rouge">10.17605/OSF.IO/YUSGH</code></a></li>
+  <li><strong>medRxiv</strong>: three complementary systematic reviews registered in PROSPERO</li>
+</ul>
+
+<h3 id="license">License</h3>
+
+<ul>
+  <li>IG narrative content + generated FHIR resources: <a href="https://creativecommons.org/licenses/by/4.0/"><strong>CC-BY 4.0</strong></a></li>
+  <li>Build scripts and tooling: <strong>MIT</strong></li>
+</ul>
+
+<p>The IG is free to use, modify, and redistribute for research, education, and professional clinical decision support — subject to the disclaimers above. Not a medical device.</p>
+
+<h3 id="author">Author</h3>
+
+<p><strong>Vicky Muller Ferreira, MD</strong>
+Cardiologist · Implementation Science Researcher</p>
+
+<ul>
+  <li>Email: vickymuller@heartlandprotocol.org</li>
+  <li>ORCID: <a href="https://orcid.org/0009-0009-1099-5690">0009-0009-1099-5690</a></li>
+  <li>Web: https://heartlandprotocol.org</li>
 </ul>
 
 
@@ -287,7 +416,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 15:03-0400">2026-04-16</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 15:20-0400">2026-04-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

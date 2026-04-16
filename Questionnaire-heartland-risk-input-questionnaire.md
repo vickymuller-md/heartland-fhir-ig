@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandRiskInputQuestionnaire |
 
  
@@ -25,7 +25,7 @@ Standardized capture of HEARTLAND risk score inputs to enable interoperable risk
 {
   "resourceType" : "Questionnaire",
   "id" : "heartland-risk-input-questionnaire",
-  "url" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire",
+  "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire",
   "version" : "0.1.0",
   "name" : "HeartlandRiskInputQuestionnaire",
   "title" : "HEARTLAND Risk Input Questionnaire",

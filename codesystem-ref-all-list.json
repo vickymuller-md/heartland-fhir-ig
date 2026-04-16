@@ -129,15 +129,15 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
     "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -224,7 +224,7 @@
     "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevel",
@@ -235,7 +235,7 @@
     "ValueSet-heartland-evidence-level-vs.html" : "HEARTLAND Evidence Level Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandImplementationTier",
@@ -246,7 +246,7 @@
     "ValueSet-heartland-implementation-tier-vs.html" : "HEARTLAND Implementation Tier Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrack",
@@ -257,7 +257,7 @@
     "ValueSet-heartland-monitoring-track-vs.html" : "HEARTLAND Monitoring Track Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandRiskTier",

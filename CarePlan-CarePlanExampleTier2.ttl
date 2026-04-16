@@ -6,30 +6,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://heartlandprotocol.org/fhir/CarePlan/CarePlanExampleTier2> a fhir:CarePlan ;
+<https://fhir.heartlandprotocol.org/CarePlan/CarePlanExampleTier2> a fhir:CarePlan ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CarePlanExampleTier2"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CarePlan CarePlanExampleTier2</b></p><a name=\"CarePlanExampleTier2\"> </a><a name=\"hcCarePlanExampleTier2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-heartland-careplan.html\">HEARTLAND Care Plan</a></p></div><p><b>HEARTLAND Facility Implementation Tier</b>: <span title=\"Códigos:{https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier tier-2-standard}\">Tier 2 - Standard</span></p><p><b>HEARTLAND Monitoring Track Assignment</b>: <span title=\"Códigos:{https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track analog-track-b}\">Analog Track B</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-PatientExampleRural.html\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)</a></p><p><b>period</b>: 2026-04-16 --&gt; 2026-07-16</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Not Started</td><td>Uma vez</td><td>Initiate all 4 GDMT classes (ARNI/ACEi/ARB, beta-blocker, MRA, SGLT2i) within 14 days per Tier 2 protocol. Prioritize SGLT2i and beta-blocker first if simultaneous initiation not feasible.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Uma vez</td><td>Post-discharge contact within 48 hours by RN champion.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>7-day in-person follow-up visit at FQHC for vitals, medication reconciliation, and GDMT titration.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Contagem 4  times, Uma vez por 1 week</td><td>Weekly follow-up phone calls x 4 weeks (Track B analog) capturing weight, blood pressure, oxygen saturation, and symptom assessment.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Full discharge teach-back covering 8 AHA-aligned domains: (1) daily weight monitoring, (2) sodium and fluid restriction (&lt;=2 g/day Na, 1.5-2 L fluid), (3) medication adherence and timing, (4) symptom recognition (red flags), (5) activity and exercise progression, (6) when to call provider vs ED, (7) follow-up appointment plan, (8) self-care between visits.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Patient assistance program (PAP) pursuit + Generic Bridge for medication access. Generic therapy is superior to no therapy; never delay treatment while waiting for paperwork.</td></tr></table></blockquote><p><b>note</b>: </p><blockquote><div><p>Tier 2 protocol: full implementation over 12 months with phased rollout. Quality metrics: dose optimization and 30-day readmission reduction.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CarePlan CarePlanExampleTier2</b></p><a name=\"CarePlanExampleTier2\"> </a><a name=\"hcCarePlanExampleTier2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-heartland-careplan.html\">HEARTLAND Care Plan</a></p></div><p><b>HEARTLAND Facility Implementation Tier</b>: <span title=\"Códigos:{https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier tier-2-standard}\">Tier 2 - Standard</span></p><p><b>HEARTLAND Monitoring Track Assignment</b>: <span title=\"Códigos:{https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track analog-track-b}\">Analog Track B</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-PatientExampleRural.html\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)</a></p><p><b>period</b>: 2026-04-16 --&gt; 2026-07-16</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Not Started</td><td>Uma vez</td><td>Initiate all 4 GDMT classes (ARNI/ACEi/ARB, beta-blocker, MRA, SGLT2i) within 14 days per Tier 2 protocol. Prioritize SGLT2i and beta-blocker first if simultaneous initiation not feasible.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Uma vez</td><td>Post-discharge contact within 48 hours by RN champion.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>7-day in-person follow-up visit at FQHC for vitals, medication reconciliation, and GDMT titration.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Contagem 4  times, Uma vez por 1 week</td><td>Weekly follow-up phone calls x 4 weeks (Track B analog) capturing weight, blood pressure, oxygen saturation, and symptom assessment.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Full discharge teach-back covering 8 AHA-aligned domains: (1) daily weight monitoring, (2) sodium and fluid restriction (&lt;=2 g/day Na, 1.5-2 L fluid), (3) medication adherence and timing, (4) symptom recognition (red flags), (5) activity and exercise progression, (6) when to call provider vs ED, (7) follow-up appointment plan, (8) self-care between visits.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td><td>Patient assistance program (PAP) pursuit + Generic Bridge for medication access. Generic therapy is superior to no therapy; never delay treatment while waiting for paperwork.</td></tr></table></blockquote><p><b>note</b>: </p><blockquote><div><p>Tier 2 protocol: full implementation over 12 months with phased rollout. Quality metrics: dose optimization and 30-day readmission reduction.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"^^xsd:anyURI ;
-           fhir:l <https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier>
+           fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"^^xsd:anyURI ;
+           fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier>
          ] ;
          fhir:code [ fhir:v "tier-2-standard" ] ;
          fhir:display [ fhir:v "Tier 2 - Standard" ]
@@ -37,15 +37,15 @@
      ]
   ] [
      fhir:url [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"^^xsd:anyURI ;
-           fhir:l <https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track>
+           fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"^^xsd:anyURI ;
+           fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track>
          ] ;
          fhir:code [ fhir:v "analog-track-b" ] ;
          fhir:display [ fhir:v "Analog Track B" ]
@@ -55,7 +55,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:subject [
-     fhir:l <https://heartlandprotocol.org/fhir/Patient/PatientExampleRural> ;
+     fhir:l <https://fhir.heartlandprotocol.org/Patient/PatientExampleRural> ;
      fhir:reference [ fhir:v "Patient/PatientExampleRural" ]
   ] ; # 
   fhir:period [

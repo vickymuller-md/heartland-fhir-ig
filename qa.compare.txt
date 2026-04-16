@@ -3,7 +3,7 @@ HeartlandProtocolIG : Validation Results
 
 err = 0, warn = 7, info = 4
 $--
-Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = https://heartlandprotocol.org/fhir)
+Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = https://fhir.heartlandprotocol.org)
  Build Errors : 0 / 4 / 0
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CarePlan-CarePlanExampleTier2 : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-evidence-level : 0 / 0 / 1
@@ -48,7 +48,7 @@ WARNING: ImplementationGuide/heartland.fhir.us.protocol: ImplementationGuide.dep
 == fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json ==
 WARNING: Observation/ObservationExampleWeightRedFlag: Observation: Recomendação de boas práticas: Em geral, todas as observações devem ter um executante
 == fsh-generated/resources/Patient-PatientExampleRural.json ==
-WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://heartlandprotocol.org/fhir/sid/example-mrn'
+WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://fhir.heartlandprotocol.org/sid/example-mrn'
 == fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json ==

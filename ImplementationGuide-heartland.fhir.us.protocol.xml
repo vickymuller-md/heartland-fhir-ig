@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="heartland.fhir.us.protocol"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide heartland.fhir.us.protocol</b></p><a name="heartland.fhir.us.protocol"> </a><a name="hcheartland.fhir.us.protocol"> </a><h2>HeartlandProtocolIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide heartland.fhir.us.protocol</b></p><a name="heartland.fhir.us.protocol"> </a><a name="hcheartland.fhir.us.protocol"> </a><h2>HeartlandProtocolIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).</p>
 </div></div>
   </text>
-  <url value="https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol"/>
+  <url value="https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol"/>
   <version value="0.1.0"/>
   <name value="HeartlandProtocolIG"/>
   <title value="HEARTLAND Protocol FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-04-16T15:03:58-04:00"/>
+  <date value="2026-04-16T15:20:02-04:00"/>
   <publisher value="Vicky Muller Ferreira, MD"/>
   <contact>
     <name value="Vicky Muller Ferreira, MD"/>
@@ -185,7 +185,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://heartlandprotocol.org/fhir/history.html"/>
+        <valueString value="https://fhir.heartlandprotocol.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -396,7 +396,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://heartlandprotocol.org/fhir/history.html"/>
+        <valueString value="https://fhir.heartlandprotocol.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -496,7 +496,7 @@
       </reference>
       <name value="Example: Body Weight Observation with Red-Flag Threshold"/>
       <description value="Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes the HEARTLAND default red-flag threshold (&gt;=0.9 kg in 24 hours triggers clinician outreach per the human filter principle)."/>
-      <exampleCanonical value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-remote-monitoring-observation"/>
+      <exampleCanonical value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,7 +507,7 @@
       </reference>
       <name value="Example: High-Risk HEARTLAND Risk Assessment"/>
       <description value="Risk assessment for PatientExampleRural scoring 11/18 points (&gt;=9 = High Risk tier). Inputs: age &gt;=75 (+2), prior HF hosp 6mo (+3), eGFR &lt;45 (+2), BP &lt;100 (+2), distance &gt;50 mi (+1), limited social support (+1). Triggers Intensive Bundle per HEARTLAND v3.2."/>
-      <exampleCanonical value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"/>
+      <exampleCanonical value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -518,7 +518,7 @@
       </reference>
       <name value="Example: Risk Input Questionnaire Response (score 11)"/>
       <description value="Responses to the HeartlandRiskInputQuestionnaire for PatientExampleRural. Six items answered true (age &gt;=75, prior HF hosp 6mo, SBP &lt;100, CKM Stage 3-4, distance &gt;50 mi, limited social support) totaling 11 points -&gt; High Risk tier. Referenced by RiskAssessmentExampleHigh.basis[0]."/>
-      <exampleCanonical value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response"/>
+      <exampleCanonical value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -529,7 +529,7 @@
       </reference>
       <name value="Example: Rural HF Patient (high-distance, limited support)"/>
       <description value="A 78-year-old patient living alone in a rural county without a local cardiologist (87 miles to nearest cardiology care). Demonstrates use of HeartlandDistanceToCardiology and HeartlandSocialSupportScore extensions. Modeled on the cohort described in HEARTLAND Protocol v3.2 background data."/>
-      <exampleCanonical value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient"/>
+      <exampleCanonical value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -540,7 +540,7 @@
       </reference>
       <name value="Example: Tier 2 Care Plan with Track B Monitoring"/>
       <description value="Care plan for PatientExampleRural at a Tier 2 (Standard) FQHC. Patient was assigned Track B (analog) because rural broadband is unreliable. Plan includes target initiation of all 4 GDMT classes within 14 days, weekly follow-up calls for 4 weeks, 7-day in-person visit, and full 8-domain teach-back education."/>
-      <exampleCanonical value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan"/>
+      <exampleCanonical value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

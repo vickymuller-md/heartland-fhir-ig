@@ -12,7 +12,7 @@
     "ValueSet-heartland-monitoring-observation-code-vs.html" : "HEARTLAND Monitoring Observation Code Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevel",
@@ -23,7 +23,7 @@
     "ValueSet-heartland-evidence-level-vs.html" : "HEARTLAND Evidence Level Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandImplementationTier",
@@ -34,7 +34,7 @@
     "ValueSet-heartland-implementation-tier-vs.html" : "HEARTLAND Implementation Tier Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrack",
@@ -45,7 +45,7 @@
     "ValueSet-heartland-monitoring-track-vs.html" : "HEARTLAND Monitoring Track Value Set"
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandRiskTier",

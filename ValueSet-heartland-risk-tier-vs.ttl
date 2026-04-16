@@ -6,23 +6,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs> a fhir:ValueSet ;
+<https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "heartland-risk-tier-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-risk-tier-vs</b></p><a name=\"heartland-risk-tier-vs\"> </a><a name=\"hcheartland-risk-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-risk-tier.html\"><code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-risk-tier-vs</b></p><a name=\"heartland-risk-tier-vs\"> </a><a name=\"hcheartland-risk-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-risk-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs"^^xsd:anyURI ;
-     fhir:l <https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs>
+     fhir:v "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"^^xsd:anyURI ;
+     fhir:l <https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "HeartlandRiskTierVS"] ; # 
   fhir:title [ fhir:v "HEARTLAND Risk Tier Value Set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-16T15:03:58-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-16T15:20:02-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
@@ -57,8 +57,8 @@
   fhir:compose [
      fhir:include ( [
        fhir:system [
-         fhir:v "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"^^xsd:anyURI ;
-         fhir:l <https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier>
+         fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"^^xsd:anyURI ;
+         fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier>
        ]
      ] )
   ] . # 

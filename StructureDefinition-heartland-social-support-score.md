@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandSocialSupportScore |
 
 Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).
@@ -42,13 +42,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-social-sup
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-social-support-score",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score",
   "version" : "0.1.0",
   "name" : "HeartlandSocialSupportScore",
   "title" : "HEARTLAND Social Support Score",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-social-sup
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score"
+      "fixedUri" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score"
     },
     {
       "id" : "Extension.value[x]",

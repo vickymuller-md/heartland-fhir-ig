@@ -12,11 +12,11 @@ Perfil: [HEARTLAND Risk Assessment](StructureDefinition-heartland-risk-assessmen
 
 **method**: HEARTLAND Protocol v3.2 Risk Score
 
-**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
+**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
 
 **occurrence**: 2026-04-16 14:30:00-0500
 
-**basis**: [Resposta ao questionário '->HEARTLAND Risk Input Questionnaire' sobre '->Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)'](QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.md)
+**basis**: [Resposta ao questionário '->HEARTLAND Risk Input Questionnaire' sobre '->Rural Patient Example Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)'](QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.md)
 
 ### Predictions
 
@@ -41,7 +41,7 @@ Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle in
   "resourceType" : "RiskAssessment",
   "id" : "RiskAssessmentExampleHigh",
   "meta" : {
-    "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"]
+    "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"]
   },
   "status" : "final",
   "method" : {
@@ -58,7 +58,7 @@ Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle in
     "probabilityDecimal" : 11,
     "qualitativeRisk" : {
       "coding" : [{
-        "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+        "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
         "code" : "high",
         "display" : "High Risk"
       }]

@@ -1,24 +1,24 @@
 {
   "codeSystems" : [{
-    "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs",
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevelVS",
     "title" : "HEARTLAND Evidence Level Value Set",
     "description" : "All evidence level codes (established | emerging | pragmatic).",
-    "systems" : ["https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"]
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"]
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs",
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandImplementationTierVS",
     "title" : "HEARTLAND Implementation Tier Value Set",
     "description" : "All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced).",
-    "systems" : ["https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"]
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"]
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs",
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandMonitoringObservationCodeVS",
@@ -27,21 +27,21 @@
     "systems" : ["http://loinc.org"]
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs",
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrackVS",
     "title" : "HEARTLAND Monitoring Track Value Set",
     "description" : "All remote monitoring track codes (digital-track-a | analog-track-b).",
-    "systems" : ["https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"]
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"]
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs",
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandRiskTierVS",
     "title" : "HEARTLAND Risk Tier Value Set",
     "description" : "All risk tier codes from the HEARTLAND risk score (low | moderate | high).",
-    "systems" : ["https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"]
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"]
   }]
 }

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandMonitoringTrackExtension |
 
 Assigns a CarePlan to either Track A (digital, app-based) or Track B (analog, telephone/paper) per HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms; the choice reflects patient access to technology and facility implementation tier.
@@ -44,13 +44,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-monitoring
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-monitoring-track-ext",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrackExtension",
   "title" : "HEARTLAND Monitoring Track Assignment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-monitoring
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext"
+      "fixedUri" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext"
     },
     {
       "id" : "Extension.value[x]",
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-monitoring
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs"
+        "valueSet" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs"
       }
     }]
   }

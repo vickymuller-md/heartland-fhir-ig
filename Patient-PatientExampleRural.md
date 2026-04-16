@@ -8,7 +8,7 @@
 
 Perfil: [HEARTLAND Patient](StructureDefinition-heartland-patient.md)
 
-Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)
+Rural Patient Example Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)
 
 -------
 
@@ -28,10 +28,10 @@ Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fh
   "resourceType" : "Patient",
   "id" : "PatientExampleRural",
   "meta" : {
-    "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient"]
+    "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient"]
   },
   "extension" : [{
-    "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology",
+    "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology",
     "valueQuantity" : {
       "value" : 87,
       "unit" : "mi_us",
@@ -40,11 +40,11 @@ Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fh
     }
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score",
+    "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score",
     "valueBoolean" : true
   }],
   "identifier" : [{
-    "system" : "https://heartlandprotocol.org/fhir/sid/example-mrn",
+    "system" : "https://fhir.heartlandprotocol.org/sid/example-mrn",
     "value" : "EXAMPLE-001"
   }],
   "active" : true,

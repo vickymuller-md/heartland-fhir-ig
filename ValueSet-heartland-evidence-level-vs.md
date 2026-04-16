@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandEvidenceLevelVS |
 
  
@@ -50,13 +50,13 @@ Este conjunto de valores não é utilizado aqui; pode ser utilizado noutro local
 {
   "resourceType" : "ValueSet",
   "id" : "heartland-evidence-level-vs",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
   "version" : "0.1.0",
   "name" : "HeartlandEvidenceLevelVS",
   "title" : "HEARTLAND Evidence Level Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -90,7 +90,7 @@ Este conjunto de valores não é utilizado aqui; pode ser utilizado noutro local
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"
+      "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"
     }]
   }
 }

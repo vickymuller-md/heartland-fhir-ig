@@ -1,154 +1,154 @@
 [{
   "id" : "heartland-evidence-level",
   "type" : "CodeSystem",
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
   "version" : "0.1.0",
   "name" : "HeartlandEvidenceLevel"
 },
 {
   "id" : "heartland-implementation-tier",
   "type" : "CodeSystem",
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
   "version" : "0.1.0",
   "name" : "HeartlandImplementationTier"
 },
 {
   "id" : "heartland-monitoring-track",
   "type" : "CodeSystem",
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrack"
 },
 {
   "id" : "heartland-risk-tier",
   "type" : "CodeSystem",
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
   "version" : "0.1.0",
   "name" : "HeartlandRiskTier"
 },
 {
   "id" : "heartland.fhir.us.protocol",
   "type" : "ImplementationGuide",
-  "url" : "https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol",
+  "url" : "https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol",
   "version" : "0.1.0",
   "name" : "HeartlandProtocolIG"
 },
 {
   "id" : "heartland-facility-tier-questionnaire",
   "type" : "Questionnaire",
-  "url" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-facility-tier-questionnaire",
+  "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire",
   "version" : "0.1.0",
   "name" : "HeartlandFacilityTierQuestionnaire"
 },
 {
   "id" : "heartland-patient-track-questionnaire",
   "type" : "Questionnaire",
-  "url" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-patient-track-questionnaire",
+  "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire",
   "version" : "0.1.0",
   "name" : "HeartlandPatientTrackQuestionnaire"
 },
 {
   "id" : "heartland-risk-input-questionnaire",
   "type" : "Questionnaire",
-  "url" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire",
+  "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire",
   "version" : "0.1.0",
   "name" : "HeartlandRiskInputQuestionnaire"
 },
 {
   "id" : "heartland-careplan",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan",
   "version" : "0.1.0",
   "name" : "HeartlandCarePlan"
 },
 {
   "id" : "heartland-distance-to-cardiology",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology",
   "version" : "0.1.0",
   "name" : "HeartlandDistanceToCardiology"
 },
 {
   "id" : "heartland-facility-tier",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier",
   "version" : "0.1.0",
   "name" : "HeartlandFacilityTier"
 },
 {
   "id" : "heartland-monitoring-track-ext",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrackExtension"
 },
 {
   "id" : "heartland-patient",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient",
   "version" : "0.1.0",
   "name" : "HeartlandPatient"
 },
 {
   "id" : "heartland-questionnaire-response",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response",
   "version" : "0.1.0",
   "name" : "HeartlandQuestionnaireResponse"
 },
 {
   "id" : "heartland-remote-monitoring-observation",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-remote-monitoring-observation",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation",
   "version" : "0.1.0",
   "name" : "HeartlandRemoteMonitoringObservation"
 },
 {
   "id" : "heartland-risk-assessment",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment",
   "version" : "0.1.0",
   "name" : "HeartlandRiskAssessment"
 },
 {
   "id" : "heartland-social-support-score",
   "type" : "StructureDefinition",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score",
   "version" : "0.1.0",
   "name" : "HeartlandSocialSupportScore"
 },
 {
   "id" : "heartland-evidence-level-vs",
   "type" : "ValueSet",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
   "version" : "0.1.0",
   "name" : "HeartlandEvidenceLevelVS"
 },
 {
   "id" : "heartland-implementation-tier-vs",
   "type" : "ValueSet",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
   "version" : "0.1.0",
   "name" : "HeartlandImplementationTierVS"
 },
 {
   "id" : "heartland-monitoring-observation-code-vs",
   "type" : "ValueSet",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringObservationCodeVS"
 },
 {
   "id" : "heartland-monitoring-track-vs",
   "type" : "ValueSet",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrackVS"
 },
 {
   "id" : "heartland-risk-tier-vs",
   "type" : "ValueSet",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
   "version" : "0.1.0",
   "name" : "HeartlandRiskTierVS"
 }]

@@ -3,14 +3,14 @@
   "id" : "heartland.fhir.us.protocol",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide heartland.fhir.us.protocol</b></p><a name=\"heartland.fhir.us.protocol\"> </a><a name=\"hcheartland.fhir.us.protocol\"> </a><h2>HeartlandProtocolIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide heartland.fhir.us.protocol</b></p><a name=\"heartland.fhir.us.protocol\"> </a><a name=\"hcheartland.fhir.us.protocol\"> </a><h2>HeartlandProtocolIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).</p>\n</div></div>"
   },
-  "url" : "https://heartlandprotocol.org/fhir/ImplementationGuide/heartland.fhir.us.protocol",
+  "url" : "https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol",
   "version" : "0.1.0",
   "name" : "HeartlandProtocolIG",
   "title" : "HEARTLAND Protocol FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -233,7 +233,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://heartlandprotocol.org/fhir/history.html"
+        "valueString" : "https://fhir.heartlandprotocol.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -523,7 +523,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://heartlandprotocol.org/fhir/history.html"
+        "valueString" : "https://fhir.heartlandprotocol.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -658,7 +658,7 @@
       },
       "name" : "Example: Body Weight Observation with Red-Flag Threshold",
       "description" : "Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes the HEARTLAND default red-flag threshold (>=0.9 kg in 24 hours triggers clinician outreach per the human filter principle).",
-      "exampleCanonical" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-remote-monitoring-observation"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"
     },
     {
       "extension" : [{
@@ -670,7 +670,7 @@
       },
       "name" : "Example: High-Risk HEARTLAND Risk Assessment",
       "description" : "Risk assessment for PatientExampleRural scoring 11/18 points (>=9 = High Risk tier). Inputs: age >=75 (+2), prior HF hosp 6mo (+3), eGFR <45 (+2), BP <100 (+2), distance >50 mi (+1), limited social support (+1). Triggers Intensive Bundle per HEARTLAND v3.2.",
-      "exampleCanonical" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"
     },
     {
       "extension" : [{
@@ -682,7 +682,7 @@
       },
       "name" : "Example: Risk Input Questionnaire Response (score 11)",
       "description" : "Responses to the HeartlandRiskInputQuestionnaire for PatientExampleRural. Six items answered true (age >=75, prior HF hosp 6mo, SBP <100, CKM Stage 3-4, distance >50 mi, limited social support) totaling 11 points -> High Risk tier. Referenced by RiskAssessmentExampleHigh.basis[0].",
-      "exampleCanonical" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response"
     },
     {
       "extension" : [{
@@ -694,7 +694,7 @@
       },
       "name" : "Example: Rural HF Patient (high-distance, limited support)",
       "description" : "A 78-year-old patient living alone in a rural county without a local cardiologist (87 miles to nearest cardiology care). Demonstrates use of HeartlandDistanceToCardiology and HeartlandSocialSupportScore extensions. Modeled on the cohort described in HEARTLAND Protocol v3.2 background data.",
-      "exampleCanonical" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient"
     },
     {
       "extension" : [{
@@ -706,7 +706,7 @@
       },
       "name" : "Example: Tier 2 Care Plan with Track B Monitoring",
       "description" : "Care plan for PatientExampleRural at a Tier 2 (Standard) FQHC. Patient was assigned Track B (analog) because rural broadband is unreliable. Plan includes target initiation of all 4 GDMT classes within 14 days, weekly follow-up calls for 4 weeks, 7-day in-person visit, and full 8-domain teach-back education.",
-      "exampleCanonical" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"
     },
     {
       "extension" : [{

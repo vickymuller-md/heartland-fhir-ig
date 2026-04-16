@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandMonitoringObservationCodeVS |
 
  
@@ -45,13 +45,13 @@ LOINC codes for the four observations captured by the HEARTLAND remote monitorin
 {
   "resourceType" : "ValueSet",
   "id" : "heartland-monitoring-observation-code-vs",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringObservationCodeVS",
   "title" : "HEARTLAND Monitoring Observation Code Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

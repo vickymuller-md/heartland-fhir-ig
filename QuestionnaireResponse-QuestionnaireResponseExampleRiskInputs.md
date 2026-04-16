@@ -63,9 +63,9 @@ Perfil: [HEARTLAND Questionnaire Response](StructureDefinition-heartland-questio
   "resourceType" : "QuestionnaireResponse",
   "id" : "QuestionnaireResponseExampleRiskInputs",
   "meta" : {
-    "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response"]
+    "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response"]
   },
-  "questionnaire" : "https://heartlandprotocol.org/fhir/Questionnaire/heartland-risk-input-questionnaire|0.1.0",
+  "questionnaire" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire|0.1.0",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/PatientExampleRural"

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandRiskAssessment |
 
  
@@ -36,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-risk-assessment",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment",
   "version" : "0.1.0",
   "name" : "HeartlandRiskAssessment",
   "title" : "HEARTLAND Risk Assessment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
       "path" : "RiskAssessment.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient",
+        "targetProfile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient",
         "http://hl7.org/fhir/StructureDefinition/Patient"]
       }],
       "mustSupport" : true
@@ -185,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs"
+        "valueSet" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"
       }
     }]
   }

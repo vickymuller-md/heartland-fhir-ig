@@ -5,7 +5,7 @@
   "jurisdiction": "US",
   "extensions": [
     {
-      "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology",
+      "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology",
       "title": "HEARTLAND Distance to Cardiology",
       "types": [
         "Quantity",
@@ -19,21 +19,21 @@
       ]
     },
     {
-      "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier",
+      "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier",
       "title": "HEARTLAND Facility Implementation Tier",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext",
+      "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext",
       "title": "HEARTLAND Monitoring Track Assignment",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score",
+      "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score",
       "title": "HEARTLAND Social Support Score",
       "types": [
         "boolean"
@@ -43,31 +43,31 @@
   "profiles": {
     "CarePlan": [
       {
-        "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan",
+        "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan",
         "title": "HEARTLAND Care Plan"
       }
     ],
     "Patient": [
       {
-        "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient",
+        "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient",
         "title": "HEARTLAND Patient"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response",
+        "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response",
         "title": "HEARTLAND Questionnaire Response"
       }
     ],
     "Observation": [
       {
-        "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-remote-monitoring-observation",
+        "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation",
         "title": "HEARTLAND Remote Monitoring Observation"
       }
     ],
     "RiskAssessment": [
       {
-        "url": "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment",
+        "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment",
         "title": "HEARTLAND Risk Assessment"
       }
     ]
@@ -116,16 +116,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology": [
+    "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology": [
       "Patient"
     ],
-    "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier": [
+    "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier": [
       "CarePlan"
     ],
-    "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext": [
+    "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext": [
       "CarePlan"
     ],
-    "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score": [
+    "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score": [
       "Patient"
     ]
   }

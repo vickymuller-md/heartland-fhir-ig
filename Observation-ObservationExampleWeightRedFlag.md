@@ -14,7 +14,7 @@ Perfil: [HEARTLAND Remote Monitoring Observation](StructureDefinition-heartland-
 
 **code**: Body weight
 
-**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
+**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
 
 **effective**: 2026-04-16 08:15:00-0500
 
@@ -36,7 +36,7 @@ Perfil: [HEARTLAND Remote Monitoring Observation](StructureDefinition-heartland-
   "resourceType" : "Observation",
   "id" : "ObservationExampleWeightRedFlag",
   "meta" : {
-    "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-remote-monitoring-observation"]
+    "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"]
   },
   "status" : "final",
   "category" : [{

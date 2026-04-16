@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Patient</sch:title>
     <sch:rule context="f:Patient">
-      <sch:assert test="count(f:extension[@url = 'https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology']) &lt;= 1">extension with URL = 'https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score']) &lt;= 1">extension with URL = 'https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology']) &lt;= 1">extension with URL = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score']) &lt;= 1">extension with URL = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

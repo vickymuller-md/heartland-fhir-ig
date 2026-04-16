@@ -3,10 +3,10 @@
 <RiskAssessment xmlns="http://hl7.org/fhir">
   <id value="RiskAssessmentExampleHigh"/>
   <meta>
-    <profile value="https://heartlandprotocol.org/fhir/StructureDefinition/heartland-risk-assessment"/>
+    <profile value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: RiskAssessment RiskAssessmentExampleHigh</b></p><a name="RiskAssessmentExampleHigh"> </a><a name="hcRiskAssessmentExampleHigh"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-heartland-risk-assessment.html">HEARTLAND Risk Assessment</a></p></div><p><b>status</b>: Final</p><p><b>method</b>: <span title="Códigos:">HEARTLAND Protocol v3.2 Risk Score</span></p><p><b>subject</b>: <a href="Patient-PatientExampleRural.html">Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)</a></p><p><b>occurrence</b>: 2026-04-16 14:30:00-0500</p><p><b>basis</b>: <a href="QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html">Resposta ao questionário '-&gt;HEARTLAND Risk Input Questionnaire' sobre '-&gt;Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)'</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td><td><b>QualitativeRisk</b></td></tr><tr><td style="display: none">*</td><td>11</td><td><span title="Códigos:{https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier high}">High Risk</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: RiskAssessment RiskAssessmentExampleHigh</b></p><a name="RiskAssessmentExampleHigh"> </a><a name="hcRiskAssessmentExampleHigh"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-heartland-risk-assessment.html">HEARTLAND Risk Assessment</a></p></div><p><b>status</b>: Final</p><p><b>method</b>: <span title="Códigos:">HEARTLAND Protocol v3.2 Risk Score</span></p><p><b>subject</b>: <a href="Patient-PatientExampleRural.html">Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)</a></p><p><b>occurrence</b>: 2026-04-16 14:30:00-0500</p><p><b>basis</b>: <a href="QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html">Resposta ao questionário '-&gt;HEARTLAND Risk Input Questionnaire' sobre '-&gt;Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)'</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Probability[x]</b></td><td><b>QualitativeRisk</b></td></tr><tr><td style="display: none">*</td><td>11</td><td><span title="Códigos:{https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier high}">High Risk</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated.</p>
 </div></blockquote></div>
   </text>
   <status value="final"/>
@@ -24,7 +24,7 @@
     <probabilityDecimal value="11"/>
     <qualitativeRisk>
       <coding>
-        <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"/>
+        <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"/>
         <code value="high"/>
         <display value="High Risk"/>
       </coding>

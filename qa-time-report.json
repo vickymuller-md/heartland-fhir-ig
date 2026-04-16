@@ -1,58 +1,53 @@
 {
-  "date" : "Thu, 16 Apr, 2026 15:03:58 -0400",
+  "date" : "Thu, 16 Apr, 2026 15:20:02 -0400",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json",
     "size" : 16519,
     "processes" : [{
       "activity" : "load",
-      "start" : 17,
-      "length" : 7
+      "start" : 19,
+      "length" : 13
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 18,
-      "length" : 10
+      "start" : 20,
+      "length" : 9
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
+      "start" : 20,
       "length" : 75
     },
     {
       "activity" : "validate",
-      "start" : 23,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 23,
-      "length" : 2728
+      "start" : 26,
+      "length" : 3000
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 25,
+      "start" : 29,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 81
+      "start" : 30,
+      "length" : 133
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 124
+      "start" : 35,
+      "length" : 238
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
-      "length" : 7
+      "start" : 64,
+      "length" : 4
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 51,
-      "length" : 3
+      "start" : 75,
+      "length" : 2
     }]
   },
   {
@@ -60,38 +55,48 @@
     "size" : 3506,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "load-configure",
-      "start" : 18,
+      "start" : 20,
       "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 18,
-      "length" : 2
+      "start" : 20,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 469
+      "start" : 20,
+      "length" : 1892
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 25,
-      "length" : 13
+      "start" : 29,
+      "length" : 99
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 19
+      "start" : 30,
+      "length" : 25
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 20
+      "start" : 35,
+      "length" : 58
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 64,
+      "length" : 1
     }]
   },
   {
@@ -99,42 +104,42 @@
     "size" : 1313,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 4
+      "start" : 19,
+      "length" : 8
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 4
+      "start" : 22,
+      "length" : 25
     },
     {
       "activity" : "validate",
-      "start" : 19,
-      "length" : 24
+      "start" : 22,
+      "length" : 36
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 25,
+      "activity" : "checkConformanceResources",
+      "start" : 29,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 10
+      "start" : 30,
+      "length" : 15
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 39
+      "start" : 35,
+      "length" : 72
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
+      "start" : 64,
       "length" : 1
     }]
   },
@@ -142,43 +147,38 @@
     "name" : "fsh-generated/resources/CodeSystem-heartland-implementation-tier.json",
     "size" : 1557,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 4
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 18,
+      "activity" : "load-configure",
+      "start" : 20,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 2
+      "start" : 22,
+      "length" : 5
     },
     {
       "activity" : "validate",
-      "start" : 19,
+      "start" : 22,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 10
+      "start" : 30,
+      "length" : 16
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 28
+      "start" : 35,
+      "length" : 44
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
+      "start" : 64,
       "length" : 1
     }]
   },
@@ -186,68 +186,73 @@
     "name" : "fsh-generated/resources/CodeSystem-heartland-monitoring-track.json",
     "size" : 1025,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 19,
+      "length" : 1
+    },
+    {
       "activity" : "load",
-      "start" : 17,
+      "start" : 19,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 1
+      "start" : 22,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 19,
-      "length" : 5
+      "start" : 22,
+      "length" : 10
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 6
+      "start" : 30,
+      "length" : 12
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 30
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 42,
-      "length" : 1
+      "start" : 35,
+      "length" : 50
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-heartland-risk-tier.json",
     "size" : 1114,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 17,
+      "start" : 19,
       "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 1
+      "start" : 22,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 19,
+      "start" : 22,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 8
+      "start" : 30,
+      "length" : 12
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 26
+      "start" : 35,
+      "length" : 35
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 64,
+      "length" : 1
     }]
   },
   {
@@ -255,168 +260,178 @@
     "size" : 1158,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 18,
-      "length" : 26
+      "start" : 22,
+      "length" : 41
     },
     {
       "activity" : "validate",
-      "start" : 25,
-      "length" : 427
+      "start" : 29,
+      "length" : 466
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 7
+      "start" : 30,
+      "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 9
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 42,
-      "length" : 1
+      "start" : 35,
+      "length" : 22
     }]
   },
   {
     "name" : "fsh-generated/resources/Patient-PatientExampleRural.json",
     "size" : 1031,
     "processes" : [{
-      "activity" : "checkR4R4B",
-      "start" : 18,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
+      "activity" : "loadResources",
       "start" : 19,
       "length" : 1
     },
     {
-      "activity" : "validate",
-      "start" : 26,
-      "length" : 7
+      "activity" : "checkR4R4B",
+      "start" : 20,
+      "length" : 1
     },
     {
-      "activity" : "generate1",
-      "start" : 26,
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 30,
       "length" : 9
     },
     {
+      "activity" : "generate1",
+      "start" : 30,
+      "length" : 10
+    },
+    {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 7
+      "start" : 35,
+      "length" : 19
     }]
   },
   {
     "name" : "fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json",
     "size" : 2894,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 17,
-      "length" : 9
+      "start" : 19,
+      "length" : 16
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 15
+      "start" : 22,
+      "length" : 18
     },
     {
       "activity" : "validate",
-      "start" : 25,
-      "length" : 15
+      "start" : 29,
+      "length" : 55
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 42
+      "start" : 30,
+      "length" : 57
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 14
+      "start" : 35,
+      "length" : 43
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
-      "length" : 4
+      "start" : 64,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json",
     "size" : 1229,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 19,
+      "length" : 1
+    },
+    {
       "activity" : "load",
-      "start" : 17,
-      "length" : 3
+      "start" : 19,
+      "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 25,
+      "start" : 22,
       "length" : 3
     },
     {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 13
+    },
+    {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 31
+      "start" : 30,
+      "length" : 40
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 7
+      "start" : 36,
+      "length" : 26
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 64,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json",
     "size" : 2145,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
+      "activity" : "load",
+      "start" : 19,
+      "length" : 2
     },
     {
-      "activity" : "load",
-      "start" : 17,
+      "activity" : "load-configure",
+      "start" : 20,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 25,
+      "start" : 22,
       "length" : 4
     },
     {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 24
+    },
+    {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 55
+      "start" : 30,
+      "length" : 85
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 10
+      "start" : 36,
+      "length" : 29
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 52,
+      "length" : 1
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
+      "start" : 64,
       "length" : 2
     }]
   },
@@ -424,58 +439,53 @@
     "name" : "fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json",
     "size" : 2191,
     "processes" : [{
-      "activity" : "checkR4R4B",
-      "start" : 18,
+      "activity" : "loadResources",
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 5
+      "start" : 22,
+      "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 26,
-      "length" : 7
+      "start" : 30,
+      "length" : 10
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 49
+      "start" : 31,
+      "length" : 63
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 13
+      "start" : 36,
+      "length" : 30
     }]
   },
   {
     "name" : "fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json",
     "size" : 970,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
-      "start" : 19,
+      "start" : 22,
       "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 26,
-      "length" : 10
+      "start" : 30,
+      "length" : 12
     },
     {
       "activity" : "generate1",
-      "start" : 26,
-      "length" : 6
+      "start" : 31,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 29,
-      "length" : 10
+      "start" : 36,
+      "length" : 25
     }]
   },
   {
@@ -483,63 +493,78 @@
     "size" : 4148,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 3
+      "start" : 19,
+      "length" : 5
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 30
-    },
-    {
-      "activity" : "generateNarratives",
       "start" : 19,
       "length" : 39
     },
     {
-      "activity" : "validate",
+      "activity" : "checkR4R4B",
       "start" : 20,
-      "length" : 315
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 25,
       "length" : 1
     },
     {
-      "activity" : "generate1",
-      "start" : 26,
-      "length" : 289
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 37
     },
     {
-      "activity" : "generate2",
+      "activity" : "validate",
+      "start" : 23,
+      "length" : 405
+    },
+    {
+      "activity" : "checkConformanceResources",
       "start" : 29,
-      "length" : 919
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 31,
+      "length" : 376
     },
     {
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 1254
+      "start" : 36,
+      "length" : 4732
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 2276
     },
     {
       "activity" : "makeDependencies",
-      "start" : 36,
+      "start" : 52,
       "length" : 1
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 42,
+      "start" : 64,
       "length" : 10
     },
     {
+      "activity" : "scanProfilesForR5",
+      "start" : 75,
+      "length" : 4
+    },
+    {
       "activity" : "scanExamplesForR5",
-      "start" : 51,
-      "length" : 1
+      "start" : 75,
+      "length" : 2
     }]
   },
   {
@@ -547,107 +572,102 @@
     "size" : 2606,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
+      "start" : 19,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 17,
+      "start" : 19,
       "length" : 2
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 6
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 18,
-      "length" : 1
+      "start" : 19,
+      "length" : 8
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 13
+      "start" : 22,
+      "length" : 16
     },
     {
       "activity" : "validate",
-      "start" : 20,
-      "length" : 2176
+      "start" : 23,
+      "length" : 2271
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 25,
+      "activity" : "checkConformanceResources",
+      "start" : 29,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 27,
-      "length" : 96
+      "start" : 31,
+      "length" : 322
     },
     {
       "activity" : "generate2",
-      "start" : 30,
-      "length" : 102
+      "start" : 40,
+      "length" : 377
     },
     {
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 66
+      "start" : 46,
+      "length" : 117
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 3
+      "start" : 64,
+      "length" : 6
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-heartland-facility-tier.json",
     "size" : 2209,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 19,
+      "length" : 2
+    },
+    {
       "activity" : "load",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
+      "start" : 22,
       "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 22,
-      "length" : 31
+      "start" : 26,
+      "length" : 30
     },
     {
       "activity" : "generate1",
-      "start" : 27,
-      "length" : 56
+      "start" : 31,
+      "length" : 69
     },
     {
       "activity" : "generate2",
-      "start" : 30,
-      "length" : 74
+      "start" : 41,
+      "length" : 127
     },
     {
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 32
+      "start" : 46,
+      "length" : 43
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 1
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 51,
-      "length" : 1
+      "start" : 64,
+      "length" : 2
     }]
   },
   {
@@ -655,48 +675,48 @@
     "size" : 2101,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 4
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 6
+      "start" : 22,
+      "length" : 9
     },
     {
       "activity" : "validate",
-      "start" : 22,
-      "length" : 16
-    },
-    {
-      "activity" : "generate1",
-      "start" : 27,
-      "length" : 46
-    },
-    {
-      "activity" : "generate2",
-      "start" : 30,
-      "length" : 65
-    },
-    {
-      "activity" : "generate2",
-      "start" : 33,
+      "start" : 26,
       "length" : 22
     },
     {
+      "activity" : "generate1",
+      "start" : 31,
+      "length" : 57
+    },
+    {
+      "activity" : "generate2",
+      "start" : 41,
+      "length" : 103
+    },
+    {
+      "activity" : "generate2",
+      "start" : 46,
+      "length" : 47
+    },
+    {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 3
+      "start" : 64,
+      "length" : 1
     }]
   },
   {
@@ -704,112 +724,122 @@
     "size" : 2012,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 23
+      "start" : 19,
+      "length" : 20
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 27
+      "start" : 22,
+      "length" : 15
     },
     {
       "activity" : "validate",
-      "start" : 22,
-      "length" : 75
+      "start" : 26,
+      "length" : 91
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 27,
-      "length" : 207
+      "start" : 31,
+      "length" : 212
     },
     {
       "activity" : "generate2",
-      "start" : 30,
-      "length" : 202
+      "start" : 41,
+      "length" : 316
     },
     {
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 191
+      "start" : 46,
+      "length" : 261
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 14
+      "start" : 64,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 75,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-heartland-questionnaire-response.json",
     "size" : 1999,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
-    },
-    {
       "activity" : "load",
-      "start" : 17,
-      "length" : 3
+      "start" : 19,
+      "length" : 2
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 15
-    },
-    {
-      "activity" : "generateNarratives",
       "start" : 19,
-      "length" : 21
-    },
-    {
-      "activity" : "validate",
-      "start" : 22,
-      "length" : 69
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 25,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 27,
-      "length" : 169
-    },
-    {
-      "activity" : "generate2",
-      "start" : 31,
-      "length" : 153
-    },
-    {
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 154
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 43,
       "length" : 17
     },
     {
-      "activity" : "scanProfilesForR5",
-      "start" : 51,
+      "activity" : "load-configure",
+      "start" : 20,
       "length" : 1
     },
     {
-      "activity" : "scanExamplesForR5",
-      "start" : 51,
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 17
+    },
+    {
+      "activity" : "validate",
+      "start" : 26,
+      "length" : 82
+    },
+    {
+      "activity" : "generateLogicalMaps",
+      "start" : 29,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
       "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 32,
+      "length" : 221
+    },
+    {
+      "activity" : "generate2",
+      "start" : 41,
+      "length" : 289
+    },
+    {
+      "activity" : "generate2",
+      "start" : 46,
+      "length" : 169
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 64,
+      "length" : 6
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 75,
+      "length" : 1
     }]
   },
   {
@@ -817,58 +847,63 @@
     "size" : 3939,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 35
+      "start" : 19,
+      "length" : 29
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 28
+      "start" : 22,
+      "length" : 26
     },
     {
       "activity" : "validate",
-      "start" : 22,
-      "length" : 83
+      "start" : 26,
+      "length" : 89
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 29,
+      "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 25,
+      "start" : 29,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 27,
-      "length" : 286
+      "start" : 32,
+      "length" : 320
     },
     {
       "activity" : "generate2",
-      "start" : 31,
-      "length" : 522
+      "start" : 42,
+      "length" : 966
     },
     {
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 216
+      "start" : 46,
+      "length" : 253
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 28
+      "start" : 64,
+      "length" : 11
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 51,
-      "length" : 2
+      "start" : 75,
+      "length" : 5
     }]
   },
   {
@@ -876,57 +911,57 @@
     "size" : 3494,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
+      "start" : 19,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 3
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 16
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 18,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
       "start" : 19,
-      "length" : 20
-    },
-    {
-      "activity" : "validate",
-      "start" : 22,
-      "length" : 111
-    },
-    {
-      "activity" : "generate1",
-      "start" : 27,
-      "length" : 175
-    },
-    {
-      "activity" : "generate2",
-      "start" : 31,
-      "length" : 124
-    },
-    {
-      "activity" : "generate2",
-      "start" : 34,
-      "length" : 111
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 43,
       "length" : 5
     },
     {
+      "activity" : "generateSnapshots",
+      "start" : 19,
+      "length" : 22
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 22
+    },
+    {
+      "activity" : "validate",
+      "start" : 26,
+      "length" : 71
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 32,
+      "length" : 208
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 240
+    },
+    {
+      "activity" : "generate2",
+      "start" : 47,
+      "length" : 157
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 64,
+      "length" : 11
+    },
+    {
       "activity" : "scanExamplesForR5",
-      "start" : 51,
+      "start" : 75,
       "length" : 1
     }]
   },
@@ -935,47 +970,47 @@
     "size" : 1994,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
-      "length" : 2
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 1
+      "start" : 19,
+      "length" : 5
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 17,
-      "length" : 4
-    },
-    {
-      "activity" : "generateNarratives",
       "start" : 19,
       "length" : 4
     },
     {
-      "activity" : "validate",
+      "activity" : "generateNarratives",
       "start" : 22,
-      "length" : 15
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 26,
+      "length" : 14
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 41
-    },
-    {
-      "activity" : "generate2",
-      "start" : 31,
+      "start" : 32,
       "length" : 51
     },
     {
       "activity" : "generate2",
-      "start" : 34,
-      "length" : 36
+      "start" : 43,
+      "length" : 128
+    },
+    {
+      "activity" : "generate2",
+      "start" : 47,
+      "length" : 24
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
+      "start" : 64,
       "length" : 2
     }]
   },
@@ -984,66 +1019,71 @@
     "size" : 589,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 17,
+      "start" : 19,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 17,
-      "length" : 1
+      "start" : 19,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 46
+      "start" : 22,
+      "length" : 111
     },
     {
       "activity" : "validate",
-      "start" : 19,
-      "length" : 10
+      "start" : 22,
+      "length" : 13
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 8
+      "start" : 32,
+      "length" : 6
     },
     {
       "activity" : "generate2",
-      "start" : 31,
-      "length" : 112
+      "start" : 43,
+      "length" : 298
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json",
     "size" : 644,
     "processes" : [{
-      "activity" : "load",
-      "start" : 17,
+      "activity" : "loadResources",
+      "start" : 19,
       "length" : 1
     },
     {
-      "activity" : "generateNarratives",
+      "activity" : "load",
       "start" : 19,
       "length" : 2
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 1
+    },
+    {
       "activity" : "validate",
-      "start" : 19,
-      "length" : 6
+      "start" : 22,
+      "length" : 9
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 7
+      "start" : 32,
+      "length" : 6
     },
     {
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 23
+      "start" : 43,
+      "length" : 70
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
+      "start" : 64,
       "length" : 1
     }]
   },
@@ -1051,39 +1091,29 @@
     "name" : "fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json",
     "size" : 1228,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 17,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 17,
-      "length" : 1
+      "start" : 19,
+      "length" : 5
     },
     {
       "activity" : "generateNarratives",
-      "start" : 19,
-      "length" : 272
+      "start" : 22,
+      "length" : 366
     },
     {
       "activity" : "validate",
-      "start" : 19,
-      "length" : 515
+      "start" : 22,
+      "length" : 516
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 8
+      "start" : 32,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 22
-    },
-    {
-      "activity" : "generateValidationPack",
       "start" : 43,
-      "length" : 1
+      "length" : 52
     }]
   },
   {
@@ -1091,72 +1121,72 @@
     "size" : 606,
     "processes" : [{
       "activity" : "load",
-      "start" : 17,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
       "start" : 19,
       "length" : 1
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 2
+    },
+    {
       "activity" : "validate",
-      "start" : 20,
-      "length" : 5
+      "start" : 23,
+      "length" : 7
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 6
+      "start" : 32,
+      "length" : 7
     },
     {
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 19
+      "start" : 43,
+      "length" : 33
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 43,
-      "length" : 1
+      "start" : 64,
+      "length" : 2
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json",
     "size" : 576,
     "processes" : [{
-      "activity" : "load",
-      "start" : 17,
-      "length" : 1
-    },
-    {
-      "activity" : "scan",
-      "start" : 18,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
+      "activity" : "loadResources",
       "start" : 19,
       "length" : 1
     },
     {
-      "activity" : "validate",
+      "activity" : "load",
+      "start" : 19,
+      "length" : 1
+    },
+    {
+      "activity" : "scan",
       "start" : 20,
-      "length" : 7
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 23,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 28,
-      "length" : 6
+      "start" : 32,
+      "length" : 7
     },
     {
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 17
-    },
-    {
-      "activity" : "generateValidationPack",
       "start" : 43,
-      "length" : 1
+      "length" : 50
     }]
   },
   {
@@ -1164,43 +1194,63 @@
     "size" : 2068,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 1
+      "start" : 43,
+      "length" : 3
     }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
     "size" : 1243,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 26,
+      "activity" : "generate2",
+      "start" : 43,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/implementation.md",
-    "size" : 5647
+    "size" : 5647,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/risk-assessment.md",
     "size" : 3417,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 1
+      "start" : 43,
+      "length" : 2
     }]
   },
   {
     "name" : "/input/pagecontent/index.md",
-    "size" : 2746
+    "size" : 6549,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 4
+    }]
   },
   {
     "name" : "/input/pagecontent/background.md",
-    "size" : 3933
+    "size" : 3933,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 5
+    }]
   },
   {
     "name" : "/template/config",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config/_config.yml",
@@ -1211,8 +1261,8 @@
     "size" : 19256,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 32,
-      "length" : 1
+      "start" : 43,
+      "length" : 2
     }]
   }]
 }

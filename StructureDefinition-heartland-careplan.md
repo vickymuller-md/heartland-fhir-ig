@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandCarePlan |
 
  
@@ -36,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-careplan.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-careplan",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan",
   "version" : "0.1.0",
   "name" : "HeartlandCarePlan",
   "title" : "HEARTLAND Care Plan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-careplan.c
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier"]
+        "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier"]
       }],
       "mustSupport" : true
     },
@@ -137,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-careplan.c
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext"]
+        "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext"]
       }],
       "mustSupport" : true
     },
@@ -156,7 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-careplan.c
       "path" : "CarePlan.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient",
+        "targetProfile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient",
         "http://hl7.org/fhir/StructureDefinition/Patient"]
       }],
       "mustSupport" : true

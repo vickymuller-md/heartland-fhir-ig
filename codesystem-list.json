@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevel",
@@ -8,7 +8,7 @@
     "description" : "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandImplementationTier",
@@ -16,7 +16,7 @@
     "description" : "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrack",
@@ -24,7 +24,7 @@
     "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier",
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
     "version" : "0.1.0",
     "status" : "active",
     "name" : "HeartlandRiskTier",

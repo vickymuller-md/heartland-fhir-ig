@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandRiskTierVS |
 
  
@@ -50,13 +50,13 @@
 {
   "resourceType" : "ValueSet",
   "id" : "heartland-risk-tier-vs",
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
   "version" : "0.1.0",
   "name" : "HeartlandRiskTierVS",
   "title" : "HEARTLAND Risk Tier Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -90,7 +90,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"
+      "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"
     }]
   }
 }

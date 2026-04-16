@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0947d8d1-623e-45c2-aac4-050df141fbc9"/>
+  <id value="ad7508c7-f457-443a-9656-d8849c3e5512"/>
   <meta>
-    <lastUpdated value="2026-04-16T15:03:58.476-04:00"/>
+    <lastUpdated value="2026-04-16T15:20:02.912-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs"/>
+    <fullUrl value="https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -17,7 +17,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
               <a href="CodeSystem-heartland-evidence-level.html">codesystem HEARTLAND Evidence Level v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Este conjunto de valores contém 3 conceitos</p>
@@ -44,8 +44,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level-established"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level-established"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-evidence-level.html#heartland-evidence-level-established">established</a>
@@ -54,19 +54,19 @@
                 <td>Interventions with strong guideline support, such as SGLT2i for all HF phenotypes endorsed by the 2022 AHA/ACC/HFSA guideline.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;established&quot;, &quot;display&quot;: &quot;Established Evidence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;established&quot;, &quot;display&quot;: &quot;Established Evidence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;established&quot;&gt;&lt;display value=&quot;Established Evidence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;established&quot;&gt;&lt;display value=&quot;Established Evidence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level-emerging"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level-emerging"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-evidence-level.html#heartland-evidence-level-emerging">emerging</a>
@@ -75,19 +75,19 @@
                 <td>Recent trial findings not yet fully incorporated into guidelines, such as finerenone for HFpEF based on the FINEARTS-HF trial.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;emerging&quot;, &quot;display&quot;: &quot;Emerging Evidence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;emerging&quot;, &quot;display&quot;: &quot;Emerging Evidence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;emerging&quot;&gt;&lt;display value=&quot;Emerging Evidence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;emerging&quot;&gt;&lt;display value=&quot;Emerging Evidence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level-pragmatic"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level-pragmatic"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-evidence-level.html#heartland-evidence-level-pragmatic">pragmatic</a>
@@ -96,25 +96,25 @@
                 <td>Tools developed for clinical utility without formal statistical validation, such as the HEARTLAND Risk Score itself.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pragmatic&quot;, &quot;display&quot;: &quot;Pragmatic Heuristic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pragmatic&quot;, &quot;display&quot;: &quot;Pragmatic Heuristic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pragmatic&quot;&gt;&lt;display value=&quot;Pragmatic Heuristic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;pragmatic&quot;&gt;&lt;display value=&quot;Pragmatic Heuristic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-evidence-level-vs"/>
+        <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs"/>
         <version value="0.1.0"/>
         <name value="HeartlandEvidenceLevelVS"/>
         <title value="HEARTLAND Evidence Level Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-04-16T15:03:58-04:00"/>
+        <date value="2026-04-16T15:20:02-04:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -122,8 +122,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:42307695-fe4c-493e-a3db-25c1325049ab"/>
-          <timestamp value="2026-04-16T15:04:30-04:00"/>
+          <identifier value="urn:uuid:e028610b-5099-49c1-91ec-52950ed2715a"/>
+          <timestamp value="2026-04-16T15:20:46-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -144,20 +144,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level|0.1.0"/>
+            <valueUri value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"/>
             <code value="established"/>
             <display value="Established Evidence"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"/>
             <code value="emerging"/>
             <display value="Emerging Evidence"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-evidence-level"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"/>
             <code value="pragmatic"/>
             <display value="Pragmatic Heuristic"/>
           </contains>
@@ -166,7 +166,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs"/>
+    <fullUrl value="https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -176,7 +176,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
               <a href="CodeSystem-heartland-implementation-tier.html">codesystem HEARTLAND Implementation Tier v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Este conjunto de valores contém 3 conceitos</p>
@@ -203,8 +203,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier-tier-1-minimal"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier-tier-1-minimal"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-implementation-tier.html#heartland-implementation-tier-tier-1-minimal">tier-1-minimal</a>
@@ -213,19 +213,19 @@
                 <td>Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-1-minimal&quot;, &quot;display&quot;: &quot;Tier 1 - Minimal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-1-minimal&quot;, &quot;display&quot;: &quot;Tier 1 - Minimal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-1-minimal&quot;&gt;&lt;display value=&quot;Tier 1 - Minimal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-1-minimal&quot;&gt;&lt;display value=&quot;Tier 1 - Minimal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier-tier-2-standard"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier-tier-2-standard"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-implementation-tier.html#heartland-implementation-tier-tier-2-standard">tier-2-standard</a>
@@ -234,19 +234,19 @@
                 <td>Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-2-standard&quot;, &quot;display&quot;: &quot;Tier 2 - Standard&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-2-standard&quot;, &quot;display&quot;: &quot;Tier 2 - Standard&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-2-standard&quot;&gt;&lt;display value=&quot;Tier 2 - Standard&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-2-standard&quot;&gt;&lt;display value=&quot;Tier 2 - Standard&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier-tier-3-advanced"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier-tier-3-advanced"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-implementation-tier.html#heartland-implementation-tier-tier-3-advanced">tier-3-advanced</a>
@@ -255,25 +255,25 @@
                 <td>Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-3-advanced&quot;, &quot;display&quot;: &quot;Tier 3 - Advanced&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;tier-3-advanced&quot;, &quot;display&quot;: &quot;Tier 3 - Advanced&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-3-advanced&quot;&gt;&lt;display value=&quot;Tier 3 - Advanced&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;tier-3-advanced&quot;&gt;&lt;display value=&quot;Tier 3 - Advanced&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs"/>
+        <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs"/>
         <version value="0.1.0"/>
         <name value="HeartlandImplementationTierVS"/>
         <title value="HEARTLAND Implementation Tier Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-04-16T15:03:58-04:00"/>
+        <date value="2026-04-16T15:20:02-04:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -281,8 +281,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d85a5ed6-0fb4-47ac-9c7d-2bb4b47eb0b6"/>
-          <timestamp value="2026-04-16T15:04:30-04:00"/>
+          <identifier value="urn:uuid:22f5f033-5c7f-46c5-8485-50f13c38925d"/>
+          <timestamp value="2026-04-16T15:20:46-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -303,20 +303,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier|0.1.0"/>
+            <valueUri value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
             <code value="tier-1-minimal"/>
             <display value="Tier 1 - Minimal"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
             <code value="tier-2-standard"/>
             <display value="Tier 2 - Standard"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
             <code value="tier-3-advanced"/>
             <display value="Tier 3 - Advanced"/>
           </contains>
@@ -325,7 +325,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs"/>
+    <fullUrl value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -439,13 +439,13 @@
             </table>
           </div>
         </text>
-        <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs"/>
+        <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs"/>
         <version value="0.1.0"/>
         <name value="HeartlandMonitoringObservationCodeVS"/>
         <title value="HEARTLAND Monitoring Observation Code Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-04-16T15:03:58-04:00"/>
+        <date value="2026-04-16T15:20:02-04:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -453,8 +453,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d1230b66-a09b-40fd-a895-5a6621be0976"/>
-          <timestamp value="2026-04-16T15:04:29-04:00"/>
+          <identifier value="urn:uuid:7d4d4300-587c-462a-b102-6346bfa757b7"/>
+          <timestamp value="2026-04-16T15:20:45-04:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -510,7 +510,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs"/>
+    <fullUrl value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -520,7 +520,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
               <a href="CodeSystem-heartland-monitoring-track.html">codesystem HEARTLAND Monitoring Track v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Este conjunto de valores contém 2 conceitos</p>
@@ -547,8 +547,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track-digital-track-a"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track-digital-track-a"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-monitoring-track.html#heartland-monitoring-track-digital-track-a">digital-track-a</a>
@@ -557,19 +557,19 @@
                 <td>App-based symptom tracking, Bluetooth-enabled devices, automated data transmission.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;digital-track-a&quot;, &quot;display&quot;: &quot;Digital Track A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;digital-track-a&quot;, &quot;display&quot;: &quot;Digital Track A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;digital-track-a&quot;&gt;&lt;display value=&quot;Digital Track A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;digital-track-a&quot;&gt;&lt;display value=&quot;Digital Track A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track-analog-track-b"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track-analog-track-b"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-monitoring-track.html#heartland-monitoring-track-analog-track-b">analog-track-b</a>
@@ -578,25 +578,25 @@
                 <td>Voice telephone calls, paper symptom diaries, manual data entry by staff.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;analog-track-b&quot;, &quot;display&quot;: &quot;Analog Track B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;analog-track-b&quot;, &quot;display&quot;: &quot;Analog Track B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;analog-track-b&quot;&gt;&lt;display value=&quot;Analog Track B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;analog-track-b&quot;&gt;&lt;display value=&quot;Analog Track B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs"/>
+        <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs"/>
         <version value="0.1.0"/>
         <name value="HeartlandMonitoringTrackVS"/>
         <title value="HEARTLAND Monitoring Track Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-04-16T15:03:58-04:00"/>
+        <date value="2026-04-16T15:20:02-04:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -604,8 +604,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:25d807af-945b-4e1d-b9d6-d595f53e1210"/>
-          <timestamp value="2026-04-16T15:04:30-04:00"/>
+          <identifier value="urn:uuid:dd69169a-178d-44ff-940c-87eb7322edc1"/>
+          <timestamp value="2026-04-16T15:20:46-04:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -626,15 +626,15 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track|0.1.0"/>
+            <valueUri value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"/>
             <code value="digital-track-a"/>
             <display value="Digital Track A"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"/>
             <code value="analog-track-b"/>
             <display value="Analog Track B"/>
           </contains>
@@ -643,7 +643,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs"/>
+    <fullUrl value="https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -653,7 +653,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
               <a href="CodeSystem-heartland-risk-tier.html">codesystem HEARTLAND Risk Tier v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier|0.1.0" title="Clique para copiar o URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Este conjunto de valores contém 3 conceitos</p>
@@ -680,8 +680,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier-low"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier-low"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-risk-tier.html#heartland-risk-tier-low">low</a>
@@ -690,19 +690,19 @@
                 <td>Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;low&quot;, &quot;display&quot;: &quot;Low Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;low&quot;, &quot;display&quot;: &quot;Low Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;low&quot;&gt;&lt;display value=&quot;Low Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;low&quot;&gt;&lt;display value=&quot;Low Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier-moderate"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier-moderate"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-risk-tier.html#heartland-risk-tier-moderate">moderate</a>
@@ -711,19 +711,19 @@
                 <td>Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderate&quot;, &quot;display&quot;: &quot;Moderate Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderate&quot;, &quot;display&quot;: &quot;Moderate Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;moderate&quot;&gt;&lt;display value=&quot;Moderate Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;moderate&quot;&gt;&lt;display value=&quot;Moderate Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier-high"> </a>
-                  <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier</code>
+                  <a name="x-https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier-high"> </a>
+                  <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-heartland-risk-tier.html#heartland-risk-tier-high">high</a>
@@ -732,25 +732,25 @@
                 <td>High Risk (&gt;=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;high&quot;, &quot;display&quot;: &quot;High Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;high&quot;, &quot;display&quot;: &quot;High Risk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;high&quot;&gt;&lt;display value=&quot;High Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;high&quot;&gt;&lt;display value=&quot;High Risk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-risk-tier-vs"/>
+        <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"/>
         <version value="0.1.0"/>
         <name value="HeartlandRiskTierVS"/>
         <title value="HEARTLAND Risk Tier Value Set"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-04-16T15:03:58-04:00"/>
+        <date value="2026-04-16T15:20:02-04:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -758,8 +758,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e0c0a5f-c3a4-496e-b16b-d29aa8c537ad"/>
-          <timestamp value="2026-04-16T15:04:30-04:00"/>
+          <identifier value="urn:uuid:837c5316-2fcd-4ade-8e86-05967ab8add8"/>
+          <timestamp value="2026-04-16T15:20:46-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -780,20 +780,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier|0.1.0"/>
+            <valueUri value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"/>
             <code value="low"/>
             <display value="Low Risk"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"/>
             <code value="moderate"/>
             <display value="Moderate Risk"/>
           </contains>
           <contains>
-            <system value="https://heartlandprotocol.org/fhir/CodeSystem/heartland-risk-tier"/>
+            <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"/>
             <code value="high"/>
             <display value="High Risk"/>
           </contains>

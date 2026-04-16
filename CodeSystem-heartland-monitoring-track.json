@@ -3,15 +3,15 @@
   "id" : "heartland-monitoring-track",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-monitoring-track</b></p><a name=\"heartland-monitoring-track\"> </a><a name=\"hcheartland-monitoring-track\"> </a><p>Este case-sensitive sistema de código <code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">digital-track-a<a name=\"heartland-monitoring-track-digital-track-a\"> </a></td><td>Digital Track A</td><td>App-based symptom tracking, Bluetooth-enabled devices, automated data transmission.</td></tr><tr><td style=\"white-space:nowrap\">analog-track-b<a name=\"heartland-monitoring-track-analog-track-b\"> </a></td><td>Analog Track B</td><td>Voice telephone calls, paper symptom diaries, manual data entry by staff.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-monitoring-track</b></p><a name=\"heartland-monitoring-track\"> </a><a name=\"hcheartland-monitoring-track\"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">digital-track-a<a name=\"heartland-monitoring-track-digital-track-a\"> </a></td><td>Digital Track A</td><td>App-based symptom tracking, Bluetooth-enabled devices, automated data transmission.</td></tr><tr><td style=\"white-space:nowrap\">analog-track-b<a name=\"heartland-monitoring-track-analog-track-b\"> </a></td><td>Analog Track B</td><td>Voice telephone calls, paper symptom diaries, manual data entry by staff.</td></tr></table></div>"
   },
-  "url" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrack",
   "title" : "HEARTLAND Monitoring Track",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

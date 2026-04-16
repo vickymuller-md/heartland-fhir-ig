@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandPatient |
 
  
@@ -37,13 +37,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-patient.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-patient",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient",
   "version" : "0.1.0",
   "name" : "HeartlandPatient",
   "title" : "HEARTLAND Patient",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-patient.cs
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology"]
+        "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology"]
       }],
       "mustSupport" : true
     },
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-patient.cs
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score"]
+        "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score"]
       }],
       "mustSupport" : true
     }]

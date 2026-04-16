@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CarePlan.extension:facilityTier","CarePlan.extension","facilityTier","","",0,1,"Y","","","Extension {[CanonicalType[https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier]]} {[]}
+"CarePlan.extension:facilityTier","CarePlan.extension","facilityTier","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier]]} {[]}
 ","HEARTLAND Facility Implementation Tier","Identifies the HEARTLAND Protocol v3.2 implementation tier (1 Minimal, 2 Standard, 3 Advanced) at which a facility, organization, or care plan operates. Drives which protocol activities (monitoring, GDMT cadence, education, follow-up) are operationally feasible.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CarePlan.extension:monitoringTrack","CarePlan.extension","monitoringTrack","","",0,1,"Y","","","Extension {[CanonicalType[https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext]]} {[]}
+"CarePlan.extension:monitoringTrack","CarePlan.extension","monitoringTrack","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext]]} {[]}
 ","HEARTLAND Monitoring Track Assignment","Assigns a CarePlan to either Track A (digital, app-based) or Track B (analog, telephone/paper) per HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms; the choice reflects patient access to technology and facility implementation tier.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -77,7 +77,7 @@ This element is labeled as a modifier because the status contains the code enter
 ","Summary of nature of plan","A description of the scope and nature of the plan.","","Provides more detail than conveyed by category.","","","","","","","",,,,,"",,,,"CarePlan.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]"
 "CarePlan.subject","CarePlan.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Who the care plan is for","Identifies the patient or group whose intended care is described by the plan.","","","","","","","","","",,,,,"",,,,"CarePlan.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject",".participation[typeCode=PAT].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "CarePlan.encounter","CarePlan.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}

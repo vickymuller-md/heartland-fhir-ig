@@ -3,15 +3,15 @@
   "id" : "heartland-monitoring-track-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-monitoring-track-vs</b></p><a name=\"heartland-monitoring-track-vs\"> </a><a name=\"hcheartland-monitoring-track-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-monitoring-track.html\"><code>https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-monitoring-track-vs</b></p><a name=\"heartland-monitoring-track-vs\"> </a><a name=\"hcheartland-monitoring-track-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-monitoring-track.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
   },
-  "url" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-track-vs",
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
   "version" : "0.1.0",
   "name" : "HeartlandMonitoringTrackVS",
   "title" : "HEARTLAND Monitoring Track Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -45,7 +45,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track"
+      "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"
     }]
   }
 }

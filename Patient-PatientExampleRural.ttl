@@ -6,23 +6,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://heartlandprotocol.org/fhir/Patient/PatientExampleRural> a fhir:Patient ;
+<https://fhir.heartlandprotocol.org/Patient/PatientExampleRural> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientExampleRural"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-patient>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Patient PatientExampleRural</b></p><a name=\"PatientExampleRural\"> </a><a name=\"hcPatientExampleRural\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-heartland-patient.html\">HEARTLAND Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"O registo está ativo\">Ativo:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\">MT US (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance >50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).\"><a href=\"StructureDefinition-heartland-distance-to-cardiology.html\">HEARTLAND Distance to Cardiology</a></td><td colspan=\"3\">87 mi_us<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código[mi_us] = '[mi_us]')</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).\"><a href=\"StructureDefinition-heartland-social-support-score.html\">HEARTLAND Social Support Score</a></td><td colspan=\"3\">true</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Patient PatientExampleRural</b></p><a name=\"PatientExampleRural\"> </a><a name=\"hcPatientExampleRural\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-heartland-patient.html\">HEARTLAND Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"O registo está ativo\">Ativo:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\">MT US (home)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance >50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).\"><a href=\"StructureDefinition-heartland-distance-to-cardiology.html\">HEARTLAND Distance to Cardiology</a></td><td colspan=\"3\">87 mi_us<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código[mi_us] = '[mi_us]')</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).\"><a href=\"StructureDefinition-heartland-social-support-score.html\">HEARTLAND Social Support Score</a></td><td colspan=\"3\">true</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-distance-to-cardiology>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology>
      ] ;
      fhir:value [
        a fhir:Quantity ;
@@ -36,8 +36,8 @@
      ]
   ] [
      fhir:url [
-       fhir:v "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/StructureDefinition/heartland-social-support-score>
+       fhir:v "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score>
      ] ;
      fhir:value [
        a fhir:Boolean ;
@@ -46,8 +46,8 @@
   ] ) ; # 
   fhir:identifier ( [
      fhir:system [
-       fhir:v "https://heartlandprotocol.org/fhir/sid/example-mrn"^^xsd:anyURI ;
-       fhir:l <https://heartlandprotocol.org/fhir/sid/example-mrn>
+       fhir:v "https://fhir.heartlandprotocol.org/sid/example-mrn"^^xsd:anyURI ;
+       fhir:l <https://fhir.heartlandprotocol.org/sid/example-mrn>
      ] ;
      fhir:value [ fhir:v "EXAMPLE-001" ]
   ] ) ; # 

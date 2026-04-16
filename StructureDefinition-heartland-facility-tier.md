@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandFacilityTier |
 
 Identifies the HEARTLAND Protocol v3.2 implementation tier (1 Minimal, 2 Standard, 3 Advanced) at which a facility, organization, or care plan operates. Drives which protocol activities (monitoring, GDMT cadence, education, follow-up) are operationally feasible.
@@ -44,13 +44,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-facility-t
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-facility-tier",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier",
   "version" : "0.1.0",
   "name" : "HeartlandFacilityTier",
   "title" : "HEARTLAND Facility Implementation Tier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-facility-t
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier"
+      "fixedUri" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier"
     },
     {
       "id" : "Extension.value[x]",
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-facility-t
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://heartlandprotocol.org/fhir/ValueSet/heartland-implementation-tier-vs"
+        "valueSet" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs"
       }
     }]
   }

@@ -16,7 +16,7 @@ Perfil: [HEARTLAND Care Plan](StructureDefinition-heartland-careplan.md)
 
 **intent**: Plan
 
-**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://heartlandprotocol.org/fhir/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
+**subject**: [Rural Patient Example Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)](Patient-PatientExampleRural.md)
 
 **period**: 2026-04-16 --> 2026-07-16
 
@@ -96,23 +96,23 @@ Tier 2 protocol: full implementation over 12 months with phased rollout. Quality
   "resourceType" : "CarePlan",
   "id" : "CarePlanExampleTier2",
   "meta" : {
-    "profile" : ["https://heartlandprotocol.org/fhir/StructureDefinition/heartland-careplan"]
+    "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"]
   },
   "extension" : [{
-    "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-facility-tier",
+    "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-implementation-tier",
+        "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
         "code" : "tier-2-standard",
         "display" : "Tier 2 - Standard"
       }]
     }
   },
   {
-    "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-monitoring-track-ext",
+    "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://heartlandprotocol.org/fhir/CodeSystem/heartland-monitoring-track",
+        "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
         "code" : "analog-track-b",
         "display" : "Analog Track B"
       }]

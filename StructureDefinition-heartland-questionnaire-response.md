@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response | *Version*:0.1.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandQuestionnaireResponse |
 
  
@@ -36,13 +36,13 @@ Other representations of profile: [CSV](StructureDefinition-heartland-questionna
 {
   "resourceType" : "StructureDefinition",
   "id" : "heartland-questionnaire-response",
-  "url" : "https://heartlandprotocol.org/fhir/StructureDefinition/heartland-questionnaire-response",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response",
   "version" : "0.1.0",
   "name" : "HeartlandQuestionnaireResponse",
   "title" : "HEARTLAND Questionnaire Response",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T15:03:58-04:00",
+  "date" : "2026-04-16T15:20:02-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

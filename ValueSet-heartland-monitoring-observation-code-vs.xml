@@ -5,13 +5,13 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet heartland-monitoring-observation-code-vs</b></p><a name="heartland-monitoring-observation-code-vs"> </a><a name="hcheartland-monitoring-observation-code-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="https://loinc.org/29463-7/">29463-7</a></td><td>Body weight</td></tr><tr><td><a href="https://loinc.org/8480-6/">8480-6</a></td><td>Systolic blood pressure</td></tr><tr><td><a href="https://loinc.org/8481-4/">8481-4</a></td><td>Diastolic blood pressure</td></tr><tr><td><a href="https://loinc.org/59408-5/">59408-5</a></td><td>Oxygen saturation in Arterial blood by Pulse oximetry</td></tr></table></li></ul></div>
   </text>
-  <url value="https://heartlandprotocol.org/fhir/ValueSet/heartland-monitoring-observation-code-vs"/>
+  <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs"/>
   <version value="0.1.0"/>
   <name value="HeartlandMonitoringObservationCodeVS"/>
   <title value="HEARTLAND Monitoring Observation Code Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-04-16T15:03:58-04:00"/>
+  <date value="2026-04-16T15:20:02-04:00"/>
   <publisher value="Vicky Muller Ferreira, MD"/>
   <contact>
     <name value="Vicky Muller Ferreira, MD"/>
