@@ -1,0 +1,14 @@
+fsh-generated/
+output/
+input-cache/
+node_modules/
+*.log
+temp/
+template/
+_*.sh
+_*.bat
+publisher.jar
+.fhirvalidator/
+qa.txt
+qa.html.bak
+.DS_Store

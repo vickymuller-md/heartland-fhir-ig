@@ -1,0 +1,53 @@
+id: heartland.fhir.us.protocol
+canonical: https://heartlandprotocol.org/fhir
+name: HeartlandProtocolIG
+title: HEARTLAND Protocol FHIR Implementation Guide
+description: >-
+  FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical
+  implementation toolkit for primary care-led heart failure management in
+  rural and resource-limited US settings. Defines profiles, extensions,
+  questionnaires, and value sets enabling EHR vendors to exchange
+  HEARTLAND-structured data (risk assessments, care plans, remote monitoring
+  observations).
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+publisher:
+  name: Vicky Muller Ferreira, MD
+  url: https://heartlandprotocol.org
+  email: vickymuller@heartlandprotocol.org
+contact:
+  - name: Vicky Muller Ferreira, MD
+    telecom:
+      - system: email
+        value: vickymuller@heartlandprotocol.org
+        use: work
+      - system: url
+        value: https://heartlandprotocol.org
+license: CC-BY-4.0
+jurisdiction: urn:iso:std:iso:3166#US
+dependencies:
+  hl7.fhir.us.core: 6.1.0
+parameters:
+  show-inherited-invariants: false
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-contact: true
+  apply-version: true
+pages:
+  index.md:
+    title: Home
+  background.md:
+    title: Background
+  risk-assessment.md:
+    title: Risk Assessment
+  implementation.md:
+    title: Tiers and Tracks
+menu:
+  Home: index.html
+  Background: background.html
+  Risk Assessment: risk-assessment.html
+  Tiers and Tracks: implementation.html
+  Artifacts: artifacts.html
