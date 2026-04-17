@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@heartland/ui/css/theme.css";
 
+@source "../node_modules/@heartland/ui/dist/**/*.{js,mjs}";
+
 @theme inline {
   --color-terminal: #faf6ee;
   --color-terminal-deep: #f2ecde;
