@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heartland-risk-tier"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-risk-tier</b></p><a name=\"heartland-risk-tier\"> </a><a name=\"hcheartland-risk-tier\"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">low<a name=\"heartland-risk-tier-low\"> </a></td><td>Low Risk</td><td>Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2.</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"heartland-risk-tier-moderate\"> </a></td><td>Moderate Risk</td><td>Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2.</td></tr><tr><td style=\"white-space:nowrap\">high<a name=\"heartland-risk-tier-high\"> </a></td><td>High Risk</td><td>High Risk (&gt;=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"^^xsd:anyURI ;
+     fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartlandRiskTier"] ; # 
+  fhir:title [ fhir:v "HEARTLAND Risk Tier"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-16T20:13:50-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY 4.0"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "low" ] ;
+     fhir:display [ fhir:v "Low Risk" ] ;
+     fhir:definition [ fhir:v "Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2." ]
+  ] [
+     fhir:code [ fhir:v "moderate" ] ;
+     fhir:display [ fhir:v "Moderate Risk" ] ;
+     fhir:definition [ fhir:v "Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2." ]
+  ] [
+     fhir:code [ fhir:v "high" ] ;
+     fhir:display [ fhir:v "High Risk" ] ;
+     fhir:definition [ fhir:v "High Risk (>=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

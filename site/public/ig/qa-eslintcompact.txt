@@ -1,0 +1,18 @@
+HeartlandProtocolIG
+=========================================
+
+Generic: line 0, col 0, Warning - The link 'https://fhir.heartlandprotocol.org' for "fhir.heartlandprotocol.org" is a canonical link and is therefore unsafe with regard to versions (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json: line 1, col 2973, Warning - O Guia de Implementação utiliza o pacote hl7.fhir.us.core#6.1.0 lançado em 2023-06-30, mas a versão apropriada mais recente é 8.0.1. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json: line 1, col 2, Warning - Recomendação de boas práticas: Em geral, todas as observações devem ter um executante (INVALID)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Patient-PatientExampleRural.json: line 26, col 69, Warning - Não foi possível encontrar uma definição para o valor URL 'https://fhir.heartlandprotocol.org/sid/example-mrn' (INVALID)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-careplan.json: line 1, col 46421, Info - O extensão http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 está obsoleto (BUSINESSRULE)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json: line 1, col 118316, Info - O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado) (BUSINESSRULE)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json: line 1, col 60858, Info - O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado) (BUSINESSRULE)
+/Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json: line 1, col 2414, Info - Wrong Display Name 'Diastolic blood pressure' for http://loinc.org#8481-4. Valid display is one of 3 choices: 'Systolic blood pressure 1 hour maximum' (en-US), 'Systolic blood pressure 1 hour maximum' (en-US) or 'BP sys 1h Max' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code (INFORMATIONAL)
+
+err = 0, warn = 7, info = 4
+IG Publisher Version: 2.2.6

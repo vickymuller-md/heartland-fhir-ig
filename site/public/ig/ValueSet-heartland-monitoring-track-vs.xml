@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="heartland-monitoring-track-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet heartland-monitoring-track-vs</b></p><a name="heartland-monitoring-track-vs"> </a><a name="hcheartland-monitoring-track-vs"> </a><ul><li>Include todos os códigos definidos em <a href="CodeSystem-heartland-monitoring-track.html"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs"/>
+  <version value="0.1.0"/>
+  <name value="HeartlandMonitoringTrackVS"/>
+  <title value="HEARTLAND Monitoring Track Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-16T20:13:50-04:00"/>
+  <publisher value="Vicky Muller Ferreira, MD"/>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <description value="All remote monitoring track codes (digital-track-a | analog-track-b)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heartland-evidence-level-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-evidence-level-vs</b></p><a name=\"heartland-evidence-level-vs\"> </a><a name=\"hcheartland-evidence-level-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-evidence-level.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs"^^xsd:anyURI ;
+     fhir:l <https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartlandEvidenceLevelVS"] ; # 
+  fhir:title [ fhir:v "HEARTLAND Evidence Level Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-16T20:13:50-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "All evidence level codes (established | emerging | pragmatic)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"^^xsd:anyURI ;
+         fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

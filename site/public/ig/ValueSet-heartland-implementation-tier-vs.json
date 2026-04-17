@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "heartland-implementation-tier-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-implementation-tier-vs</b></p><a name=\"heartland-implementation-tier-vs\"> </a><a name=\"hcheartland-implementation-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-implementation-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
+  "version" : "0.1.0",
+  "name" : "HeartlandImplementationTierVS",
+  "title" : "HEARTLAND Implementation Tier Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-16T20:13:50-04:00",
+  "publisher" : "Vicky Muller Ferreira, MD",
+  "contact" : [{
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    },
+    {
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org"
+    }]
+  },
+  {
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org",
+      "use" : "work"
+    },
+    {
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    }]
+  }],
+  "description" : "All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"
+    }]
+  }
+}

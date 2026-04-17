@@ -1,0 +1,47 @@
+{
+  "codeSystems" : [{
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandEvidenceLevelVS",
+    "title" : "HEARTLAND Evidence Level Value Set",
+    "description" : "All evidence level codes (established | emerging | pragmatic).",
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"]
+  },
+  {
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandImplementationTierVS",
+    "title" : "HEARTLAND Implementation Tier Value Set",
+    "description" : "All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced).",
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"]
+  },
+  {
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandMonitoringObservationCodeVS",
+    "title" : "HEARTLAND Monitoring Observation Code Value Set",
+    "description" : "LOINC codes for the four observations captured by the HEARTLAND remote monitoring kit per Module 5: body weight (digital scale), systolic and diastolic blood pressure (BP monitor), and oxygen saturation (pulse oximeter, when indicated).",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandMonitoringTrackVS",
+    "title" : "HEARTLAND Monitoring Track Value Set",
+    "description" : "All remote monitoring track codes (digital-track-a | analog-track-b).",
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"]
+  },
+  {
+    "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandRiskTierVS",
+    "title" : "HEARTLAND Risk Tier Value Set",
+    "description" : "All risk tier codes from the HEARTLAND risk score (low | moderate | high).",
+    "systems" : ["https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"]
+  }]
+}

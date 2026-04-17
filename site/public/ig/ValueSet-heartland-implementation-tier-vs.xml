@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="heartland-implementation-tier-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet heartland-implementation-tier-vs</b></p><a name="heartland-implementation-tier-vs"> </a><a name="hcheartland-implementation-tier-vs"> </a><ul><li>Include todos os códigos definidos em <a href="CodeSystem-heartland-implementation-tier.html"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs"/>
+  <version value="0.1.0"/>
+  <name value="HeartlandImplementationTierVS"/>
+  <title value="HEARTLAND Implementation Tier Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-16T20:13:50-04:00"/>
+  <publisher value="Vicky Muller Ferreira, MD"/>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <description value="All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,571 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example: Rural HF Patient (high-distance, limited support) - XML Representation - HEARTLAND Protocol FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- HEARTLAND Brand override for fhir.base.template
+     Palette mirrors heartland-app (app.heartlandprotocol.org):
+     terminal #faf6ee | navy #0f2544 | signal #2e6f5e | alert #ff6b55 -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+  :root {
+    --hl-terminal: #faf6ee;
+    --hl-terminal-deep: #f2ecde;
+    --hl-panel: #ffffff;
+    --hl-panel-hi: #efe9dd;
+    --hl-grid: #e3dcd0;
+    --hl-grid-hi: #c5bcac;
+    --hl-cool: #0f2544;
+    --hl-cool-soft: #1f3354;
+    --hl-stone: #7a8593;
+    --hl-stone-soft: #9aa3b0;
+    --hl-signal: #2e6f5e;
+    --hl-signal-deep: #1e4e41;
+    --hl-signal-soft: #4a8f7c;
+    --hl-alert: #ff6b55;
+    --hl-alert-deep: #e04a35;
+    --hl-critical: #d63a20;
+    --hl-radius: 6px;
+  }
+
+  html, body {
+    background: var(--hl-terminal) !important;
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-feature-settings: 'cv11','ss01','ss03';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 {
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-weight: 700 !important; letter-spacing: -0.02em; }
+
+  p, li, td, th, dt, dd { color: var(--hl-cool); }
+  small, .text-muted, .small { color: var(--hl-stone) !important; }
+
+  a, a:visited {
+    color: var(--hl-signal) !important;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 120ms ease;
+  }
+  a:hover, a:focus {
+    color: var(--hl-signal-deep) !important;
+    border-bottom-color: var(--hl-signal-deep);
+    text-decoration: none;
+  }
+
+  code, pre, kbd, samp, tt {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace !important;
+    background: var(--hl-terminal-deep) !important;
+    border-radius: 4px;
+    color: var(--hl-cool);
+  }
+  pre {
+    border: 1px solid var(--hl-grid);
+    padding: 12px 16px;
+  }
+  code { padding: 1px 5px; font-size: 0.92em; }
+  pre code { background: transparent !important; padding: 0; }
+
+  blockquote {
+    border-left: 4px solid var(--hl-signal);
+    background: var(--hl-panel);
+    color: var(--hl-cool);
+    padding: 12px 18px;
+    margin: 18px 0;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+  }
+  blockquote em, blockquote i { color: var(--hl-cool-soft); }
+
+  table, .table, .grid {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-collapse: collapse;
+  }
+  table th, .table th {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    border-bottom: 1px solid var(--hl-grid-hi) !important;
+    font-weight: 600;
+  }
+  table td, .table td {
+    border-color: var(--hl-grid) !important;
+  }
+  table tr:hover { background: var(--hl-terminal-deep); }
+
+  hr { border-color: var(--hl-grid); border-top-style: solid; }
+
+  /* IG Publisher chrome */
+  .navbar, .navbar-default, .navbar-fixed-top {
+    background: var(--hl-cool) !important;
+    border-color: var(--hl-cool) !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  }
+  .navbar a, .navbar .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: var(--hl-terminal) !important;
+    border-bottom: none !important;
+  }
+  .navbar a:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff !important;
+    background: var(--hl-cool-soft) !important;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background: var(--hl-signal) !important;
+    color: #ffffff !important;
+  }
+
+  /* Container */
+  .container, .container-fluid {
+    background: transparent;
+  }
+
+  /* Cards / panels */
+  .panel, .well, .alert {
+    background: var(--hl-panel) !important;
+    border: 1px solid var(--hl-grid) !important;
+    border-radius: var(--hl-radius);
+    color: var(--hl-cool);
+  }
+  .panel-heading {
+    background: var(--hl-panel-hi) !important;
+    border-bottom: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    font-weight: 600;
+  }
+  .alert-info { border-left: 4px solid var(--hl-signal); }
+  .alert-warning { border-left: 4px solid var(--hl-alert); }
+  .alert-danger { border-left: 4px solid var(--hl-critical); }
+
+  /* Buttons */
+  .btn, .btn-default {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    border-radius: var(--hl-radius);
+    font-weight: 500;
+  }
+  .btn:hover, .btn-default:hover {
+    background: var(--hl-panel-hi);
+    border-color: var(--hl-stone);
+    color: var(--hl-cool);
+  }
+  .btn-primary {
+    background: var(--hl-signal) !important;
+    border-color: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background: var(--hl-signal-deep) !important;
+    border-color: var(--hl-signal-deep) !important;
+  }
+
+  /* HEARTLAND landing page hero & sections */
+  .hl-hero {
+    background: linear-gradient(135deg, var(--hl-terminal) 0%, var(--hl-terminal-deep) 100%);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 40px 36px 32px;
+    margin: 24px 0 28px;
+  }
+  .hl-hero h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+  .hl-tagline {
+    color: var(--hl-signal);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .hl-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .hl-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: var(--hl-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: none !important;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+  .hl-cta-primary {
+    background: var(--hl-signal);
+    color: #ffffff !important;
+    border: 1px solid var(--hl-signal-deep);
+  }
+  .hl-cta-primary:hover {
+    background: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -8px rgba(46,111,94,0.5);
+  }
+  .hl-cta-secondary {
+    background: var(--hl-panel);
+    color: var(--hl-cool) !important;
+    border: 1px solid var(--hl-grid-hi);
+  }
+  .hl-cta-secondary:hover {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    transform: translateY(-1px);
+  }
+
+  .hl-disclaimer {
+    background: var(--hl-panel-hi);
+    border-left: 4px solid var(--hl-alert);
+    padding: 14px 18px;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+    margin: 18px 0;
+    font-size: 0.94rem;
+  }
+  .hl-disclaimer em, .hl-disclaimer i { color: var(--hl-cool-soft); }
+
+  .hl-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .hl-feature {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 16px 18px;
+  }
+  .hl-feature-title {
+    color: var(--hl-cool);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .hl-feature-desc {
+    color: var(--hl-stone);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .ig-footer, footer, .footer {
+    background: var(--hl-cool) !important;
+    color: var(--hl-terminal) !important;
+    padding: 18px 0;
+    margin-top: 40px;
+  }
+  .ig-footer a, footer a, .footer a {
+    color: var(--hl-terminal) !important;
+    border-bottom: 1px solid rgba(250,246,238,0.35);
+  }
+  .ig-footer a:hover, footer a:hover {
+    color: #ffffff !important;
+    border-bottom-color: var(--hl-terminal);
+  }
+</style>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.25"}
+    h3,h4,h5,h6{--heading-prefix:"5.25"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- HEARTLAND Brand header bar (above IG Publisher's auto-generated nav) -->
+<div style="background: #0f2544; color: #faf6ee; border-bottom: 1px solid #1f3354;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; max-width: 1200px;">
+    <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.02em; font-family: 'Inter', sans-serif;">
+      <span style="display: inline-block; width: 22px; height: 22px; background: #2e6f5e; border-radius: 4px; position: relative;">
+        <span style="position: absolute; inset: 5px; background: #faf6ee; clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);"></span>
+      </span>
+      <span>HEARTLAND <span style="opacity: 0.7; font-weight: 500;">Protocol</span></span>
+    </a>
+    <nav style="display: flex; gap: 18px; align-items: center; font-size: 0.88rem;">
+      <a href="https://heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">Site</a>
+      <a href="https://app.heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">App</a>
+      <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; background: #2e6f5e; padding: 4px 10px; border-radius: 4px; font-weight: 600;">FHIR IG</a>
+    </nav>
+  </div>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HEARTLAND Protocol FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="risk-assessment.html">Risk Assessment</a>
+  </li>
+  <li>
+    <a href="implementation.html">Tiers and Tracks</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example: Rural HF Patient (high-distance, limited support)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HEARTLAND Protocol FHIR Implementation Guide - Compilação de desenvolvimento local (v0.1.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.heartlandprotocol.org/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Patient-PatientExampleRural.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Patient-PatientExampleRural.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Patient-PatientExampleRural.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example: Rural HF Patient (high-distance, limited support) - XML Representation</h2>
+
+
+<p><a href="Patient-PatientExampleRural.xml" no-download="true">Raw xml</a> | <a href="Patient-PatientExampleRural.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;PatientExampleRural&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://fhir.heartlandprotocol.org/StructureDefinition/heartland-patient&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: Patient PatientExampleRural&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;PatientExampleRural&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcPatientExampleRural&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;StructureDefinition-heartland-patient.html&quot;&gt;HEARTLAND Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;O registo está ativo&quot;&gt;Ativo:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Formas de contactar o doente&quot;&gt;Detalhes do contacto&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;MT US (home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance &amp;gt;50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).&quot;&gt;&lt;a href=&quot;StructureDefinition-heartland-distance-to-cardiology.html&quot;&gt;HEARTLAND Distance to Cardiology&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;87 mi_us&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Detalhes: UCUM código[mi_us] = '[mi_us]')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).&quot;&gt;&lt;a href=&quot;StructureDefinition-heartland-social-support-score.html&quot;&gt;HEARTLAND Social Support Score&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueQuantity</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;87&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mi_us&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;[mi_us]&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueQuantity</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.heartlandprotocol.org/sid/example-mrn&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EXAMPLE-001&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Example&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rural&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;female&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1947-06-15&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MT&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;US&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 20:13-0400">2026-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

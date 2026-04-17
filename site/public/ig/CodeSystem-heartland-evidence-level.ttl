@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heartland-evidence-level"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-evidence-level</b></p><a name=\"heartland-evidence-level\"> </a><a name=\"hcheartland-evidence-level\"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">established<a name=\"heartland-evidence-level-established\"> </a></td><td>Established Evidence</td><td>Interventions with strong guideline support, such as SGLT2i for all HF phenotypes endorsed by the 2022 AHA/ACC/HFSA guideline.</td></tr><tr><td style=\"white-space:nowrap\">emerging<a name=\"heartland-evidence-level-emerging\"> </a></td><td>Emerging Evidence</td><td>Recent trial findings not yet fully incorporated into guidelines, such as finerenone for HFpEF based on the FINEARTS-HF trial.</td></tr><tr><td style=\"white-space:nowrap\">pragmatic<a name=\"heartland-evidence-level-pragmatic\"> </a></td><td>Pragmatic Heuristic</td><td>Tools developed for clinical utility without formal statistical validation, such as the HEARTLAND Risk Score itself.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"^^xsd:anyURI ;
+     fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartlandEvidenceLevel"] ; # 
+  fhir:title [ fhir:v "HEARTLAND Evidence Level"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-16T20:13:50-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY 4.0"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "established" ] ;
+     fhir:display [ fhir:v "Established Evidence" ] ;
+     fhir:definition [ fhir:v "Interventions with strong guideline support, such as SGLT2i for all HF phenotypes endorsed by the 2022 AHA/ACC/HFSA guideline." ]
+  ] [
+     fhir:code [ fhir:v "emerging" ] ;
+     fhir:display [ fhir:v "Emerging Evidence" ] ;
+     fhir:definition [ fhir:v "Recent trial findings not yet fully incorporated into guidelines, such as finerenone for HFpEF based on the FINEARTS-HF trial." ]
+  ] [
+     fhir:code [ fhir:v "pragmatic" ] ;
+     fhir:display [ fhir:v "Pragmatic Heuristic" ] ;
+     fhir:definition [ fhir:v "Tools developed for clinical utility without formal statistical validation, such as the HEARTLAND Risk Score itself." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

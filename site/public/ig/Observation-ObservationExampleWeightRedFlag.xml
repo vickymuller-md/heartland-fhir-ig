@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationExampleWeightRedFlag"/>
+  <meta>
+    <profile value="https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Observation ObservationExampleWeightRedFlag</b></p><a name="ObservationExampleWeightRedFlag"> </a><a name="hcObservationExampleWeightRedFlag"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-heartland-remote-monitoring-observation.html">HEARTLAND Remote Monitoring Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Patient-PatientExampleRural.html">Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)</a></p><p><b>effective</b>: 2026-04-16 08:15:00-0500</p><p><b>value</b>: 79.4 kg<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigokg = 'kg')</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>0.9 kg/d<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigokg/d = 'kg/d')</span></td><td>HEARTLAND red flag (default): weight gain &gt;=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral.</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExampleRural"/>
+  </subject>
+  <effectiveDateTime value="2026-04-16T08:15:00-05:00"/>
+  <valueQuantity>
+    <value value="79.4"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+  <referenceRange>
+    <high>
+      <value value="0.9"/>
+      <unit value="kg/d"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="kg/d"/>
+    </high>
+    <text value="HEARTLAND red flag (default): weight gain &gt;=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral."/>
+  </referenceRange>
+</Observation>

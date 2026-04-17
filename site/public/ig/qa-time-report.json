@@ -1,0 +1,1281 @@
+{
+  "date" : "Thu, 16 Apr, 2026 20:13:50 -0400",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json",
+    "size" : 16519,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 19
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 7
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 80
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 3773
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 33,
+      "length" : 90
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 171
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CarePlan-CarePlanExampleTier2.json",
+    "size" : 3506,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 22,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 22,
+      "length" : 578
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 41
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 21
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 24
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 54,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-heartland-evidence-level.json",
+    "size" : 1313,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 8
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 35
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 60
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-heartland-implementation-tier.json",
+    "size" : 1557,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 35
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-heartland-monitoring-track.json",
+    "size" : 1025,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 13
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 30
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-heartland-risk-tier.json",
+    "size" : 1114,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 36
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json",
+    "size" : 1158,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 58
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 439
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-PatientExampleRural.json",
+    "size" : 1031,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json",
+    "size" : 2894,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 23
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 30
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 54
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 20
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json",
+    "size" : 1229,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 32
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 11
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json",
+    "size" : 2145,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 15
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 63
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 20
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json",
+    "size" : 2191,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 54
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 16
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json",
+    "size" : 970,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 17
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-careplan.json",
+    "size" : 4148,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 51
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 58
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 617
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 318
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 1161
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 1944
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 47,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 54,
+      "length" : 12
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology.json",
+    "size" : 2606,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 25,
+      "length" : 3373
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 89
+    },
+    {
+      "activity" : "generate2",
+      "start" : 38,
+      "length" : 108
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 90
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-facility-tier.json",
+    "size" : 2209,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 9
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 47
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 49
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 116
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 32
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext.json",
+    "size" : 2101,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 9
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 22
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 52
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 111
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 26
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-patient.json",
+    "size" : 2012,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 12
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 36
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 30
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 115
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 190
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 272
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 380
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 7
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-questionnaire-response.json",
+    "size" : 1999,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 27
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 17
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 83
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 161
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 152
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 242
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json",
+    "size" : 3939,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 29
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 36
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 171
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 297
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 623
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 271
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 15
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-risk-assessment.json",
+    "size" : 3494,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 33
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 78
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 180
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 130
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 234
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 65,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-heartland-social-support-score.json",
+    "size" : 1994,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 21,
+      "length" : 3
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 21
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 57
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 58
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 23
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heartland-evidence-level-vs.json",
+    "size" : 589,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 77
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 24
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 155
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json",
+    "size" : 644,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 22,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 28
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 55,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json",
+    "size" : 1228,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 23,
+      "length" : 290
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 630
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 36
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heartland-monitoring-track-vs.json",
+    "size" : 606,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 24,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 21
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json",
+    "size" : 576,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 21,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 24,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 24,
+      "length" : 5
+    },
+    {
+      "activity" : "processProvenanceDetails",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 35,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "/input/includes/fragment-header.html",
+    "size" : 1640,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/includes/fragment-css.html",
+    "size" : 7905
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 2068,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1243
+  },
+  {
+    "name" : "/input/pagecontent/implementation.md",
+    "size" : 5647,
+    "processes" : [{
+      "activity" : "generateExampleZip",
+      "start" : 54,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/risk-assessment.md",
+    "size" : 3417,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2920
+  },
+  {
+    "name" : "/input/pagecontent/background.md",
+    "size" : 3933
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 19256
+  }]
+}
