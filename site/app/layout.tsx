@@ -3,14 +3,14 @@ import { Sora, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const sora = Sora({
-  variable: "--font-sora",
+  variable: "--font-editorial",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-serif",
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal", "italic"],
@@ -18,7 +18,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+  variable: "--font-mono-editorial",
   subsets: ["latin"],
   weight: ["400", "500"],
   display: "swap",
@@ -46,8 +46,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${sora.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-terminal font-editorial text-cool antialiased selection:bg-alert/40 selection:text-cool min-h-screen flex flex-col">
-        <main className="flex-1">{children}</main>
+      <body className="min-h-screen flex flex-col bg-terminal font-editorial text-cool antialiased selection:bg-alert/40 selection:text-cool">
+        {children}
       </body>
     </html>
   );
