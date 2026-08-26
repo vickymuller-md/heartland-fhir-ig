@@ -88,6 +88,12 @@ For the underlying clinical protocol:
 
 Muller Ferreira V. *HEARTLAND Protocol: An Implementation Framework for Primary Care-Led Heart Failure Management in Rural Settings.* Cureus. 2026. DOI: [10.5281/zenodo.18566403](https://doi.org/10.5281/zenodo.18566403).
 
+## Software preservation
+
+Software Heritage snapshot (archived 2026-08-25): [`swh:1:snp:f6fb5441d0f21ea983944164fed3dbcdff6d04b0`](https://archive.softwareheritage.org/swh:1:snp:f6fb5441d0f21ea983944164fed3dbcdff6d04b0/)
+
+This persistent SWHID identifies the repository snapshot captured on that date; archival does not imply endorsement or validation.
+
 ## Author
 
 **Vicky Muller Ferreira, MD**

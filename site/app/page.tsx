@@ -541,6 +541,12 @@ function OpenScience() {
             />
             <DepositRow
               kind="FHIR IG"
+              label="Software Heritage"
+              href="https://archive.softwareheritage.org/swh:1:snp:f6fb5441d0f21ea983944164fed3dbcdff6d04b0/"
+              meta="swh:1:snp:f6fb5441d0f21ea983944164fed3dbcdff6d04b0"
+            />
+            <DepositRow
+              kind="FHIR IG"
               label="Zenodo (this IG)"
               href="#"
               meta="Pending first public release · CC-BY 4.0"
@@ -599,4 +605,3 @@ function DepositRow({
     </Wrapper>
   );
 }
-
