@@ -8,6 +8,7 @@ This Implementation Guide (IG) defines the FHIR profiles, extensions, value sets
 
 **Published IG**: https://vickymuller-md.github.io/heartland-fhir-ig/
 **Source protocol DOI**: [10.5281/zenodo.18566403](https://doi.org/10.5281/zenodo.18566403) | [10.17605/OSF.IO/YUSGH](https://doi.org/10.17605/OSF.IO/YUSGH)
+**Technical report DOI**: [10.5281/zenodo.22137121](https://doi.org/10.5281/zenodo.22137121) (all versions) | [10.5281/zenodo.22137122](https://doi.org/10.5281/zenodo.22137122) (v1.0)
 
 ---
 
@@ -82,7 +83,9 @@ Open `output/index.html` in a browser, or check `output/qa.html` for the QA repo
 
 ## Citation
 
-Muller Ferreira V. *HEARTLAND Protocol FHIR Implementation Guide v0.1.0*. Zenodo. 2026.
+Muller Ferreira V. *An Open FHIR R4 Implementation Guide for Structured Rural Heart-Failure Research Workflows*. Zenodo. 2026. DOI: [10.5281/zenodo.22137121](https://doi.org/10.5281/zenodo.22137121). Version 1.0: [10.5281/zenodo.22137122](https://doi.org/10.5281/zenodo.22137122).
+
+Software archive: [10.5281/zenodo.19634998](https://doi.org/10.5281/zenodo.19634998).
 
 For the underlying clinical protocol:
 

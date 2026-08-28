@@ -426,7 +426,7 @@ const STATUS_ROWS: Array<{ stream: string; state: string; tone: "ok" | "draft" |
   { stream: "Cureus manuscript", state: "Published; peer-review response in progress", tone: "ok" },
   { stream: "HEARTLAND Protocol", state: "v3.2 (Feb 2026) — authoritative", tone: "ok" },
   { stream: "FHIR IG", state: "v0.1.0 — initial draft, ready for vendor review", tone: "draft" },
-  { stream: "Zenodo IG DOI", state: "Pending — minted at first public release", tone: "pending" },
+  { stream: "Zenodo archives", state: "Software + technical report published", tone: "ok" },
   { stream: "Pilot site EHR validation", state: "Phase 3 — not yet started", tone: "pending" },
 ];
 
@@ -547,10 +547,15 @@ function OpenScience() {
             />
             <DepositRow
               kind="FHIR IG"
-              label="Zenodo (this IG)"
-              href="#"
-              meta="Pending first public release · CC-BY 4.0"
-              pending
+              label="Zenodo software archive"
+              href="https://doi.org/10.5281/zenodo.19634998"
+              meta="DOI 10.5281/zenodo.19634998"
+            />
+            <DepositRow
+              kind="Technical report"
+              label="Zenodo report"
+              href="https://doi.org/10.5281/zenodo.22137121"
+              meta="Concept DOI 10.5281/zenodo.22137121 · v1.0 DOI 10.5281/zenodo.22137122"
             />
             <DepositRow
               kind="Companion app"
