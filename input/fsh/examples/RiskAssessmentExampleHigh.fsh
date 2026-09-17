@@ -9,6 +9,6 @@ Usage: #example
 * occurrenceDateTime = "2026-04-16T14:30:00-05:00"
 * method.text = "HEARTLAND Protocol v3.2 Risk Score"
 * prediction.qualitativeRisk = HeartlandRiskTier#high "High Risk"
-* prediction.probabilityDecimal = 11
+* prediction.extension[scoreTotal].valueInteger = 11
 * basis[0] = Reference(QuestionnaireResponseExampleRiskInputs)
 * note[0].text = "Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated."

@@ -33,9 +33,15 @@ The HEARTLAND risk score stratifies HF patients at discharge into three tiers us
 3. **Map score to tier** using the cutoff table above.
 4. **Create a [`HeartlandRiskAssessment`](StructureDefinition-heartland-risk-assessment.html)** with:
    - `prediction.qualitativeRisk` bound to the resulting [`HeartlandRiskTier`](CodeSystem-heartland-risk-tier.html) code (`low` | `moderate` | `high`).
-   - `prediction.probabilityDecimal` set to the integer total (0-18).
+   - the [`heartland-risk-score-total`](StructureDefinition-heartland-risk-score-total.html) extension on `prediction` carrying the integer total (0-18).
    - `basis` referencing the `HeartlandQuestionnaireResponse`.
    - `method.text` exactly `"HEARTLAND Protocol v3.2 Risk Score"`.
+
+#### Where the Point Total Goes
+
+`prediction.probability[x]` is prohibited by the profile. FHIR R4 defines that element as the likelihood of a specified outcome, expressed as a percentage; the HEARTLAND total is a count of heuristic points, and writing it there would publish "11 points" as "11% chance of an event". The tier is the canonical result and lives in `prediction.qualitativeRisk`; the total lives in the `heartland-risk-score-total` extension.
+
+Implementations that already carry the total on an `Observation` — for example a generator that references the Observation from `basis` instead of populating the extension — should code that Observation with the [`HeartlandRiskScore`](CodeSystem-heartland-risk-score.html) code system (`https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score`), using code `heartland-risk-score` with `valueInteger` for the total and, where a component repeats the tier, code `heartland-risk-tier` with a `HeartlandRiskTier` coding. Both representations are conformant; neither expresses a probability.
 
 #### Patient Extensions
 
