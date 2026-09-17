@@ -14,7 +14,7 @@ This Implementation Guide (IG) defines the FHIR profiles, extensions, value sets
 
 ## Disclaimers (read first)
 
-> *"This Implementation Guide is a clinical decision support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only."*
+> *"This Implementation Guide is an implementation-support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only."*
 
 > *"The HEARTLAND Risk Stratification Framework is a proposed tool under development. It has not been validated against clinical outcomes data. Formal validation through registry data is a defined research objective."*
 
