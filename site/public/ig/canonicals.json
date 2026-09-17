@@ -20,6 +20,13 @@
   "name" : "HeartlandMonitoringTrack"
 },
 {
+  "id" : "heartland-risk-score",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score",
+  "version" : "0.1.0",
+  "name" : "HeartlandRiskScore"
+},
+{
   "id" : "heartland-risk-tier",
   "type" : "CodeSystem",
   "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
@@ -109,6 +116,13 @@
   "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment",
   "version" : "0.1.0",
   "name" : "HeartlandRiskAssessment"
+},
+{
+  "id" : "heartland-risk-score-total",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total",
+  "version" : "0.1.0",
+  "name" : "HeartlandRiskScoreTotal"
 },
 {
   "id" : "heartland-social-support-score",

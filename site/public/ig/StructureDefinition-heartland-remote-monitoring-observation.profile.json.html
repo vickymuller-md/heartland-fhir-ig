@@ -504,7 +504,7 @@
         
           Active
           
-            as of 2026-04-16
+            as of 2026-09-17
           
         
       </td>
@@ -535,7 +535,7 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "HEARTLAND Remote Monitoring Observation",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-04-16T20:13:50-04:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-17T14:02:25-04:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Vicky Muller Ferreira, MD",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -566,7 +566,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. Default thresholds (HEARTLAND v3.2 standard, configurable per program): weight gain &gt;=2 lb (0.9 kg)/24h or &gt;=5 lb (2.3 kg)/7d; SBP &lt;90 or &gt;180 mmHg; DBP &lt;50 or &gt;110 mmHg; SpO2 &lt;90% on room air. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain &gt;=2 lb (0.9 kg)/24h or &gt;=5 lb (2.3 kg)/7d, and SpO2 &lt;90% on room air, all configurable per program. Systolic BP &lt;90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -3418,7 +3418,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 20:13-0400">2026-04-16</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 14:02-0400">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

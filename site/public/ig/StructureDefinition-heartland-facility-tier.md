@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-facility-tier | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandFacilityTier |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandFacilityTier |
 
 Identifies the HEARTLAND Protocol v3.2 implementation tier (1 Minimal, 2 Standard, 3 Advanced) at which a facility, organization, or care plan operates. Drives which protocol activities (monitoring, GDMT cadence, education, follow-up) are operationally feasible.
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-facility-t
   "title" : "HEARTLAND Facility Implementation Tier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

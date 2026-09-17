@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandCarePlan |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandCarePlan |
 
  
 Heart failure care plan structured per HEARTLAND Protocol v3.2. Activities are organized around five domains: GDMT initiation/titration, remote monitoring schedule, post-discharge follow-up (calls and visits), discharge education (3 condensed or 8 comprehensive domains), and patient assistance navigation. Two extensions identify the facility implementation tier and the assigned monitoring track (A digital / B analog). 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-careplan.c
   "title" : "HEARTLAND Care Plan",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

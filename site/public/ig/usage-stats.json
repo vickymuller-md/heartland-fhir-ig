@@ -33,6 +33,13 @@
       ]
     },
     {
+      "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total",
+      "title": "HEARTLAND Risk Score Total",
+      "types": [
+        "integer"
+      ]
+    },
+    {
       "url": "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score",
       "title": "HEARTLAND Social Support Score",
       "types": [
@@ -124,6 +131,9 @@
     ],
     "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-monitoring-track-ext": [
       "CarePlan"
+    ],
+    "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total": [
+      "RiskAssessment.prediction"
     ],
     "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score": [
       "Patient"

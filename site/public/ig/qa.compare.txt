@@ -1,7 +1,7 @@
 HeartlandProtocolIG : Validation Results
 =========================================
 
-err = 0, warn = 7, info = 4
+err = 1, warn = 11, info = 9
 $--
 Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = https://fhir.heartlandprotocol.org)
  Build Errors : 0 / 5 / 0
@@ -9,10 +9,11 @@ Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = 
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-evidence-level : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-implementation-tier : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-monitoring-track : 0 / 0 / 1
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-risk-score : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-risk-tier : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol : 0 / 1 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Observation-ObservationExampleWeightRedFlag : 0 / 1 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Patient-PatientExampleRural : 0 / 1 / 1
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Observation-ObservationExampleWeightRedFlag : 0 / 3 / 4
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Patient-PatientExampleRural : 0 / 2 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire : 0 / 0 / 1
@@ -26,12 +27,13 @@ Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = 
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-questionnaire-response : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation : 0 / 0 / 3
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-risk-assessment : 0 / 0 / 1
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-risk-score-total : 0 / 0 / 1
  /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-social-support-score : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-evidence-level-vs : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-implementation-tier-vs : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs : 0 / 0 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-track-vs : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-risk-tier-vs : 0 / 0 / 1
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-evidence-level-vs : 0 / 0 / 2
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-implementation-tier-vs : 0 / 0 / 2
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs : 1 / 1 / 1
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-track-vs : 0 / 0 / 2
+ /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-risk-tier-vs : 0 / 0 / 2
 </table>
 == n/a ==
 WARNING: index.html#/html/body/div/div/div/div/div/p/a at Line 502, column 55: The link 'https://fhir.heartlandprotocol.org' for "fhir.heartlandprotocol.org" is a canonical link and is therefore unsafe with regard to versions
@@ -43,12 +45,18 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-heartland-evidence-level.json ==
 == fsh-generated/resources/CodeSystem-heartland-implementation-tier.json ==
 == fsh-generated/resources/CodeSystem-heartland-monitoring-track.json ==
+== fsh-generated/resources/CodeSystem-heartland-risk-score.json ==
 == fsh-generated/resources/CodeSystem-heartland-risk-tier.json ==
 == fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json ==
-WARNING: ImplementationGuide/heartland.fhir.us.protocol: ImplementationGuide.dependsOn[2]: O Guia de Implementação utiliza o pacote hl7.fhir.us.core#6.1.0 lançado em 2023-06-30, mas a versão apropriada mais recente é 8.0.1. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/heartland.fhir.us.protocol: ImplementationGuide.dependsOn[2]: O Guia de Implementação utiliza o pacote hl7.fhir.us.core#6.1.0 lançado em 2023-06-30, mas a versão apropriada mais recente é 9.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
 == fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json ==
+INFORMATION: Observation/ObservationExampleWeightRedFlag: Observation.code: Não foi possível confirmar que os códigos fornecidos pertencem ao conjunto de valores extensíveis https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs porque não existe um serviço de terminologia
+WARNING: Observation/ObservationExampleWeightRedFlag: Observation.value.ofType(Quantity): Não é possível validar o código 'kg' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
+WARNING: Observation/ObservationExampleWeightRedFlag: Observation.referenceRange[0].high: Não é possível validar o código 'kg/d' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
+INFORMATION: Observation/ObservationExampleWeightRedFlag: Observation.code: Não foi possível confirmar que os códigos fornecidos pertencem ao conjunto de valores extensíveis http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 porque não existe um serviço de terminologia
 WARNING: Observation/ObservationExampleWeightRedFlag: Observation: Recomendação de boas práticas: Em geral, todas as observações devem ter um executante
 == fsh-generated/resources/Patient-PatientExampleRural.json ==
+WARNING: Patient/PatientExampleRural: Patient.extension[0].value.ofType(Quantity): Não é possível validar o código '[mi_us]' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
 WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://fhir.heartlandprotocol.org/sid/example-mrn'
 == fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json ==
@@ -56,7 +64,7 @@ WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: Não foi pos
 == fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json ==
 == fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json ==
 == fsh-generated/resources/StructureDefinition-heartland-careplan.json ==
-INFORMATION: StructureDefinition/heartland-careplan: StructureDefinition.snapshot.element[4].binding.extension[0]: O extensão http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 está obsoleto
+INFORMATION: StructureDefinition/heartland-careplan: StructureDefinition.snapshot.element[4].binding.extension[0]: O extensão http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 está obsoleto com a nota Use additionalBinding extension or element instead
 == fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology.json ==
 == fsh-generated/resources/StructureDefinition-heartland-facility-tier.json ==
 == fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext.json ==
@@ -66,10 +74,16 @@ INFORMATION: StructureDefinition/heartland-careplan: StructureDefinition.snapsho
 INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.differential.element[2].slicing.discriminator[0]: O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado)
 INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado)
 == fsh-generated/resources/StructureDefinition-heartland-risk-assessment.json ==
+== fsh-generated/resources/StructureDefinition-heartland-risk-score-total.json ==
 == fsh-generated/resources/StructureDefinition-heartland-social-support-score.json ==
 == fsh-generated/resources/ValueSet-heartland-evidence-level-vs.json ==
+INFORMATION: ValueSet/heartland-evidence-level-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 == fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json ==
+INFORMATION: ValueSet/heartland-implementation-tier-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 == fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json ==
-INFORMATION: ValueSet/heartland-monitoring-observation-code-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Diastolic blood pressure' for http://loinc.org#8481-4. Valid display is one of 3 choices: 'Systolic blood pressure 1 hour maximum' (en-US), 'Systolic blood pressure 1 hour maximum' (en-US) or 'BP sys 1h Max' (en-US) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/heartland-monitoring-observation-code-vs: ValueSet.compose.include[0]: O conjunto de valores faz referência ao CodeSystem 'http://loinc.org' que tem o estatuto 'not-present'
+ERROR: ValueSet.where(id = 'heartland-monitoring-observation-code-vs'): No server available
 == fsh-generated/resources/ValueSet-heartland-monitoring-track-vs.json ==
+INFORMATION: ValueSet/heartland-monitoring-track-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 == fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json ==
+INFORMATION: ValueSet/heartland-risk-tier-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server

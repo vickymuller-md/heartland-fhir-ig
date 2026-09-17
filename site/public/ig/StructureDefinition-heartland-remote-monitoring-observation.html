@@ -523,7 +523,7 @@
         
           Active
           
-            as of 2026-04-16
+            as of 2026-09-17
           
         
       </td>
@@ -539,7 +539,7 @@
   </table>
 
 <p>
-<p>Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. Default thresholds (HEARTLAND v3.2 standard, configurable per program): weight gain &gt;=2 lb (0.9 kg)/24h or &gt;=5 lb (2.3 kg)/7d; SBP &lt;90 or &gt;180 mmHg; DBP &lt;50 or &gt;110 mmHg; SpO2 &lt;90% on room air. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.</p>
+<p>Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain &gt;=2 lb (0.9 kg)/24h or &gt;=5 lb (2.3 kg)/7d, and SpO2 &lt;90% on room air, all configurable per program. Systolic BP &lt;90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.</p>
 
 </p>
 
@@ -739,7 +739,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text based reference range in an observation</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationK'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationK-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationK'));
 document.getElementById('cbheartland-remote-monitoring-observationK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1042,7 +1042,7 @@ filterDesc(document.getElementById('heartland-remote-monitoring-observationK'), 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Text based reference range in an observation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationD'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationD-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationD'));
 document.getElementById('cbheartland-remote-monitoring-observationD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1485,7 +1485,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Ver <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationS'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationS-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationS'));
 document.getElementById('cbheartland-remote-monitoring-observationS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2129,7 +2129,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text based reference range in an observation</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationKA'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationKA-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationKA'));
 document.getElementById('cbheartland-remote-monitoring-observationKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2432,7 +2432,7 @@ filterDesc(document.getElementById('heartland-remote-monitoring-observationKA'),
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Text based reference range in an observation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationDA'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationDA-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationDA'));
 document.getElementById('cbheartland-remote-monitoring-observationDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2874,7 +2874,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Ver <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // b6f4eb8d-3f03-4833-bce8-c8eff4c27b22
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // abb72dea-539c-4912-93c3-d60fae676c3c
 document.getElementById('cbheartland-remote-monitoring-observationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('heartland-remote-monitoring-observationSA'), 'constraint', document.getElementById('cbheartland-remote-monitoring-observationSA-constraint').checked, document.getElementById('ppheartland-remote-monitoring-observationSA'));
 document.getElementById('cbheartland-remote-monitoring-observationSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -3399,7 +3399,7 @@ Resumo
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 20:13-0400">2026-04-16</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 14:02-0400">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

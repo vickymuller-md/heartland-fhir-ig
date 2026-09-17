@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandEvidenceLevelVS |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandEvidenceLevelVS |
 
  
 
@@ -56,7 +56,7 @@ Este conjunto de valores não é utilizado aqui; pode ser utilizado noutro local
   "title" : "HEARTLAND Evidence Level Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

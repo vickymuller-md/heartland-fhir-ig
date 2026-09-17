@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "heartland-risk-score"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-risk-score</b></p><a name=\"heartland-risk-score\"> </a><a name=\"hcheartland-risk-score\"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">heartland-risk-score<a name=\"heartland-risk-score-heartland-risk-score\"> </a></td><td>HEARTLAND Risk Score</td><td>Total of the HEARTLAND risk score, 0 to 18 points. Carried as Observation.valueInteger. A heuristic point count, not a probability.</td></tr><tr><td style=\"white-space:nowrap\">heartland-risk-tier<a name=\"heartland-risk-score-heartland-risk-tier\"> </a></td><td>HEARTLAND Risk Tier</td><td>Qualitative tier derived from the total. Carried as a CodeableConcept drawn from the HeartlandRiskTier code system, typically as an Observation component of the score.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score"^^xsd:anyURI ;
+     fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HeartlandRiskScore"] ; # 
+  fhir:title [ fhir:v "HEARTLAND Risk Score Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-09-17T14:02:25-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes identifying the HEARTLAND risk score and its tier when either is carried on an Observation rather than on a RiskAssessment — for example an Observation referenced from HeartlandRiskAssessment.basis holding the point total. The score is a non-validated implementation heuristic: the total is a point count, not a probability, and the tier assigns monitoring intensity rather than predicting an outcome."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY 4.0"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "heartland-risk-score" ] ;
+     fhir:display [ fhir:v "HEARTLAND Risk Score" ] ;
+     fhir:definition [ fhir:v "Total of the HEARTLAND risk score, 0 to 18 points. Carried as Observation.valueInteger. A heuristic point count, not a probability." ]
+  ] [
+     fhir:code [ fhir:v "heartland-risk-tier" ] ;
+     fhir:display [ fhir:v "HEARTLAND Risk Tier" ] ;
+     fhir:definition [ fhir:v "Qualitative tier derived from the total. Carried as a CodeableConcept drawn from the HeartlandRiskTier code system, typically as an Observation component of the score." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

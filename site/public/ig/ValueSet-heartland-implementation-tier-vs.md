@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandImplementationTierVS |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandImplementationTierVS |
 
  
 
@@ -56,7 +56,7 @@
   "title" : "HEARTLAND Implementation Tier Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

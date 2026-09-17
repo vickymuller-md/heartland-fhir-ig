@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandQuestionnaireResponse |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandQuestionnaireResponse |
 
  
 Captures responses to any HEARTLAND-defined Questionnaire (risk inputs, facility tier self-assessment, or patient track assignment). Used as the basis reference for HeartlandRiskAssessment when the questionnaire is HeartlandRiskInputQuestionnaire. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-questionna
   "title" : "HEARTLAND Questionnaire Response",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

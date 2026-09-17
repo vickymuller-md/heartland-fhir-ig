@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandDistanceToCardiology |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandDistanceToCardiology |
 
 Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance >50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-distance-t
   "title" : "HEARTLAND Distance to Cardiology",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

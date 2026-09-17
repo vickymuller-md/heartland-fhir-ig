@@ -15,6 +15,7 @@
 * [HEARTLAND Evidence Level](CodeSystem-heartland-evidence-level.md)
 * [HEARTLAND Implementation Tier](CodeSystem-heartland-implementation-tier.md)
 * [HEARTLAND Monitoring Track](CodeSystem-heartland-monitoring-track.md)
+* [HEARTLAND Risk Score Codes](CodeSystem-heartland-risk-score.md)
 * [HEARTLAND Risk Tier](CodeSystem-heartland-risk-tier.md)
 
 ### ValueSets
@@ -38,6 +39,7 @@
 * [HEARTLAND Distance to Cardiology](StructureDefinition-heartland-distance-to-cardiology.md)
 * [HEARTLAND Facility Implementation Tier](StructureDefinition-heartland-facility-tier.md)
 * [HEARTLAND Monitoring Track Assignment](StructureDefinition-heartland-monitoring-track-ext.md)
+* [HEARTLAND Risk Score Total](StructureDefinition-heartland-risk-score-total.md)
 * [HEARTLAND Social Support Score](StructureDefinition-heartland-social-support-score.md)
 
 ### ImplementationGuides

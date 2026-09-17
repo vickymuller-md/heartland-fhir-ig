@@ -619,12 +619,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Systolic BP</td>
       <td>8480-6</td>
-      <td>&lt;90 or &gt;180 mmHg</td>
+      <td>&lt;90 mmHg</td>
     </tr>
     <tr>
       <td>Diastolic BP</td>
       <td>8481-4</td>
-      <td>&lt;50 or &gt;110 mmHg</td>
+      <td>None defined</td>
     </tr>
     <tr>
       <td>Oxygen saturation</td>
@@ -634,7 +634,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Thresholds are encoded via <code class="language-plaintext highlighter-rouge">Observation.referenceRange</code> with <code class="language-plaintext highlighter-rouge">referenceRange.text</code> describing the rule. Defaults shown above are configurable per program; programs operating in altitudes above 5,000 ft, for instance, may justify a lower SpO2 threshold.</p>
+<p>Thresholds are encoded via <code class="language-plaintext highlighter-rouge">Observation.referenceRange</code> with <code class="language-plaintext highlighter-rouge">referenceRange.text</code> describing the rule.</p>
+
+<p>The weight and oxygen saturation values above are <strong>configurable program defaults, not HEARTLAND Protocol rules</strong>: the protocol's own table uses different weight windows and a different resting SpO2 cutoff, so a program should set these from its copy of the protocol and treat the numbers here as a starting configuration. Programs operating at altitudes above 5,000 ft, for instance, may justify a lower SpO2 threshold. No diastolic threshold is stated because the protocol defines none; the value set still carries the LOINC code so diastolic readings can be exchanged.</p>
 
 <p>See <a href="Observation-ObservationExampleWeightRedFlag.html"><code class="language-plaintext highlighter-rouge">ObservationExampleWeightRedFlag</code></a> for a worked example.</p>
 
@@ -665,7 +667,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 20:13-0400">2026-04-16</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 14:02-0400">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

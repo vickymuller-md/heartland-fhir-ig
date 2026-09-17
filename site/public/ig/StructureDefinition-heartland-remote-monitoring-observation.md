@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandRemoteMonitoringObservation |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandRemoteMonitoringObservation |
 
  
-Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. Default thresholds (HEARTLAND v3.2 standard, configurable per program): weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d; SBP <90 or >180 mmHg; DBP <50 or >110 mmHg; SpO2 <90% on room air. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral. 
+Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d, and SpO2 <90% on room air, all configurable per program. Systolic BP <90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral. 
 
 **Usos:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-remote-mon
   "title" : "HEARTLAND Remote Monitoring Observation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-remote-mon
       "value" : "https://heartlandprotocol.org"
     }]
   }],
-  "description" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. Default thresholds (HEARTLAND v3.2 standard, configurable per program): weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d; SBP <90 or >180 mmHg; DBP <50 or >110 mmHg; SpO2 <90% on room air. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
+  "description" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d, and SpO2 <90% on room air, all configurable per program. Systolic BP <90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -25,7 +25,7 @@ Perfil: [HEARTLAND Remote Monitoring Observation](StructureDefinition-heartland-
 | | | |
 | :--- | :--- | :--- |
 | - | **High** | **Text** |
-| * | 0.9 kg/d (Detalhes: UCUM códigokg/d = 'kg/d') | HEARTLAND red flag (default): weight gain >=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral. |
+| * | 0.9 kg/d (Detalhes: UCUM códigokg/d = 'kg/d') | Configurable program default, not a HEARTLAND Protocol threshold: weight gain >=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral. |
 
 
 
@@ -69,7 +69,7 @@ Perfil: [HEARTLAND Remote Monitoring Observation](StructureDefinition-heartland-
       "system" : "http://unitsofmeasure.org",
       "code" : "kg/d"
     },
-    "text" : "HEARTLAND red flag (default): weight gain >=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral."
+    "text" : "Configurable program default, not a HEARTLAND Protocol threshold: weight gain >=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral."
   }]
 }
 

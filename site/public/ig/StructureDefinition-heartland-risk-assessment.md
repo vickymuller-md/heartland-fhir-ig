@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment | *Version*:0.1.0 |
-| Active as of 2026-04-16 | *Computable Name*:HeartlandRiskAssessment |
+| Active as of 2026-09-17 | *Computable Name*:HeartlandRiskAssessment |
 
  
-Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables. 
+Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables, or an Observation carrying the point total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome. 
 
 **Usos:**
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
   "title" : "HEARTLAND Risk Assessment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
       "value" : "https://heartlandprotocol.org"
     }]
   }],
-  "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables.",
+  "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables, or an Observation carrying the point total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -156,27 +156,34 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
       "mustSupport" : true
     },
     {
-      "id" : "RiskAssessment.prediction.probability[x]",
-      "path" : "RiskAssessment.prediction.probability[x]",
+      "id" : "RiskAssessment.prediction.extension",
+      "path" : "RiskAssessment.prediction.extension",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "value",
+          "path" : "url"
         }],
         "ordered" : false,
         "rules" : "open"
       }
     },
     {
-      "id" : "RiskAssessment.prediction.probability[x]:probabilityDecimal",
-      "path" : "RiskAssessment.prediction.probability[x]",
-      "sliceName" : "probabilityDecimal",
-      "short" : "Total HEARTLAND risk score (0-18 integer points)",
+      "id" : "RiskAssessment.prediction.extension:scoreTotal",
+      "path" : "RiskAssessment.prediction.extension",
+      "sliceName" : "scoreTotal",
+      "short" : "Total HEARTLAND risk score (0-18 heuristic points, not a probability)",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "decimal"
-      }]
+        "code" : "Extension",
+        "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "RiskAssessment.prediction.probability[x]",
+      "path" : "RiskAssessment.prediction.probability[x]",
+      "max" : "0"
     },
     {
       "id" : "RiskAssessment.prediction.qualitativeRisk",

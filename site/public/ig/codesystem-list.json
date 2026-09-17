@@ -24,6 +24,14 @@
     "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."
   },
   {
+    "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "HeartlandRiskScore",
+    "title" : "HEARTLAND Risk Score Codes",
+    "description" : "Codes identifying the HEARTLAND risk score and its tier when either is carried on an Observation rather than on a RiskAssessment — for example an Observation referenced from HeartlandRiskAssessment.basis holding the point total. The score is a non-validated implementation heuristic: the total is a point count, not a probability, and the tier assigns monitoring intensity rather than predicting an outcome."
+  },
+  {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
     "version" : "0.1.0",
     "status" : "active",

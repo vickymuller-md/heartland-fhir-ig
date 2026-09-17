@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "heartland.fhir.us.protocol",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 16 Apr, 2026 20:13:50 -0400",
-  "dateISO8601" : "2026-04-16T20:13:50-04:00",
-  "errs" : 0,
-  "warnings" : 7,
-  "hints" : 4,
+  "date" : "Thu, 17 Sep, 2026 14:02:25 -0400",
+  "dateISO8601" : "2026-09-17T14:02:25-04:00",
+  "errs" : 1,
+  "warnings" : 11,
+  "hints" : 9,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1692303360
+  "maxMemory" : 1337453112
 }

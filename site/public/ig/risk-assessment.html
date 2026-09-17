@@ -560,12 +560,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           </tbody>
         </table>
       </li>
-      <li><code class="language-plaintext highlighter-rouge">prediction.probabilityDecimal</code> set to the integer total (0-18).</li>
+      <li>the <a href="StructureDefinition-heartland-risk-score-total.html"><code class="language-plaintext highlighter-rouge">heartland-risk-score-total</code></a> extension on <code class="language-plaintext highlighter-rouge">prediction</code> carrying the integer total (0-18).</li>
       <li><code class="language-plaintext highlighter-rouge">basis</code> referencing the <code class="language-plaintext highlighter-rouge">HeartlandQuestionnaireResponse</code>.</li>
       <li><code class="language-plaintext highlighter-rouge">method.text</code> exactly <code class="language-plaintext highlighter-rouge">"HEARTLAND Protocol v3.2 Risk Score"</code>.</li>
     </ul>
   </li>
 </ol>
+
+<h4 id="where-the-point-total-goes">Where the Point Total Goes</h4>
+
+<p><code class="language-plaintext highlighter-rouge">prediction.probability[x]</code> is prohibited by the profile. FHIR R4 defines that element as the likelihood of a specified outcome, expressed as a percentage; the HEARTLAND total is a count of heuristic points, and writing it there would publish "11 points" as "11% chance of an event". The tier is the canonical result and lives in <code class="language-plaintext highlighter-rouge">prediction.qualitativeRisk</code>; the total lives in the <code class="language-plaintext highlighter-rouge">heartland-risk-score-total</code> extension.</p>
+
+<p>Implementations that already carry the total on an <code class="language-plaintext highlighter-rouge">Observation</code> — for example a generator that references the Observation from <code class="language-plaintext highlighter-rouge">basis</code> instead of populating the extension — should code that Observation with the <a href="CodeSystem-heartland-risk-score.html"><code class="language-plaintext highlighter-rouge">HeartlandRiskScore</code></a> code system (<code class="language-plaintext highlighter-rouge">https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score</code>), using code <code class="language-plaintext highlighter-rouge">heartland-risk-score</code> with <code class="language-plaintext highlighter-rouge">valueInteger</code> for the total and, where a component repeats the tier, code <code class="language-plaintext highlighter-rouge">heartland-risk-tier</code> with a <code class="language-plaintext highlighter-rouge">HeartlandRiskTier</code> coding. Both representations are conformant; neither expresses a probability.</p>
 
 <h4 id="patient-extensions">Patient Extensions</h4>
 
@@ -620,7 +626,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 16, 2026 20:13-0400">2026-04-16</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  Package heartland.fhir.us.protocol#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 14:02-0400">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

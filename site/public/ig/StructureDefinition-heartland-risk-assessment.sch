@@ -29,6 +29,8 @@
   <sch:pattern>
     <sch:title>f:RiskAssessment/f:prediction</sch:title>
     <sch:rule context="f:RiskAssessment/f:prediction">
+      <sch:assert test="count(f:extension[@url = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total']) &lt;= 1">extension with URL = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:probability[x]) &lt;= 0">probability[x]: maximum cardinality of 'probability[x]' is 0</sch:assert>
       <sch:assert test="count(f:qualitativeRisk) &gt;= 1">qualitativeRisk: minimum cardinality of 'qualitativeRisk' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

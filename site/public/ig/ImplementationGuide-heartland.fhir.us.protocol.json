@@ -10,7 +10,7 @@
   "name" : "HeartlandProtocolIG",
   "title" : "HEARTLAND Protocol FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-16T20:13:50-04:00",
+  "date" : "2026-09-17T14:02:25-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -53,7 +53,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -63,7 +63,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -657,7 +657,7 @@
         "reference" : "Observation/ObservationExampleWeightRedFlag"
       },
       "name" : "Example: Body Weight Observation with Red-Flag Threshold",
-      "description" : "Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes the HEARTLAND default red-flag threshold (>=0.9 kg in 24 hours triggers clinician outreach per the human filter principle).",
+      "description" : "Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes a configurable program default rather than a protocol rule (>=0.9 kg in 24 hours triggers clinician outreach per the human filter principle).",
       "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"
     },
     {
@@ -897,7 +897,7 @@
         "reference" : "StructureDefinition/heartland-remote-monitoring-observation"
       },
       "name" : "HEARTLAND Remote Monitoring Observation",
-      "description" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. Default thresholds (HEARTLAND v3.2 standard, configurable per program): weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d; SBP <90 or >180 mmHg; DBP <50 or >110 mmHg; SpO2 <90% on room air. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
+      "description" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d, and SpO2 <90% on room air, all configurable per program. Systolic BP <90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
       "exampleBoolean" : false
     },
     {
@@ -909,7 +909,7 @@
         "reference" : "StructureDefinition/heartland-risk-assessment"
       },
       "name" : "HEARTLAND Risk Assessment",
-      "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables.",
+      "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables, or an Observation carrying the point total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome.",
       "exampleBoolean" : false
     },
     {
@@ -922,6 +922,30 @@
       },
       "name" : "HEARTLAND Risk Input Questionnaire",
       "description" : "Captures the 10 binary inputs to the HEARTLAND Protocol v3.2 risk score. Each item carries an itemWeight extension with its point contribution. Total score (0-18) maps to qualitative tiers: low (0-4), moderate (5-8), high (>=9). Item text is verbatim from manuscript/tables.R Table 1 (HEARTLAND v3.2).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/heartland-risk-score"
+      },
+      "name" : "HEARTLAND Risk Score Codes",
+      "description" : "Codes identifying the HEARTLAND risk score and its tier when either is carried on an Observation rather than on a RiskAssessment — for example an Observation referenced from HeartlandRiskAssessment.basis holding the point total. The score is a non-validated implementation heuristic: the total is a point count, not a probability, and the tier assigns monitoring intensity rather than predicting an outcome.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/heartland-risk-score-total"
+      },
+      "name" : "HEARTLAND Risk Score Total",
+      "description" : "Total of the HEARTLAND risk score: an integer count of 0 to 18 points summed from ten binary inputs. This is a non-validated implementation heuristic used to assign monitoring intensity; it is a point total, not a probability, not a predicted event rate and not a validated prognostic estimate. It is carried in this extension rather than in RiskAssessment.prediction.probabilityDecimal because that element is defined in FHIR R4 as the likelihood of a specified outcome, expressed as a percentage.",
       "exampleBoolean" : false
     },
     {

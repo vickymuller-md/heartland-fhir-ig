@@ -137,11 +137,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation",
-    "StructureDefinition-heartland-questionnaire-response.html" : "HEARTLAND Questionnaire Response",
-    "StructureDefinition-heartland-careplan.html" : "HEARTLAND Care Plan",
     "StructureDefinition-heartland-patient.html" : "HEARTLAND Patient",
-    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment"
+    "StructureDefinition-heartland-careplan.html" : "HEARTLAND Care Plan",
+    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment",
+    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation",
+    "StructureDefinition-heartland-questionnaire-response.html" : "HEARTLAND Questionnaire Response"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -254,8 +254,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation",
-    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment"
+    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment",
+    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",

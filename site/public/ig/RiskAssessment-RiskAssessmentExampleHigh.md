@@ -22,8 +22,8 @@ Perfil: [HEARTLAND Risk Assessment](StructureDefinition-heartland-risk-assessmen
 
 | | | |
 | :--- | :--- | :--- |
-| - | **Probability[x]** | **QualitativeRisk** |
-| * | 11 | High Risk |
+| - | **Extension** | **QualitativeRisk** |
+| * |  | High Risk |
 
 **note**: 
 
@@ -55,7 +55,10 @@ Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle in
     "reference" : "QuestionnaireResponse/QuestionnaireResponseExampleRiskInputs"
   }],
   "prediction" : [{
-    "probabilityDecimal" : 11,
+    "extension" : [{
+      "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total",
+      "valueInteger" : 11
+    }],
     "qualitativeRisk" : {
       "coding" : [{
         "system" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",

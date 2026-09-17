@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "HEARTLAND Implementation Tier"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-16T20:13:50-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-17T14:02:25-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
