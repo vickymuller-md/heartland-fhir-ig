@@ -137,11 +137,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment",
     "StructureDefinition-heartland-patient.html" : "HEARTLAND Patient",
     "StructureDefinition-heartland-careplan.html" : "HEARTLAND Care Plan",
-    "StructureDefinition-heartland-risk-assessment.html" : "HEARTLAND Risk Assessment",
-    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation",
-    "StructureDefinition-heartland-questionnaire-response.html" : "HEARTLAND Questionnaire Response"
+    "StructureDefinition-heartland-questionnaire-response.html" : "HEARTLAND Questionnaire Response",
+    "StructureDefinition-heartland-remote-monitoring-observation.html" : "HEARTLAND Remote Monitoring Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -372,7 +372,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevelVS",
     "title" : "HEARTLAND Evidence Level Value Set",
@@ -381,7 +381,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandImplementationTierVS",
     "title" : "HEARTLAND Implementation Tier Value Set",
@@ -393,7 +393,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandMonitoringObservationCodeVS",
     "title" : "HEARTLAND Monitoring Observation Code Value Set",
@@ -405,7 +405,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrackVS",
     "title" : "HEARTLAND Monitoring Track Value Set",
@@ -417,7 +417,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandRiskTierVS",
     "title" : "HEARTLAND Risk Tier Value Set",

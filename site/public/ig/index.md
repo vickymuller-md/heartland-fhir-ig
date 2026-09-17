@@ -1,4 +1,4 @@
-# Home - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Home - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,12 +7,12 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol | *Version*:0.2.0 |
 | Draft as of 2026-09-17 | *Computable Name*:HeartlandProtocolIG |
 
 # HEARTLAND Protocol FHIR Implementation Guide
 
-**FHIR R4 conformance resources for the HEARTLAND Protocol v3.2**
+**FHIR R4 conformance resources for the HEARTLAND Protocol**
 
 This Implementation Guide defines the FHIR profiles, extensions, value sets, code systems, and questionnaires that EHR vendors and rural HF programs need to exchange HEARTLAND-structured clinical data.
 
@@ -34,12 +34,12 @@ The polished landing page lives at the site root ([fhir.heartlandprotocol.org](h
 | FHIR version | R4 (4.0.1) |
 | Dependencies | [US Core 6.1.0](http://hl7.org/fhir/us/core/STU6.1) |
 | Jurisdiction | United States |
-| Status | Draft (v0.1.0) |
+| Status | Draft (v0.2.0) |
 | Canonical URL | `https://fhir.heartlandprotocol.org` |
 
 ### Disclaimers
 
-> **This Implementation Guide is a clinical decision support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only.**
+> **This Implementation Guide is a clinical implementation-support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only.**
 
 > **The HEARTLAND Risk Stratification Framework is a proposed tool under development. It has not been validated against clinical outcomes data. Formal validation through registry data is a defined research objective.**
 
@@ -70,11 +70,11 @@ This IG is **not a medical device**, **not FDA-cleared**, and **not HIPAA-certif
   "resourceType" : "ImplementationGuide",
   "id" : "heartland.fhir.us.protocol",
   "url" : "https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandProtocolIG",
   "title" : "HEARTLAND Protocol FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

@@ -1,4 +1,4 @@
-# HEARTLAND Risk Input Questionnaire - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Risk Input Questionnaire - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire | *Version*:0.2.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandRiskInputQuestionnaire |
 
  
@@ -26,7 +26,7 @@ Standardized capture of HEARTLAND risk score inputs to enable interoperable risk
   "resourceType" : "Questionnaire",
   "id" : "heartland-risk-input-questionnaire",
   "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandRiskInputQuestionnaire",
   "title" : "HEARTLAND Risk Input Questionnaire",
   "status" : "active",

@@ -1,4 +1,4 @@
-# HEARTLAND Risk Score Total - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Risk Score Total - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total | *Version*:0.2.0 |
 | Active as of 2026-09-17 | *Computable Name*:HeartlandRiskScoreTotal |
 
 Total of the HEARTLAND risk score: an integer count of 0 to 18 points summed from ten binary inputs. This is a non-validated implementation heuristic used to assign monitoring intensity; it is a point total, not a probability, not a predicted event rate and not a validated prognostic estimate. It is carried in this extension rather than in RiskAssessment.prediction.probabilityDecimal because that element is defined in FHIR R4 as the likelihood of a specified outcome, expressed as a percentage.
@@ -43,12 +43,12 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-score
   "resourceType" : "StructureDefinition",
   "id" : "heartland-risk-score-total",
   "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-score-total",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandRiskScoreTotal",
   "title" : "HEARTLAND Risk Score Total",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

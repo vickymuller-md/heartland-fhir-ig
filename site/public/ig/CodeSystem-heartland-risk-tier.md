@@ -1,4 +1,4 @@
-# HEARTLAND Risk Tier - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Risk Tier - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier | *Version*:0.2.0 |
 | Active as of 2026-09-17 | *Computable Name*:HeartlandRiskTier |
 | **Copyright/Legal**: CC-BY 4.0 | |
 
@@ -28,12 +28,12 @@ Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk scor
   "resourceType" : "CodeSystem",
   "id" : "heartland-risk-tier",
   "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandRiskTier",
   "title" : "HEARTLAND Risk Tier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

@@ -1,4 +1,4 @@
-# HEARTLAND Risk Assessment - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Risk Assessment - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment | *Version*:0.2.0 |
 | Active as of 2026-09-17 | *Computable Name*:HeartlandRiskAssessment |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-heartland-risk-asses
   "resourceType" : "StructureDefinition",
   "id" : "heartland-risk-assessment",
   "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandRiskAssessment",
   "title" : "HEARTLAND Risk Assessment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

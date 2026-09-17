@@ -1,4 +1,4 @@
-# Risk Assessment - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Risk Assessment - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Risk Assessment**

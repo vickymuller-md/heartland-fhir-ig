@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-risk-score</b></p><a name="heartland-risk-score"> </a><a name="hcheartland-risk-score"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">heartland-risk-score<a name="heartland-risk-score-heartland-risk-score"> </a></td><td>HEARTLAND Risk Score</td><td>Total of the HEARTLAND risk score, 0 to 18 points. Carried as Observation.valueInteger. A heuristic point count, not a probability.</td></tr><tr><td style="white-space:nowrap">heartland-risk-tier<a name="heartland-risk-score-heartland-risk-tier"> </a></td><td>HEARTLAND Risk Tier</td><td>Qualitative tier derived from the total. Carried as a CodeableConcept drawn from the HeartlandRiskTier code system, typically as an Observation component of the score.</td></tr></table></div>
   </text>
   <url value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="HeartlandRiskScore"/>
   <title value="HEARTLAND Risk Score Codes"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-17T14:02:25-04:00"/>
+  <date value="2026-09-17T14:11:14-04:00"/>
   <publisher value="Vicky Muller Ferreira, MD"/>
   <contact>
     <name value="Vicky Muller Ferreira, MD"/>

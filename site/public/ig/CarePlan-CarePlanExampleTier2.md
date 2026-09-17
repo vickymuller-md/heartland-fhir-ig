@@ -1,4 +1,4 @@
-# Example: Tier 2 Care Plan with Track B Monitoring - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Example: Tier 2 Care Plan with Track B Monitoring - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

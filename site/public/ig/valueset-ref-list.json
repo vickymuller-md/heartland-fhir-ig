@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-evidence-level-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevelVS",
     "title" : "HEARTLAND Evidence Level Value Set",
@@ -10,7 +10,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandImplementationTierVS",
     "title" : "HEARTLAND Implementation Tier Value Set",
@@ -22,7 +22,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandMonitoringObservationCodeVS",
     "title" : "HEARTLAND Monitoring Observation Code Value Set",
@@ -34,7 +34,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-track-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrackVS",
     "title" : "HEARTLAND Monitoring Track Value Set",
@@ -46,7 +46,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandRiskTierVS",
     "title" : "HEARTLAND Risk Tier Value Set",

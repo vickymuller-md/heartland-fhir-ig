@@ -1,4 +1,4 @@
-# Example: Body Weight Observation with Red-Flag Threshold - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Example: Body Weight Observation with Red-Flag Threshold - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

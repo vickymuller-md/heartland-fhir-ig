@@ -13,7 +13,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandEvidenceLevel",
     "title" : "HEARTLAND Evidence Level",
@@ -24,7 +24,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandImplementationTier",
     "title" : "HEARTLAND Implementation Tier",
@@ -35,7 +35,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandMonitoringTrack",
     "title" : "HEARTLAND Monitoring Track",
@@ -46,7 +46,7 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "status" : "active",
     "name" : "HeartlandRiskTier",
     "title" : "HEARTLAND Risk Tier",

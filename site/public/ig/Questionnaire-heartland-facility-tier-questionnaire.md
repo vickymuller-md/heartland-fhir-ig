@@ -1,4 +1,4 @@
-# HEARTLAND Facility Tier Questionnaire - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Facility Tier Questionnaire - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire | *Version*:0.2.0 |
 | Active as of 2026-04-16 | *Computable Name*:HeartlandFacilityTierQuestionnaire |
 
  
@@ -26,7 +26,7 @@ Help heart failure programs identify the HEARTLAND implementation tier their sit
   "resourceType" : "Questionnaire",
   "id" : "heartland-facility-tier-questionnaire",
   "url" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandFacilityTierQuestionnaire",
   "title" : "HEARTLAND Facility Tier Questionnaire",
   "status" : "active",

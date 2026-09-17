@@ -1,4 +1,4 @@
-# Example: Rural HF Patient (high-distance, limited support) - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Example: Rural HF Patient (high-distance, limited support) - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

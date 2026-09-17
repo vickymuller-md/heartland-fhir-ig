@@ -1,4 +1,4 @@
-# HEARTLAND Monitoring Track - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Monitoring Track - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track | *Version*:0.2.0 |
 | Active as of 2026-09-17 | *Computable Name*:HeartlandMonitoringTrack |
 | **Copyright/Legal**: CC-BY 4.0 | |
 
@@ -28,12 +28,12 @@ Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Mo
   "resourceType" : "CodeSystem",
   "id" : "heartland-monitoring-track",
   "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandMonitoringTrack",
   "title" : "HEARTLAND Monitoring Track",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",

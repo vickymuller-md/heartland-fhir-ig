@@ -1,4 +1,4 @@
-# Example: Risk Input Questionnaire Response (score 11) - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# Example: Risk Input Questionnaire Response (score 11) - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -65,7 +65,7 @@ Perfil: [HEARTLAND Questionnaire Response](StructureDefinition-heartland-questio
   "meta" : {
     "profile" : ["https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response"]
   },
-  "questionnaire" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire|0.1.0",
+  "questionnaire" : "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire|0.2.0",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/PatientExampleRural"

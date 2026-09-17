@@ -1,4 +1,4 @@
-# HEARTLAND Distance to Cardiology - HEARTLAND Protocol FHIR Implementation Guide v0.1.0
+# HEARTLAND Distance to Cardiology - HEARTLAND Protocol FHIR Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology | *Version*:0.1.0 |
+| *Official URL*:https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology | *Version*:0.2.0 |
 | Active as of 2026-09-17 | *Computable Name*:HeartlandDistanceToCardiology |
 
 Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance >50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).
@@ -45,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-heartland-distance-t
   "resourceType" : "StructureDefinition",
   "id" : "heartland-distance-to-cardiology",
   "url" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-distance-to-cardiology",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "HeartlandDistanceToCardiology",
   "title" : "HEARTLAND Distance to Cardiology",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:02:25-04:00",
+  "date" : "2026-09-17T14:11:14-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
