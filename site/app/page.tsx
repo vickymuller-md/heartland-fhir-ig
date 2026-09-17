@@ -39,7 +39,7 @@ export default function Home() {
           },
           {
             label: "Research",
-            href: "https://doi.org/10.5281/zenodo.18566403",
+            href: "https://doi.org/10.5281/zenodo.19101219",
             external: true,
           },
         ]}
@@ -119,7 +119,7 @@ function Hero() {
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
-                href="https://doi.org/10.5281/zenodo.18566403"
+                href="https://doi.org/10.5281/zenodo.19101219"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 font-editorial text-[15px] font-medium text-cool/85 transition-colors hover:text-alert"
@@ -206,9 +206,9 @@ function WhyExists() {
 
         <div className="mt-20 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
           <Disclaimer heading="Professional use only">
-            This Implementation Guide is a clinical decision support
-            specification for healthcare professionals. It does not provide
-            medical diagnoses, treatment recommendations for individual
+            This Implementation Guide is an educational
+            implementation-support resource for healthcare professionals. It
+            does not provide medical diagnoses, treatment recommendations for individual
             patients, or replace clinical judgment. Not intended for direct
             patient care. For professional use only.
           </Disclaimer>
@@ -424,7 +424,7 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
 
 const STATUS_ROWS: Array<{ stream: string; state: string; tone: "ok" | "draft" | "pending" }> = [
   { stream: "Cureus manuscript", state: "Published; peer-review response in progress", tone: "ok" },
-  { stream: "HEARTLAND Protocol", state: "v3.2 (Feb 2026) — authoritative", tone: "ok" },
+  { stream: "HEARTLAND Protocol", state: "V3.3 — authoritative", tone: "ok" },
   { stream: "FHIR IG", state: "v0.1.0 — initial draft, ready for vendor review", tone: "draft" },
   { stream: "Zenodo archives", state: "Software + technical report published", tone: "ok" },
   { stream: "Pilot site EHR validation", state: "Phase 3 — not yet started", tone: "pending" },
@@ -518,14 +518,14 @@ function OpenScience() {
             <DepositRow
               kind="Protocol"
               label="Cureus (peer-reviewed)"
-              href="https://doi.org/10.5281/zenodo.18566403"
+              href="https://doi.org/10.7759/cureus.104817"
               meta="indexed PubMed · PMC · Scopus · Google Scholar"
             />
             <DepositRow
               kind="Protocol"
               label="Zenodo"
-              href="https://doi.org/10.5281/zenodo.18566403"
-              meta="DOI 10.5281/zenodo.18566403"
+              href="https://doi.org/10.5281/zenodo.19101219"
+              meta="DOI 10.5281/zenodo.19101219"
             />
             <DepositRow
               kind="Protocol"
