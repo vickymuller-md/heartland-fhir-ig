@@ -64,11 +64,13 @@ The [`HeartlandRemoteMonitoringObservation`](StructureDefinition-heartland-remot
 | Observation | LOINC | Default red-flag threshold |
 |-|-|-|
 | Body weight | 29463-7 | Gain >=2 lb (~0.9 kg)/24h or >=5 lb (~2.3 kg)/7d |
-| Systolic BP | 8480-6 | <90 or >180 mmHg |
-| Diastolic BP | 8481-4 | <50 or >110 mmHg |
+| Systolic BP | 8480-6 | <90 mmHg |
+| Diastolic BP | 8481-4 | None defined |
 | Oxygen saturation | 59408-5 | <90% on room air |
 
-Thresholds are encoded via `Observation.referenceRange` with `referenceRange.text` describing the rule. Defaults shown above are configurable per program; programs operating in altitudes above 5,000 ft, for instance, may justify a lower SpO2 threshold.
+Thresholds are encoded via `Observation.referenceRange` with `referenceRange.text` describing the rule.
+
+The weight and oxygen saturation values above are **configurable program defaults, not HEARTLAND Protocol rules**: the protocol's own table uses different weight windows and a different resting SpO2 cutoff, so a program should set these from its copy of the protocol and treat the numbers here as a starting configuration. Programs operating at altitudes above 5,000 ft, for instance, may justify a lower SpO2 threshold. No diastolic threshold is stated because the protocol defines none; the value set still carries the LOINC code so diastolic readings can be exchanged.
 
 See [`ObservationExampleWeightRedFlag`](Observation-ObservationExampleWeightRedFlag.html) for a worked example.
 
