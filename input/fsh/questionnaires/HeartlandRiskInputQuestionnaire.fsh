@@ -5,7 +5,7 @@ Description: "Captures the 10 binary inputs to the HEARTLAND Protocol v3.2 risk 
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-risk-input-questionnaire"
-* version = "0.1.0"
+* version = "0.2.0"
 * name = "HeartlandRiskInputQuestionnaire"
 * status = #active
 * experimental = false

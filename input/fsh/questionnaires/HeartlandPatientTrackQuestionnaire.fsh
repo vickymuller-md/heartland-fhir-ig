@@ -5,7 +5,7 @@ Description: "Three boolean items derived from HEARTLAND Protocol v3.2 Table 4 (
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire"
-* version = "0.1.0"
+* version = "0.2.0"
 * name = "HeartlandPatientTrackQuestionnaire"
 * status = #active
 * experimental = false

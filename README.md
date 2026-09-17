@@ -40,7 +40,7 @@ The IG covers:
 | FHIR version | R4 (4.0.1) |
 | Dependencies | [US Core 6.1.0](http://hl7.org/fhir/us/core/STU6.1) |
 | Jurisdiction | United States |
-| Status | Draft (v0.1.0) |
+| Status | Draft (v0.2.0) |
 
 ## Artifact counts
 

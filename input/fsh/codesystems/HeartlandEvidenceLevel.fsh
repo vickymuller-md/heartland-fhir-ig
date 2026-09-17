@@ -3,7 +3,7 @@ Id: heartland-evidence-level
 Title: "HEARTLAND Evidence Level"
 Description: "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."
 * ^url = "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

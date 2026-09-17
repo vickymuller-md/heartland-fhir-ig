@@ -5,7 +5,7 @@ Description: "Five categorical items derived from HEARTLAND Protocol v3.2 Table 
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire"
-* version = "0.1.0"
+* version = "0.2.0"
 * name = "HeartlandFacilityTierQuestionnaire"
 * status = #active
 * experimental = false

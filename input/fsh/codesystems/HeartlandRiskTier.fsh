@@ -3,7 +3,7 @@ Id: heartland-risk-tier
 Title: "HEARTLAND Risk Tier"
 Description: "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk."
 * ^url = "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

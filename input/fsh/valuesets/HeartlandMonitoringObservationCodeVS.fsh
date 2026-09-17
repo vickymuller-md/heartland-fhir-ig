@@ -3,7 +3,7 @@ Id: heartland-monitoring-observation-code-vs
 Title: "HEARTLAND Monitoring Observation Code Value Set"
 Description: "LOINC codes for the four observations captured by the HEARTLAND remote monitoring kit per Module 5: body weight (digital scale), systolic and diastolic blood pressure (BP monitor), and oxygen saturation (pulse oximeter, when indicated)."
 * ^url = "https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Vicky Muller Ferreira, MD"

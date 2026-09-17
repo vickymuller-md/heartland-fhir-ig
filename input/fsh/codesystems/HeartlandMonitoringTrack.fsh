@@ -3,7 +3,7 @@ Id: heartland-monitoring-track
 Title: "HEARTLAND Monitoring Track"
 Description: "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."
 * ^url = "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

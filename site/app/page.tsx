@@ -85,7 +85,7 @@ function Hero() {
           <div className="md:col-span-8">
             <p className="inline-flex items-center gap-2 rounded-full border border-grid bg-panel px-3.5 py-1.5 font-editorial text-[12px] tracking-tight text-cool/80">
               <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden />
-              FHIR R4 · v0.1.0 draft · CC&#8209;BY 4.0
+              FHIR R4 · v0.2.0 draft · CC&#8209;BY 4.0
             </p>
 
             <h1 className="mt-7 text-[clamp(2.4rem,5.6vw,4.75rem)] font-editorial font-semibold leading-[1.04] tracking-[-0.025em] text-cool">
@@ -398,7 +398,7 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
             "h-1.5 w-1.5 rounded-full " + (m.available ? "bg-signal" : "bg-stone")
           }
         />
-        {m.available ? "Defined in v0.1.0" : "Coming in Phase II"}
+        {m.available ? "Defined in v0.2.0" : "Coming in Phase II"}
       </p>
     </>
   );
@@ -425,7 +425,7 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
 const STATUS_ROWS: Array<{ stream: string; state: string; tone: "ok" | "draft" | "pending" }> = [
   { stream: "Cureus manuscript", state: "Published; peer-review response in progress", tone: "ok" },
   { stream: "HEARTLAND Protocol", state: "V3.3 — authoritative", tone: "ok" },
-  { stream: "FHIR IG", state: "v0.1.0 — initial draft, ready for vendor review", tone: "draft" },
+  { stream: "FHIR IG", state: "v0.2.0 — initial draft, ready for vendor review", tone: "draft" },
   { stream: "Zenodo archives", state: "Software + technical report published", tone: "ok" },
   { stream: "Pilot site EHR validation", state: "Phase 3 — not yet started", tone: "pending" },
 ];
@@ -446,7 +446,7 @@ function Status() {
               </span>
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
-              v0.1.0 is a draft release intended for vendor review and pilot
+              v0.2.0 is a draft release intended for vendor review and pilot
               site evaluation. Cleared SUSHI compilation and HL7 IG Publisher
               QA with zero critical errors.
             </p>
@@ -537,7 +537,7 @@ function OpenScience() {
               kind="FHIR IG"
               label="GitHub source"
               href="https://github.com/vickymuller-md/heartland-fhir-ig"
-              meta="vickymuller-md/heartland-fhir-ig · v0.1.0"
+              meta="vickymuller-md/heartland-fhir-ig · v0.2.0"
             />
             <DepositRow
               kind="FHIR IG"
