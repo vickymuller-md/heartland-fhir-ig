@@ -2,7 +2,7 @@ Profile: HeartlandCarePlan
 Parent: CarePlan
 Id: heartland-careplan
 Title: "HEARTLAND Care Plan"
-Description: "Heart failure care plan structured per HEARTLAND Protocol v3.2. Activities are organized around five domains: GDMT initiation/titration, remote monitoring schedule, post-discharge follow-up (calls and visits), discharge education (3 condensed or 8 comprehensive domains), and patient assistance navigation. Two extensions identify the facility implementation tier and the assigned monitoring track (A digital / B analog)."
+Description: "Draft planned-activity representation aligned with the HEARTLAND Toolkit V3.4 candidate. Facility tier describes delivery capacity, not clinical eligibility, treatment timing or exclusion of education domains. All eight educational domains are offered at every tier; format, sequence and support can differ. Planned activities are not evidence of professional review, completed teach-back, contact or care. Tier and monitoring-track extensions retain their existing identities. The profile does not encode the full operational journal."
 * ^url = "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"
 * ^version = "0.3.0"
 * ^status = #draft

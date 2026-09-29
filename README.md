@@ -22,6 +22,9 @@ FHIR R4 **4.0.1**, with dependency on US Core **6.1.0**. Importing US Core does 
 - The body-weight example no longer compares body mass in kg with a kg/day reference range, or claims a change without a prior measurement.
 - The monitoring value set corrects the diastolic LOINC code from 8481-4 (one-hour maximum systolic pressure) to 8462-4 (diastolic pressure). This corrects a mapping, not a clinical threshold; do not silently relabel historical observations.
 - Existing canonical URLs, HEARTLAND risk codes and risk method text `HEARTLAND Protocol v3.2 Risk Score` remain for compatibility. This historical label is not the current Toolkit version. Historical responses are not rewritten.
+- Facility/track definitions no longer prescribe treatment by resource tier or claim automatic assignment. The care-plan example offers all eight education domains at every tier, as 14 not-started activities in a synthetic draft plan. No schedule, professional, order or clinical outcome is fabricated.
+- The facility questionnaire changes four literal answer strings, documented in [Tiers and Tracks](input/pagecontent/implementation.md); canonical identity and item link IDs/types remain stable, but the answer values are not byte-identical. Preserve historical definitions and responses. Three monitoring-access Boolean items do not capture patient preference; record preference and the shared choice separately.
+- [Workflow Mapping](input/pagecontent/workflow.md) selects R4 resource families and the evidence they must preserve. It is a design decision, not new operational profiles or an implemented workflow exporter.
 
 ## Resource inventory
 
@@ -35,7 +38,7 @@ FHIR R4 **4.0.1**, with dependency on US Core **6.1.0**. Importing US Core does 
 | Synthetic examples | 5 |
 | ImplementationGuide manifest | 1 |
 
-SUSHI therefore produces 31 resource files plus the separate IG manifest. There are four narrative pages. Conformance resources in this candidate are draft and experimental; clinical example statuses retain their resource-specific meaning.
+SUSHI therefore produces 31 resource files plus the separate IG manifest. There are five narrative pages. Conformance resources in this candidate are draft and experimental; clinical example statuses retain their resource-specific meaning.
 
 ## Build and structural checks
 
@@ -43,7 +46,7 @@ Use Node.js, SUSHI and Java 17 or later. The verified local compiler is SUSHI 3.
 
 ```sh
 sushi .
-node --test tests/risk-contract.test.mjs
+node --test tests/*.test.mjs
 node tests/risk-contract.test.mjs --fixtures /absolute/new/evidence-directory
 ```
 
@@ -66,7 +69,7 @@ Use an explicit English Java locale so the generated English guide does not inhe
 
 ```sh
 java -Duser.language=en -Duser.country=US -Xmx4g -jar input-cache/publisher-2.3.4.jar -ig . -tx https://tx.fhir.org/r4
-FHIR_IG_OUTPUT=output node --test tests/risk-contract.test.mjs
+FHIR_IG_OUTPUT=output node --test tests/*.test.mjs
 ```
 
 The output check examines both FHIR errors and broken links, verifies every generated jurisdiction image, and checks the normalized R4 manifest. The raw SUSHI IG contains Publisher build parameters; the distributed IG normalizes non-R4 parameters into the official `ig-parameter` extension. Validate the resources inside the final `package.tgz`, not only the build recipe. Use `-language en -locale en` with the standalone validator.
@@ -75,7 +78,9 @@ Publisher 2.3.4 adds two internal annotations (`resource-information` and `imple
 
 ## Remaining integration boundary
 
-Task/ServiceRequest/Provenance mapping of the app's newer care workflows, complete Toolkit V3.4 tier/care-plan alignment, cross-resource consistency and vendor-side testing are separate release checks. A generic `RiskAssessment.basis` reference does not certify its target or recompute a score. Generic QuestionnaireResponse and Observation representations remain permitted for compatibility; only the specialized risk response expresses the complete Boolean capture contract.
+Resource mapping and the tier/care-plan content are aligned at the documented design level. No Task, ServiceRequest, Communication or Provenance exporter/profile is added. Lossless operational exchange requires a separately specified producer/consumer contract and actual receiver testing; it is not established by this guide or the app's narrower Patient/Observation/MedicationStatement collection export.
+
+`workflow-contract.test.mjs` checks the generated plan, preserved identities, changed questionnaire semantics and the five synthetic examples' common patient and 11-point risk calculation. Ten deliberately invalid mutations exercise example-specific rejection checks. These tests are not general FHIR invariants or an operational round trip. A generic `RiskAssessment.basis` reference still does not certify its target or recompute a score. Generic QuestionnaireResponse and Observation representations remain permitted for compatibility; only the specialized risk response expresses the complete Boolean capture contract.
 
 The synthetic county extension is compatible with the existing export shape, but this change does not add profile declarations to that exporter or certify the full exported Bundle. No cohort regeneration is required.
 

@@ -1,7 +1,7 @@
 CodeSystem: HeartlandImplementationTier
 Id: heartland-implementation-tier
 Title: "HEARTLAND Implementation Tier"
-Description: "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."
+Description: "Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage."
 * ^url = "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"
 * ^version = "0.3.0"
 * ^status = #draft
@@ -11,6 +11,6 @@ Description: "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 
 * ^publisher = "Vicky Muller Ferreira, MD"
 * ^copyright = "CC-BY 4.0"
 
-* #tier-1-minimal "Tier 1 - Minimal" "Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation."
-* #tier-2-standard "Tier 2 - Standard" "Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days."
-* #tier-3-advanced "Tier 3 - Advanced" "Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation."
+* #tier-1-minimal "Tier 1 - Minimal" "Resource-constrained capacity. Adapt format, sequence and support; document gaps, named coverage, alternatives and escalation without omitting required care or relevant education."
+* #tier-2-standard "Tier 2 - Standard" "Intermediate implementation capacity with locally documented staffing, monitoring routes and navigation support. Capacity alone does not establish treatment sequence or deadlines."
+* #tier-3-advanced "Tier 3 - Advanced" "Expanded implementation capacity, potentially including multidisciplinary and digital support. The label alone does not prove availability, coverage, patient access or better outcomes."

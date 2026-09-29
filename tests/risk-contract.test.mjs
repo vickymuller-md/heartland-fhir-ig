@@ -90,7 +90,7 @@ if (!['--fixtures', '--results', '--parity', '--package-results'].some(flag => p
     assert(!codes.some(c => c.code === '8481-4'));
   });
   test('public source and optional rendered landing page keep candidate and evidence boundaries', () => {
-    const paths = ['README.md', 'site/app/page.tsx', 'site/app/layout.tsx', ...['index', 'background', 'risk-assessment', 'implementation'].map(n => `input/pagecontent/${n}.md`)];
+    const paths = ['README.md', 'site/app/page.tsx', 'site/app/layout.tsx', ...['index', 'background', 'risk-assessment', 'implementation', 'workflow'].map(n => `input/pagecontent/${n}.md`)];
     if (process.env.FHIR_SITE_HTML) paths.push(process.env.FHIR_SITE_HTML);
     for (const name of paths) {
       const text = readFileSync(resolve(root, name), 'utf8');

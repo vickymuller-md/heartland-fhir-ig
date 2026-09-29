@@ -14,7 +14,7 @@ Weights, cutoffs, existing codes and the historical method label are retained. T
 
 Facility resources and communication methods can be represented for implementation planning. They must not be interpreted as a machine-generated prescription, a reason to reduce required clinical care, or proof that a proposed workflow has been completed. Resource presence does not prove contact, comprehension, delivery or clinician review.
 
-The existing facility and care-plan artifacts require further alignment with the Toolkit V3.4 candidate. Task, order and provenance coverage for newer app workflows is not yet complete. These boundaries are described on the [implementation page](implementation.html).
+The facility and care-plan artifacts now reflect the Toolkit V3.4 candidate's capacity and education boundaries; the [implementation page](implementation.html) identifies changed answer values and preserved identities. The [workflow map](workflow.html) selects resource families and states what a future operational exchange must preserve. It is not a Task, order, communication or provenance exporter, and does not claim full workflow coverage.
 
 #### Evidence and publication layers
 

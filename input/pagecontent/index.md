@@ -10,7 +10,8 @@ The public landing page at `https://fhir.heartlandprotocol.org` and this generat
 
 - [Background](background.html): purpose, evidence boundary and provenance.
 - [Risk assessment](risk-assessment.html): weights, complete Boolean responses and examples.
-- [Tiers and tracks](implementation.html): represented structures and remaining alignment limits.
+- [Tiers and tracks](implementation.html): capacity, access and an eight-domain draft care plan.
+- [Workflow mapping](workflow.html): orders, tasks, communication, lineage and export boundaries.
 - [Artifacts](artifacts.html): profiles, extensions, terminology and synthetic examples.
 
 ### Technical contract

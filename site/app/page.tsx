@@ -280,15 +280,15 @@ const MODULES: ModuleEntry[] = [
     available: true,
   },
   {
-    title: "GDMT optimization",
-    body: "Draft planned-activity representation. Historical care-plan content still requires full Toolkit V3.4 alignment.",
+    title: "Medication planning",
+    body: "A draft care plan aligned with the Toolkit candidate. Tier does not prescribe treatment timing; a plan is not an authorized medication order.",
     href: "/ig/StructureDefinition-heartland-careplan.html",
     artifact: "CarePlan profile",
     glyph: "M 8 3 H 16 V 9 L 21 14 V 21 H 3 V 14 L 8 9 Z M 12 14 V 18",
     available: true,
   },
   {
-    title: "Telephone titration",
+    title: "Monitoring route",
     body: "Digital and analog track codes record communication context; they do not prove contact, delivery or equivalent outcomes.",
     href: "/ig/CodeSystem-heartland-monitoring-track.html",
     artifact: "MonitoringTrack code system",
@@ -297,9 +297,9 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Discharge transitions",
-    body: "Historical care-plan examples, not the complete exam, education, communication or post-closure lifecycle.",
-    href: "/ig/StructureDefinition-heartland-careplan.html",
-    artifact: "CarePlan activity catalog",
+    body: "Eight education domains at every tier, plus a workflow resource map. The map is not an operational exporter or proof of completed care.",
+    href: "/ig/workflow.html",
+    artifact: "CarePlan + workflow mapping",
     glyph: "M 4 4 H 16 L 20 8 V 20 H 4 Z M 16 4 V 8 H 20 M 8 13 H 16 M 8 17 H 14",
     available: true,
   },
@@ -446,8 +446,9 @@ function Status() {
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
               v0.3.0 is a technical candidate, not an assertion of deployment
-              readiness or clinical approval. Toolkit alignment, newer workflow
-              mappings and external EHR validation remain separate checks.
+              readiness or clinical approval. Tier and education content is aligned
+              with the Toolkit candidate; operational exchange and external EHR
+              validation remain separate checks.
             </p>
           </div>
           <div className="md:col-span-7">

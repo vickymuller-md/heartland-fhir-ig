@@ -1,7 +1,7 @@
 Instance: heartland-facility-tier-questionnaire
 InstanceOf: Questionnaire
 Title: "HEARTLAND Facility Tier Questionnaire"
-Description: "Five categorical items derived from HEARTLAND Protocol v3.2 Table 2 to support facility self-assessment for implementation tier assignment (Tier 1 Minimal / Tier 2 Standard / Tier 3 Advanced). Items cover staffing model, PharmD availability, CHW program, monitoring technology, and financial navigation capacity. Tier assignment is qualitative: predominance of 'minimal' answers maps to Tier 1; 'standard' to Tier 2; 'advanced' to Tier 3. This is an operational instrument derived from Table 2; the source protocol does not provide a formal scored tool."
+Description: "Five capacity-capture items (four choices and one Boolean) for staffing, pharmacy, community health workers, monitoring and financial navigation. This descriptive instrument does not assign a tier, establish clinical eligibility or verify readiness. Capacity gaps, responsible professionals, coverage and an agreed implementation tier require separate documentation. Candidate 0.3.0 revises four answer strings; historical responses retain their original version and values."
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire"
@@ -10,30 +10,33 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * publisher = "Vicky Muller Ferreira, MD"
-* date = "2026-04-16"
-* description = "Facility self-assessment for HEARTLAND implementation tier (1/2/3). Qualitative scoring; see narrative for tier mapping."
+* date = "2026-09-29"
+* description = "Descriptive facility capacity capture; it does not score or assign a tier or establish clinical eligibility. All educational domains remain available at every tier."
 * subjectType[0] = #Location
 * subjectType[+] = #Organization
-* purpose = "Help heart failure programs identify the HEARTLAND implementation tier their site can sustainably operate at, given current staffing, technology, and resources."
+* purpose = "Record selected implementation resources for a locally reviewed plan. No majority-vote tier algorithm, staffing authorization, clinical deadline or education exclusion is derived from these answers. The choices are illustrative and not an exhaustive readiness assessment."
 
 * item[0].linkId = "staffing-level"
 * item[0].text = "Which staffing model is available for heart failure care at your facility?"
 * item[0].type = #choice
 * item[0].required = true
-* item[0].answerOption[0].valueString = "RN/MA + MD only (minimal)"
-* item[0].answerOption[+].valueString = "RN champion + PharmD (standard)"
-* item[0].answerOption[+].valueString = "Full multidisciplinary team (RN, PharmD, social worker, CHW) (advanced)"
+* item[0].repeats = false
+* item[0].answerOption[0].valueString = "RN/MA + MD"
+* item[0].answerOption[+].valueString = "RN champion + PharmD"
+* item[0].answerOption[+].valueString = "Multidisciplinary team (RN, PharmD, social worker, CHW)"
 
 * item[+].linkId = "pharmd-available"
 * item[=].text = "Is a PharmD available on-site or by consult to support GDMT titration?"
 * item[=].type = #boolean
 * item[=].required = true
+* item[=].repeats = false
 
 * item[+].linkId = "chw-program"
 * item[=].text = "What level of community health worker (CHW) program does your facility have?"
 * item[=].type = #choice
 * item[=].required = true
-* item[=].answerOption[0].valueString = "None (rely on family or alternative)"
+* item[=].repeats = false
+* item[=].answerOption[0].valueString = "No CHW program documented"
 * item[=].answerOption[+].valueString = "High-risk patients only"
 * item[=].answerOption[+].valueString = "Full integration across all HF patients"
 
@@ -41,6 +44,7 @@ Usage: #definition
 * item[=].text = "Which remote monitoring capability is available at your facility?"
 * item[=].type = #choice
 * item[=].required = true
+* item[=].repeats = false
 * item[=].answerOption[0].valueString = "Analog only (telephone, paper diary)"
 * item[=].answerOption[+].valueString = "Dual-track (analog and digital available based on patient)"
 * item[=].answerOption[+].valueString = "Digital primary plus remote patient monitoring (RPM)"
@@ -49,5 +53,6 @@ Usage: #definition
 * item[=].text = "What financial navigation capacity does your facility have for medication access?"
 * item[=].type = #choice
 * item[=].required = true
+* item[=].repeats = false
 * item[=].answerOption[0].valueString = "Generic Bridge pathway only (low-cost generics)"
 * item[=].answerOption[+].valueString = "Patient assistance program (PAP) pursuit plus Generic Bridge"
