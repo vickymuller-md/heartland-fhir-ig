@@ -2,11 +2,11 @@ Profile: HeartlandRiskAssessment
 Parent: RiskAssessment
 Id: heartland-risk-assessment
 Title: "HEARTLAND Risk Assessment"
-Description: "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables, or an Observation carrying the point total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome."
+Description: "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across ten weighted criteria and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. For the complete Boolean capture contract use HeartlandRiskInputResponse. Legacy Observation and generic QuestionnaireResponse basis references remain allowed for compatibility; this profile alone does not validate their content or recompute the total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome."
 * ^url = "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"
-* ^version = "0.2.0"
-* ^status = #active
-* ^experimental = false
+* ^version = "0.3.0"
+* ^status = #draft
+* ^experimental = true
 * ^publisher = "Vicky Muller Ferreira, MD"
 
 * status 1..1 MS

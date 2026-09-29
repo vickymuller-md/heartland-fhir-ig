@@ -1,7 +1,7 @@
 Instance: RiskAssessmentExampleHigh
 InstanceOf: HeartlandRiskAssessment
 Title: "Example: High-Risk HEARTLAND Risk Assessment"
-Description: "Risk assessment for PatientExampleRural scoring 11/18 points (>=9 = High Risk tier). Inputs: age >=75 (+2), prior HF hosp 6mo (+3), eGFR <45 (+2), BP <100 (+2), distance >50 mi (+1), limited social support (+1). Triggers Intensive Bundle per HEARTLAND v3.2."
+Description: "Synthetic risk assessment scoring 11/18 points (>=9 = High Risk tier). Inputs: age >=75 (+2), prior HF hosp 6mo (+3), CKM Stage 3-4 (+2), BP <100 (+2), distance >50 mi (+1), limited social support (+1). Demonstrates a proposed heuristic, not a treatment instruction or validated outcome prediction."
 Usage: #example
 
 * status = #final
@@ -11,4 +11,4 @@ Usage: #example
 * prediction.qualitativeRisk = HeartlandRiskTier#high "High Risk"
 * prediction.extension[scoreTotal].valueInteger = 11
 * basis[0] = Reference(QuestionnaireResponseExampleRiskInputs)
-* note[0].text = "Pragmatic heuristic per HEARTLAND Evidence Level. Intensive monitoring bundle indicated."
+* note[0].text = "Synthetic educational example of an unvalidated heuristic; not an instruction for patient care."

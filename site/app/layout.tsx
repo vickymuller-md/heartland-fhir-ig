@@ -27,13 +27,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Heartland · FHIR Implementation Guide",
   description:
-    "FHIR R4 conformance resources for the HEARTLAND Protocol — risk assessment, care plans, remote monitoring observations, questionnaires — for primary care-led heart failure management in rural and resource-limited US settings.",
+    "Draft FHIR R4 profiles, explicit risk-input weights and synthetic examples for educational implementation-support. Clinical validation and vendor interoperability are not established.",
   authors: [{ name: "Vicky Muller Ferreira, MD", url: "https://heartlandprotocol.org" }],
   metadataBase: new URL("https://fhir.heartlandprotocol.org"),
   openGraph: {
     title: "Heartland · FHIR Implementation Guide",
     description:
-      "Interoperability specification operationalizing the HEARTLAND Protocol for rural heart failure care across US EHRs.",
+      "Candidate 0.3.0: draft FHIR R4 structures and synthetic examples, not evidence of clinical validation or EHR integration.",
     url: "https://fhir.heartlandprotocol.org",
     siteName: "Heartland FHIR IG",
     type: "website",

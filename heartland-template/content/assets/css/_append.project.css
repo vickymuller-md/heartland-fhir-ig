@@ -1,0 +1,24 @@
+
+/* Keep long canonical identifiers readable within narrow narrative columns. */
+#segment-content code {
+  overflow-wrap: anywhere;
+}
+
+#segment-content table.colsd {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#segment-content table.colsd td {
+  overflow-wrap: anywhere;
+}
+
+.heartland-table-region {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.heartland-table-region:focus-visible {
+  outline: 2px solid #205c4b;
+  outline-offset: 2px;
+}

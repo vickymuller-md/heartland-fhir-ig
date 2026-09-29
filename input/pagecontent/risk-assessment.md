@@ -1,8 +1,8 @@
 ### Risk Assessment Workflow
 
-The HEARTLAND risk score stratifies HF patients at discharge into three tiers using ten binary inputs.
+This draft represents a proposed, unvalidated heuristic with ten weighted criteria, 0–18 points and three qualitative tiers. It is an educational implementation-support representation, not a patient-care instruction or outcome prediction.
 
-#### Inputs (HEARTLAND v3.2 Risk Score)
+#### Inputs (historical score definition retained for compatibility)
 
 | linkId | Item text | Points |
 |-|-|-|
@@ -20,7 +20,7 @@ The HEARTLAND risk score stratifies HF patients at discharge into three tiers us
 
 #### Tier Cutoffs
 
-| Total score | Tier | Recommended bundle |
+| Total score | Tier | Historical heuristic label, not a prescription |
 |-|-|-|
 | 0-4 | Low | Standard monitoring |
 | 5-8 | Moderate | Enhanced monitoring bundle |
@@ -28,20 +28,22 @@ The HEARTLAND risk score stratifies HF patients at discharge into three tiers us
 
 #### FHIR Workflow
 
-1. **Capture inputs** as a [`HeartlandQuestionnaireResponse`](StructureDefinition-heartland-questionnaire-response.html) instance referencing the [`HeartlandRiskInputQuestionnaire`](Questionnaire-heartland-risk-input-questionnaire.html) canonical URL.
-2. **Compute total score** by summing the point values of items answered `true`.
+1. **Capture complete inputs** using [`HeartlandRiskInputResponse`](StructureDefinition-heartland-risk-input-response.html), referencing [`HeartlandRiskInputQuestionnaire`](Questionnaire-heartland-risk-input-questionnaire.html) with version `|0.3.0`. This specialized profile requires all ten unique link IDs in Questionnaire order, each with exactly one actual Boolean value. Nested, missing, extra and duplicate items are rejected. Status must be completed or amended; this is not clinical approval.
+2. **Interpret weights by link ID**, using each item's [`HeartlandRiskTruePoints`](StructureDefinition-heartland-risk-true-points.html) extension. Explicit `true` contributes the stated weight; explicit `false` contributes zero. Missing or unknown is not false. A `_valueBoolean` containing only an absent-data extension is not an answer that can be scored. The extension allows exactly one weight, between 1 and 3, per Boolean item. These are data constraints, not an automated clinical adjudication.
 3. **Map score to tier** using the cutoff table above.
 4. **Create a [`HeartlandRiskAssessment`](StructureDefinition-heartland-risk-assessment.html)** with:
-   - `prediction.qualitativeRisk` bound to the resulting [`HeartlandRiskTier`](CodeSystem-heartland-risk-tier.html) code (`low` | `moderate` | `high`).
+   - `prediction.qualitativeRisk` bound to the resulting [`HeartlandRiskTier`](CodeSystem-heartland-risk-tier.html) code: `low`, `moderate` or `high`.
    - the [`heartland-risk-score-total`](StructureDefinition-heartland-risk-score-total.html) extension on `prediction` carrying the integer total (0-18).
-   - `basis` referencing the `HeartlandQuestionnaireResponse`.
+   - `basis` referencing the complete response, with separately checked subject and score consistency.
    - `method.text` exactly `"HEARTLAND Protocol v3.2 Risk Score"`.
 
 #### Where the Point Total Goes
 
 `prediction.probability[x]` is prohibited by the profile. FHIR R4 defines that element as the likelihood of a specified outcome, expressed as a percentage; the HEARTLAND total is a count of heuristic points, and writing it there would publish "11 points" as "11% chance of an event". The tier is the canonical result and lives in `prediction.qualitativeRisk`; the total lives in the `heartland-risk-score-total` extension.
 
-Implementations that already carry the total on an `Observation` — for example a generator that references the Observation from `basis` instead of populating the extension — should code that Observation with the [`HeartlandRiskScore`](CodeSystem-heartland-risk-score.html) code system (`https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score`), using code `heartland-risk-score` with `valueInteger` for the total and, where a component repeats the tier, code `heartland-risk-tier` with a `HeartlandRiskTier` coding. Both representations are conformant; neither expresses a probability.
+Legacy `Observation` and generic `QuestionnaireResponse` references remain allowed by `RiskAssessment.basis` for compatibility. An Observation representation uses the [`HeartlandRiskScore`](CodeSystem-heartland-risk-score.html) code system, code `heartland-risk-score`, and a point total rather than a probability. A reference alone does not validate its target, confirm subject identity, recompute the total or prove conformance of an entire Bundle. Only the specialized response profile defines the complete Boolean capture contract; it does not automatically validate a separate RiskAssessment's calculation.
+
+The method text `HEARTLAND Protocol v3.2 Risk Score` is retained as a compatibility identifier. It is not a statement that the candidate IG or current Toolkit has version 3.2. Historical resources are not rewritten.
 
 #### Patient Extensions
 
@@ -52,9 +54,11 @@ Two HEARTLAND-specific Patient extensions surface the score's social determinant
 
 Use the [`HeartlandPatient`](StructureDefinition-heartland-patient.html) profile to bundle both.
 
+The [`heartland-synthetic-county-code`](StructureDefinition-heartland-synthetic-county-code.html) extension belongs on `Patient.address` and carries `valueCoding` with system `https://fhir.heartlandprotocol.org/sid/synthetic-county-code` and a required actual code. Preserve the opaque code; it is not an ANSI/FIPS county GEOID, postal code or evidence of real residence. The extension also applies to unprofiled synthetic Patient resources; its definition does not certify the rest of an export.
+
 #### Worked Example
 
-[`PatientExampleRural`](Patient-PatientExampleRural.html) is a 78-year-old female in rural Montana, 87 miles from the nearest cardiologist, living alone.
+[`PatientExampleRural`](Patient-PatientExampleRural.html) is a synthetic example with an illustrative birth date, Montana state label, distance of 87 miles and limited support. The data do not identify a real patient or establish residence in a real county.
 
 [`QuestionnaireResponseExampleRiskInputs`](QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html) records six of ten items as `true`:
 
@@ -65,10 +69,10 @@ Use the [`HeartlandPatient`](StructureDefinition-heartland-patient.html) profile
 - distance-far (+1)
 - social-support (+1)
 
-Total = **11 points** -> **High Risk** tier -> **Intensive monitoring bundle**.
+Total = **11 points** -> **High Risk** heuristic tier. No clinical action, notification or outcome is inferred.
 
 [`RiskAssessmentExampleHigh`](RiskAssessment-RiskAssessmentExampleHigh.html) records this result and references the questionnaire response as basis.
 
 #### Evidence Note
 
-The HEARTLAND Risk Score is labeled `pragmatic` per the [`HeartlandEvidenceLevel`](CodeSystem-heartland-evidence-level.html) code system: developed for clinical utility without formal external statistical validation. It is intended as a triage tool to assign monitoring intensity, not as a survival predictor like MAGGIC. Programs using HEARTLAND should consider concurrent validation in their local population.
+The score's `pragmatic` label identifies a proposed heuristic pending validation, not established clinical utility. This guide's tests concern data representation and constraints. They do not establish discrimination, calibration, safety, clinical effectiveness or suitability for patient care.

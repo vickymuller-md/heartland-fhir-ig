@@ -1,7 +1,7 @@
 Instance: ObservationExampleWeightRedFlag
 InstanceOf: HeartlandRemoteMonitoringObservation
-Title: "Example: Body Weight Observation with Red-Flag Threshold"
-Description: "Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes a configurable program default rather than a protocol rule (>=0.9 kg in 24 hours triggers clinician outreach per the human filter principle)."
+Title: "Example: Synthetic Body Weight Observation"
+Description: "Single synthetic body-mass reading. Historical resource ID retained for compatibility; this example does not establish a weight change, alert, delivery, or clinical response. A rate-of-change threshold is not a numeric reference range for body mass."
 Usage: #example
 
 * status = #final
@@ -14,8 +14,4 @@ Usage: #example
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #kg
 
-* referenceRange[0].high.value = 0.9
-* referenceRange[0].high.unit = "kg/d"
-* referenceRange[0].high.system = "http://unitsofmeasure.org"
-* referenceRange[0].high.code = #kg/d
-* referenceRange[0].text = "Configurable program default, not a HEARTLAND Protocol threshold: weight gain >=0.9 kg (~2 lb) in 24 hours triggers clinician telephone assessment before ED referral."
+* note[0].text = "This single synthetic reading does not establish a change over time. Compare dated source measurements in compatible units under a separately governed clinical policy; no alert threshold or clinical action is asserted here."

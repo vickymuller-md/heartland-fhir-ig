@@ -22,3 +22,6 @@ Usage: #example
 * address[0].state = "MT"
 * address[0].country = "US"
 * address[0].use = #home
+* address[0].extension[syntheticCountyCode].valueCoding.system = "https://fhir.heartlandprotocol.org/sid/synthetic-county-code"
+* address[0].extension[syntheticCountyCode].valueCoding.code = #synthetic-example-001
+* address[0].extension[syntheticCountyCode].valueCoding.display = "Synthetic county code (not an ANSI/FIPS county GEOID)"

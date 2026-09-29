@@ -1,49 +1,28 @@
-### Background — Why HEARTLAND
+### Background and Evidence Boundary
 
-#### The Rural Heart Failure Gap
+HEARTLAND proposes an implementation framework for primary care-led heart-failure workflows in rural and resource-limited settings. This guide explores how selected concepts can be represented as FHIR R4 resources.
 
-Heart failure (HF) affects approximately 6.7 million US adults, with rural populations bearing a disproportionate burden. Patients living in rural counties face:
+The purpose of the IG is technical: explicit data structures, named codes, reproducible examples and testable constraints. It does not establish that the framework improves clinical outcomes, that a delivery model is equivalent to another, or that a vendor has implemented the guide.
 
-- **Distance:** Mean distance to cardiology care reaches **87 miles** in counties without a cardiologist, compared to 16 miles in counties with one.
-- **Mortality:** One-year mortality after HF hospitalization is approximately **21% in rural HF patients** versus 17% in urban — a gap that has widened over the past decade.
-- **Readmission:** **23% 30-day readmission rates** persist in rural HF cohorts despite national quality improvement programs.
-- **Workforce:** Critical Access Hospitals frequently operate with **one to two nurses** and no on-site cardiologist, pharmacist, or dedicated HF program.
-- **GDMT optimization:** Fewer than 1% of US HF patients simultaneously achieve target doses of all four guideline-directed medical therapy (GDMT) classes — and the proportion is even lower in rural settings.
+#### What the candidate adds
 
-#### The Implementation Gap
+Candidate 0.3.0 defines an opaque synthetic county identifier and explicit true-answer weights for the existing ten-criterion heuristic. A specialized response profile distinguishes a complete Boolean response from an unanswered or unknown item. Neither change validates the clinical heuristic or resolves missing clinical information.
 
-> No published implementation protocol provides a comprehensive, operational framework for primary care-led HF management specifically designed for rural and resource-limited settings in the United States.
+Weights, cutoffs, existing codes and the historical method label are retained. The method label references the historical score definition, not the candidate guide's release or the latest Toolkit version.
 
-Existing tools fill adjacent but distinct roles:
+#### Resources, staffing and clinical decisions
 
-- **Get With The Guidelines-HF (GWTG-HF)** — quality benchmarking platform; not an operational protocol.
-- **ESC-HF-LT** — European registry; not designed for US rural workflows.
-- **MAGGIC, GWTG-HF Risk Score, SHFM** — risk scores that omit distance-to-care and social support despite robust evidence of prognostic relevance.
+Facility resources and communication methods can be represented for implementation planning. They must not be interpreted as a machine-generated prescription, a reason to reduce required clinical care, or proof that a proposed workflow has been completed. Resource presence does not prove contact, comprehension, delivery or clinician review.
 
-HEARTLAND closes this gap with a tiered protocol explicitly designed around the realities of low-resource US care delivery.
+The existing facility and care-plan artifacts require further alignment with the Toolkit V3.4 candidate. Task, order and provenance coverage for newer app workflows is not yet complete. These boundaries are described on the [implementation page](implementation.html).
 
-#### Three Pillars
+#### Evidence and publication layers
 
-**1. Tiered Implementation.** Three facility tiers (Minimal / Standard / Advanced) match protocol intensity to available staffing and technology. A Critical Access Hospital with 1-2 nurses can begin at Tier 1 with realistic targets; a regional referral center can operate Tier 3 with rapid-sequence GDMT and full RPM.
+The published protocol article, versioned Toolkit, IG software and technical report are separate artifacts. Peer review of an article is not peer review or clinical validation of every software release.
 
-**2. Two Monitoring Tracks.** Track A (digital, app-based) and Track B (analog, telephone) follow identical clinical algorithms. The Hozho Trial validated that voice telephone optimization is not a fallback but a primary effective intervention, achieving substantial absolute increases in GDMT class addition.
+- Article: Muller Ferreira V. *HEARTLAND Protocol: An Implementation Framework for Primary Care-Led Heart Failure Management in Rural Settings.* Cureus. 2026. [10.7759/cureus.104817](https://doi.org/10.7759/cureus.104817).
+- Published Toolkit V3.3: [10.5281/zenodo.19101219](https://doi.org/10.5281/zenodo.19101219).
+- Historical IG software v0.1.1: [10.5281/zenodo.19634998](https://doi.org/10.5281/zenodo.19634998).
+- Technical report version 1.0: [10.5281/zenodo.22137122](https://doi.org/10.5281/zenodo.22137122).
 
-**3. Pragmatic Risk Stratification.** The HEARTLAND 10-input risk score (0-18 points) explicitly includes distance-to-cardiology and limited social support — variables omitted from MAGGIC, GWTG-HF, and SHFM despite a 3.74-fold mortality increase associated with perceived social isolation in HF cohorts.
-
-#### Evidence Levels
-
-Recommendations are labeled to help clinicians calibrate confidence:
-
-- **Established** — strong guideline support (e.g., SGLT2i for all HF phenotypes per 2022 AHA/ACC/HFSA guideline).
-- **Emerging** — recent trials not yet fully incorporated into guidelines (e.g., finerenone for HFpEF per FINEARTS-HF).
-- **Pragmatic** — tools developed for clinical utility without formal statistical validation (e.g., the HEARTLAND Risk Score itself).
-
-#### Operational Principles
-
-- **Generic Bridge.** Generic ACE-I/ARB, beta-blocker, and spironolactone cost approximately $15/month. Generic therapy is superior to no therapy. Never delay treatment while waiting for paperwork.
-- **Human Filter.** All non-emergency monitoring alerts pass through licensed clinician telephone assessment before emergency department referral. Avoids false-positive cascades from raw device alerts.
-- **Task-Shifting.** Clinical decisions remain with licensed clinicians; data collection and education delivery distribute across available workforce (RN/MA, family caregivers, IVR systems).
-
-#### Citation
-
-HEARTLAND Protocol v3.2. *Cureus*, 2026. Zenodo DOI 10.5281/zenodo.18566403.
+No new software archive is implied by a successful local build. All examples are synthetic and for educational implementation-support only.

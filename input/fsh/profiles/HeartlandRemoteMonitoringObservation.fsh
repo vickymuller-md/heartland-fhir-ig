@@ -2,11 +2,11 @@ Profile: HeartlandRemoteMonitoringObservation
 Parent: Observation
 Id: heartland-remote-monitoring-observation
 Title: "HEARTLAND Remote Monitoring Observation"
-Description: "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d, and SpO2 <90% on room air, all configurable per program. Systolic BP <90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral."
+Description: "Draft representation of body weight, blood pressure, or oxygen saturation. This profile does not encode or validate a clinical alert algorithm. A body-mass observation must not use a rate-of-change threshold as its numeric reference range. Time-window comparisons need dated source observations, matching units, and a separately governed clinical policy. Synthetic examples do not establish alert delivery, clinical assessment, or clinical outcomes."
 * ^url = "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"
-* ^version = "0.2.0"
-* ^status = #active
-* ^experimental = false
+* ^version = "0.3.0"
+* ^status = #draft
+* ^experimental = true
 * ^publisher = "Vicky Muller Ferreira, MD"
 
 * status 1..1 MS

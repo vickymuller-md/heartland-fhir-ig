@@ -5,10 +5,10 @@ Description: "Three boolean items derived from HEARTLAND Protocol v3.2 Table 4 (
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-patient-track-questionnaire"
-* version = "0.2.0"
+* version = "0.3.0"
 * name = "HeartlandPatientTrackQuestionnaire"
-* status = #active
-* experimental = false
+* status = #draft
+* experimental = true
 * publisher = "Vicky Muller Ferreira, MD"
 * date = "2026-04-16"
 * description = "Patient-level intake form to assign Track A (digital) vs Track B (analog) remote monitoring per HEARTLAND v3.2 Table 4."

@@ -3,9 +3,9 @@ Id: heartland-implementation-tier
 Title: "HEARTLAND Implementation Tier"
 Description: "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."
 * ^url = "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"
-* ^version = "0.2.0"
-* ^status = #active
-* ^experimental = false
+* ^version = "0.3.0"
+* ^status = #draft
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^publisher = "Vicky Muller Ferreira, MD"

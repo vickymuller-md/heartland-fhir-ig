@@ -5,10 +5,10 @@ Description: "Five categorical items derived from HEARTLAND Protocol v3.2 Table 
 Usage: #definition
 
 * url = "https://fhir.heartlandprotocol.org/Questionnaire/heartland-facility-tier-questionnaire"
-* version = "0.2.0"
+* version = "0.3.0"
 * name = "HeartlandFacilityTierQuestionnaire"
-* status = #active
-* experimental = false
+* status = #draft
+* experimental = true
 * publisher = "Vicky Muller Ferreira, MD"
 * date = "2026-04-16"
 * description = "Facility self-assessment for HEARTLAND implementation tier (1/2/3). Qualitative scoring; see narrative for tier mapping."

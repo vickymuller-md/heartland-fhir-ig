@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Masthead, Colophon } from "@heartland/ui";
 
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -56,7 +55,7 @@ export default function Home() {
       <OpenScience />
       <Colophon
         currentSite="fhir"
-        description="An HL7 FHIR R4 Implementation Guide that makes the peer-reviewed HEARTLAND Protocol implementable inside any US EHR. IG narrative licensed CC-BY 4.0; build scripts MIT."
+        description="Draft FHIR R4 structures and synthetic examples for educational implementation-support. Clinical validation and vendor interoperability are not established. Narrative CC-BY 4.0; tooling MIT."
         extraBlocks={[
           {
             title: "IG Artifacts",
@@ -85,11 +84,11 @@ function Hero() {
           <div className="md:col-span-8">
             <p className="inline-flex items-center gap-2 rounded-full border border-grid bg-panel px-3.5 py-1.5 font-editorial text-[12px] tracking-tight text-cool/80">
               <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden />
-              FHIR R4 · v0.2.0 draft · CC&#8209;BY 4.0
+              FHIR R4 · v0.3.0 draft · CC&#8209;BY 4.0
             </p>
 
             <h1 className="mt-7 text-[clamp(2.4rem,5.6vw,4.75rem)] font-editorial font-semibold leading-[1.04] tracking-[-0.025em] text-cool">
-              Interoperability for heart failure care{" "}
+              Structured data for heart failure care{" "}
               <span className="font-display italic font-normal text-alert">
                 where there&rsquo;s
               </span>{" "}
@@ -97,10 +96,10 @@ function Hero() {
             </h1>
 
             <p className="mt-7 max-w-2xl font-editorial text-[17px] leading-[1.65] text-cool/75 md:text-[18px]">
-              An HL7 FHIR R4 Implementation Guide that makes the peer-reviewed
-              HEARTLAND Protocol implementable inside any US EHR. Profiles for
-              risk assessment, care plans, and remote monitoring &mdash; bound
-              to LOINC, layered on US Core, ready for vendor pilots.
+              A draft FHIR R4 specification for structured HEARTLAND examples.
+              Explicit risk-input weights, complete-response checks, and synthetic
+              identifiers support technical evaluation. Vendor interoperability
+              and clinical validation are not established.
             </p>
 
             <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
@@ -130,9 +129,9 @@ function Hero() {
             </div>
 
             <p className="mt-12 max-w-xl font-editorial text-[12.5px] leading-relaxed text-stone">
-              For licensed clinicians and EHR implementers. Not a medical
-              device, not FDA-cleared, not HIPAA-certified. Examples are
-              synthetic; no PHI is included.
+              For professional educational use, not direct patient care.
+              Examples are synthetic. Do not enter real patient information.
+              Candidate 0.3.0 is separate from historical software archives.
             </p>
           </div>
 
@@ -193,15 +192,15 @@ function WhyExists() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
-          <StatCard value="86%" heading="of rural counties" note="have no practicing cardiologist." />
-          <StatCard value="+53%" heading="excess HF mortality" note="in rural communities versus urban." accent />
-          <StatCard value="< 1%" heading="of patients" note="reach all four GDMT therapeutic targets." />
+          <StatCard value="10" heading="weighted criteria" note="Explicit true-answer weights; missing is not false." />
+          <StatCard value="0–18" heading="heuristic points" note="A proposed framework pending validation, not an outcome probability." accent />
+          <StatCard value="R4" heading="FHIR 4.0.1" note="Draft profiles and examples for reproducible technical evaluation." />
         </div>
 
         <p className="mx-auto mt-16 max-w-2xl text-center font-editorial text-[15.5px] leading-relaxed text-cool/75">
-          GWTG-HF and ESC-HF-LT are registries. MAGGIC and SHFM are prognostic
-          calculators. None ships an EHR-implementable specification of the
-          rural HF workflow. <span className="text-cool">This IG does.</span>
+          A structured resource is only one part of an implementation.
+          Compilation, terminology checks, cross-resource consistency and
+          external EHR testing are separate checks. None proves clinical benefit.
         </p>
 
         <div className="mt-20 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
@@ -274,7 +273,7 @@ type ModuleEntry = {
 const MODULES: ModuleEntry[] = [
   {
     title: "Risk stratification",
-    body: "Ten-variable HEARTLAND score including distance to cardiology and social support — variables MAGGIC and SHFM omit.",
+    body: "Ten weighted criteria, explicit true-answer weights and a complete Boolean response profile; missing inputs are not zero.",
     href: "/ig/StructureDefinition-heartland-risk-assessment.html",
     artifact: "RiskAssessment + Questionnaire",
     glyph: "M 4 18 L 9 9 L 13 14 L 17 5 L 20 11 M 4 21 H 20",
@@ -282,7 +281,7 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "GDMT optimization",
-    body: "Four pillars (ARNI/ACEi/ARB · BB · MRA · SGLT2i) with tier-specific cadence encoded as CarePlan activities.",
+    body: "Draft planned-activity representation. Historical care-plan content still requires full Toolkit V3.4 alignment.",
     href: "/ig/StructureDefinition-heartland-careplan.html",
     artifact: "CarePlan profile",
     glyph: "M 8 3 H 16 V 9 L 21 14 V 21 H 3 V 14 L 8 9 Z M 12 14 V 18",
@@ -290,7 +289,7 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Telephone titration",
-    body: "Track A (digital, app-based) vs Track B (analog, telephone). Identical clinical algorithms; choice reflects patient access.",
+    body: "Digital and analog track codes record communication context; they do not prove contact, delivery or equivalent outcomes.",
     href: "/ig/CodeSystem-heartland-monitoring-track.html",
     artifact: "MonitoringTrack code system",
     glyph: "M 5 5 C 5 16 8 19 19 19 V 15 L 15 14 L 13 16 C 11 15 9 13 8 11 L 10 9 L 9 5 Z",
@@ -298,7 +297,7 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Discharge transitions",
-    body: "Three condensed (Tier 1) or eight AHA-aligned (Tier 2/3) education domains as CarePlan activities.",
+    body: "Historical care-plan examples, not the complete exam, education, communication or post-closure lifecycle.",
     href: "/ig/StructureDefinition-heartland-careplan.html",
     artifact: "CarePlan activity catalog",
     glyph: "M 4 4 H 16 L 20 8 V 20 H 4 Z M 16 4 V 8 H 20 M 8 13 H 16 M 8 17 H 14",
@@ -306,7 +305,7 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Remote monitoring",
-    body: "Weight, BP, SpO2 with red-flag thresholds via referenceRange. Human filter before ED escalation.",
+    body: "Draft body-weight, BP and oxygen-saturation observations. A single reading does not prove a change, alert or clinical response.",
     href: "/ig/StructureDefinition-heartland-remote-monitoring-observation.html",
     artifact: "Observation profile + LOINC",
     glyph: "M 3 12 H 6 L 8 7 L 11 17 L 14 9 L 16 12 H 21",
@@ -314,9 +313,9 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Comorbidity context",
-    body: "Patient profile carrying distance-to-cardiology and social-support extensions surfaced by the risk score.",
+    body: "Patient context plus an opaque synthetic county identifier; the identifier is not a real county GEOID.",
     href: "/ig/StructureDefinition-heartland-patient.html",
-    artifact: "Patient profile + 2 extensions",
+    artifact: "Patient and synthetic identifier",
     glyph: "M 12 3 C 16 7 19 11 19 14 a 7 7 0 0 1 -14 0 C 5 11 8 7 12 3 Z",
     available: true,
   },
@@ -330,7 +329,7 @@ const MODULES: ModuleEntry[] = [
   },
   {
     title: "Implementation tier",
-    body: "Facility self-assessment Questionnaire that returns Tier 1 / 2 / 3 with a tier-shaped CarePlan activity set.",
+    body: "Facility capacity questionnaire and tier codes; no validated automatic assignment or permission to reduce clinical requirements.",
     href: "/ig/Questionnaire-heartland-facility-tier-questionnaire.html",
     artifact: "FacilityTierQuestionnaire + ext.",
     glyph: "M 4 20 V 12 H 9 V 20 Z M 9 20 V 8 H 15 V 20 Z M 15 20 V 4 H 20 V 20 Z",
@@ -350,14 +349,14 @@ function Modules() {
             <h2 className="mt-5 text-[clamp(2rem,4vw,3.25rem)] font-editorial font-semibold leading-[1.05] tracking-[-0.02em] text-cool">
               Eight protocol modules,{" "}
               <span className="font-display italic font-normal text-cool/70">
-                twenty-seven FHIR resources.
+                selected draft FHIR structures.
               </span>
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
-              Each module of the published HEARTLAND Protocol maps to one or
-              more FHIR R4 conformance resources. Profiles, extensions, value
-              sets, code systems, questionnaires &mdash; all generated from
-              FSH source via SUSHI and the HL7 IG Publisher.
+              Six profiles, seven extensions, five code systems, five value sets,
+              three questionnaires and five synthetic examples, plus the IG
+              manifest. Newer workflow coverage remains incomplete; the cards
+              distinguish existing structures from planned work.
             </p>
           </div>
           <div className="md:col-span-7" />
@@ -398,7 +397,7 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
             "h-1.5 w-1.5 rounded-full " + (m.available ? "bg-signal" : "bg-stone")
           }
         />
-        {m.available ? "Defined in v0.2.0" : "Coming in Phase II"}
+        {m.available ? "Draft structure in v0.3.0" : "Not yet represented"}
       </p>
     </>
   );
@@ -423,10 +422,10 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
 /* ────────────────────────────────────────────────────────────────────────── */
 
 const STATUS_ROWS: Array<{ stream: string; state: string; tone: "ok" | "draft" | "pending" }> = [
-  { stream: "Cureus manuscript", state: "Published; peer-review response in progress", tone: "ok" },
-  { stream: "HEARTLAND Protocol", state: "V3.3 — authoritative", tone: "ok" },
-  { stream: "FHIR IG", state: "v0.2.0 — initial draft, ready for vendor review", tone: "draft" },
-  { stream: "Zenodo archives", state: "Software + technical report published", tone: "ok" },
+  { stream: "Cureus article", state: "Published article; separate from software validation", tone: "ok" },
+  { stream: "HEARTLAND Toolkit", state: "V3.3 published; V3.4 release candidate", tone: "draft" },
+  { stream: "FHIR IG", state: "v0.3.0 candidate — draft and experimental", tone: "draft" },
+  { stream: "Zenodo archives", state: "Historical software v0.1.1 and report 1.0; candidate not archived", tone: "draft" },
   { stream: "Pilot site EHR validation", state: "Phase 3 — not yet started", tone: "pending" },
 ];
 
@@ -446,9 +445,9 @@ function Status() {
               </span>
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
-              v0.2.0 is a draft release intended for vendor review and pilot
-              site evaluation. Cleared SUSHI compilation and HL7 IG Publisher
-              QA with zero critical errors.
+              v0.3.0 is a technical candidate, not an assertion of deployment
+              readiness or clinical approval. Toolkit alignment, newer workflow
+              mappings and external EHR validation remain separate checks.
             </p>
           </div>
           <div className="md:col-span-7">
@@ -508,9 +507,9 @@ function OpenScience() {
               <span className="font-display italic font-normal text-cool/70">every layer.</span>
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
-              The protocol, this IG, the companion app, and three systematic
-              reviews share an open-science footprint. Every artifact has a
-              persistent identifier.
+              The article, Toolkit, historical software and technical report
+              have different versions and identifiers. These links do not
+              identify or validate every later local software change.
             </p>
           </div>
 
@@ -519,13 +518,13 @@ function OpenScience() {
               kind="Protocol"
               label="Cureus (peer-reviewed)"
               href="https://doi.org/10.7759/cureus.104817"
-              meta="indexed PubMed · PMC · Scopus · Google Scholar"
+              meta="Article DOI 10.7759/cureus.104817; distinct from software"
             />
             <DepositRow
               kind="Protocol"
               label="Zenodo"
               href="https://doi.org/10.5281/zenodo.19101219"
-              meta="DOI 10.5281/zenodo.19101219"
+              meta="Published Toolkit V3.3 · DOI 10.5281/zenodo.19101219"
             />
             <DepositRow
               kind="Protocol"
@@ -537,7 +536,7 @@ function OpenScience() {
               kind="FHIR IG"
               label="GitHub source"
               href="https://github.com/vickymuller-md/heartland-fhir-ig"
-              meta="vickymuller-md/heartland-fhir-ig · v0.2.0"
+              meta="vickymuller-md/heartland-fhir-ig · v0.3.0"
             />
             <DepositRow
               kind="FHIR IG"
@@ -549,7 +548,7 @@ function OpenScience() {
               kind="FHIR IG"
               label="Zenodo software archive"
               href="https://doi.org/10.5281/zenodo.19634998"
-              meta="DOI 10.5281/zenodo.19634998"
+              meta="Historical software v0.1.1 · not candidate 0.3.0"
             />
             <DepositRow
               kind="Technical report"
@@ -588,7 +587,7 @@ function DepositRow({
     <Wrapper
       {...(!pending && { href, target: "_blank", rel: "noopener noreferrer" })}
       className={
-        "group flex items-center gap-4 rounded-2xl border border-grid bg-panel px-6 py-5 transition-colors " +
+        "group flex flex-wrap items-center gap-4 rounded-2xl border border-grid bg-panel px-6 py-5 transition-colors " +
         (pending ? "opacity-70" : "hover:border-cool/40")
       }
       style={{ textDecoration: "none" }}
@@ -596,7 +595,7 @@ function DepositRow({
       <span className="font-editorial text-[11.5px] uppercase tracking-[0.16em] text-alert min-w-[88px]">
         {kind}
       </span>
-      <span className="flex-1">
+      <span className="min-w-0 flex-1 basis-40 break-words [overflow-wrap:anywhere]">
         <span className="block font-editorial text-[15px] font-medium text-cool group-hover:text-alert">
           {label}
         </span>

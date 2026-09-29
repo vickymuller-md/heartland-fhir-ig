@@ -1,81 +1,42 @@
-### Implementation Tiers and Monitoring Tracks
+### Implementation Structures and Limits
 
-HEARTLAND assigns two orthogonal designations: a **facility implementation tier** (driven by site resources) and a **patient monitoring track** (driven by patient access to technology).
+This page describes the available draft structures, not a complete or approved clinical workflow. The existing facility questionnaire and care-plan example preserve historical content pending full Toolkit V3.4 alignment.
 
-#### Facility Implementation Tiers
+#### Facility tier
 
-| Component | Tier 1 - Minimal | Tier 2 - Standard | Tier 3 - Advanced |
-|-|-|-|-|
-| Setting | Critical Access Hospital, 1-2 nurses | FQHC, community hospital | Regional referral center |
-| Risk stratification | Score at discharge | Full CKM + Score | Full CKM + Score |
-| GDMT | >=2 classes, prioritize SGLT2i + beta-blocker | Target all 4 classes in 14 days | Rapid-sequence initiation |
-| Monitoring | Track B (Analog) | Dual-track A/B | Track A primary + RPM |
-| Discharge education | Condensed teach-back (3 domains) | Full teach-back (8 domains) | Full teach-back |
-| Follow-up | 48-72 hour call, 14-day visit | 48-hour call, 7-day visit, weekly x4 | 48-hour call, 7-day visit, frequent |
-| Staffing | RN/MA + MD | RN champion, MA, PharmD | Full multidisciplinary team |
-| CHW program | Alternative/Family | High-risk only | Full integration |
-| Financial navigation | Generic Bridge | PAP pursuit + Generic Bridge | PAP pursuit + Generic Bridge |
-| Quality metrics | Contact rates + basic GDMT initiation | Dose optimization + readmission reduction | Dose optimization + readmission reduction |
+The [facility tier extension](StructureDefinition-heartland-facility-tier.html) can appear on Location, Organization or CarePlan. The [code system](CodeSystem-heartland-implementation-tier.html) retains `tier-1-minimal`, `tier-2-standard` and `tier-3-advanced`.
 
-Facility tier is captured via the [`heartland-facility-tier`](StructureDefinition-heartland-facility-tier.html) extension on `Location`, `Organization`, or `CarePlan`. Tier values come from the [`HeartlandImplementationTier`](CodeSystem-heartland-implementation-tier.html) code system: `tier-1-minimal` | `tier-2-standard` | `tier-3-advanced`.
+The [self-assessment questionnaire](Questionnaire-heartland-facility-tier-questionnaire.html) records staffing, pharmacy, community-health-worker, technology and navigation capacity. It does not calculate a validated tier or establish clinical eligibility. Resource availability must not be used as a reason to lower clinical requirements.
 
-#### Facility Self-Assessment
+#### Monitoring track
 
-Use [`HeartlandFacilityTierQuestionnaire`](Questionnaire-heartland-facility-tier-questionnaire.html) to support tier assignment. Five categorical items cover staffing model, PharmD availability, CHW program, monitoring technology, and financial navigation capacity. Tier mapping is qualitative: predominance of `minimal` answers maps to Tier 1; `standard` to Tier 2; `advanced` to Tier 3. The source protocol does not provide a formal scored rubric; this questionnaire is an operational instrument derived from Table 2.
+The [monitoring track extension](StructureDefinition-heartland-monitoring-track-ext.html) represents `digital-track-a` or `analog-track-b`. The [track questionnaire](Questionnaire-heartland-patient-track-questionnaire.html) records technology access.
 
-#### Patient Monitoring Tracks
+No third hybrid code is defined. Do not transmit an invented code as though it were part of this value set. The representation does not establish equivalent outcomes, successful contact, or delivery of a monitoring intervention.
 
-Track A (digital) and Track B (analog) follow **identical clinical algorithms**, differing only in data collection method.
+#### Care plan
 
-| Aspect | Track A - Digital | Track B - Analog |
-|-|-|-|
-| Symptom tracking | App-based, structured | Voice telephone calls |
-| Devices | Bluetooth-enabled (scale, BP cuff, pulse oximeter) | Manual digital scale, BP cuff, paper diary |
-| Data transmission | Automated to clinician dashboard | Manual entry by RN/MA after telephone visit |
+[HeartlandCarePlan](StructureDefinition-heartland-careplan.html) can represent planned activities. The [historical Tier 2 example](CarePlan-CarePlanExampleTier2.html) is synthetic and illustrative; it is not a current prescribing schedule. The guide does not yet express the app's complete exam, communication, transfer, recovery and post-closure lifecycle.
 
-Track is captured via the [`heartland-monitoring-track-ext`](StructureDefinition-heartland-monitoring-track-ext.html) extension on `CarePlan`, with values from the [`HeartlandMonitoringTrack`](CodeSystem-heartland-monitoring-track.html) code system: `digital-track-a` | `analog-track-b`.
+Task, ServiceRequest and Provenance mappings, cross-resource consistency rules and full Toolkit V3.4 alignment remain release checks. A recorded plan is not evidence that an activity occurred.
 
-#### Patient Track Assignment
+#### Monitoring observations
 
-Use [`HeartlandPatientTrackQuestionnaire`](Questionnaire-heartland-patient-track-questionnaire.html) at intake. Decision logic from Table 4:
+[HeartlandRemoteMonitoringObservation](StructureDefinition-heartland-remote-monitoring-observation.html) represents readings using LOINC and UCUM where appropriate. It does not calculate an alert or prove that a clinician assessed it.
 
-- **Smartphone with reliable connectivity AND comfortable using apps** -> Track A
-- **Reliable telephone access only** -> Track B
-- **Smartphone without app comfort** -> Hybrid (clinical judgment)
+| Measurement | LOINC |
+|-|-|
+| Body weight | 29463-7 |
+| Systolic blood pressure | 8480-6 |
+| Diastolic blood pressure | 8462-4 |
+| Oxygen saturation | 59408-5 |
 
-The Hozho Trial validated Track B as a primary effective intervention, not a fallback. Patients without smartphones receive equivalent clinical benefit from telephone-based titration.
+A numeric reference range must concern the same measurement and compatible units as the observation. **Body mass in kg is not a rate of change in kg/day.** Time-window comparisons require dated source observations and a separately governed clinical policy; this guide does not introduce a threshold.
 
-#### Care Plan Structure
+Candidate 0.3.0 corrects the historical diastolic mapping to [LOINC 8462-4](https://loinc.org/8462-4). The previous code, [8481-4](https://loinc.org/8481-4), represents maximum systolic pressure over one hour. This is a terminology correction, not a change to a clinical threshold. Do not relabel existing observations without verifying the underlying measurement.
 
-The [`HeartlandCarePlan`](StructureDefinition-heartland-careplan.html) profile organizes activities across five domains:
+The [body-weight example](Observation-ObservationExampleWeightRedFlag.html) keeps its historical resource identifier for compatibility but now contains only a single synthetic reading. It does not establish a weight change or red flag.
 
-1. **GDMT initiation/titration** — class count and cadence per facility tier.
-2. **Remote monitoring schedule** — frequency aligned with risk tier and monitoring track.
-3. **Post-discharge follow-up** — call timing (48-72h vs 48h) and visit timing (14-day vs 7-day).
-4. **Discharge education** — 3 condensed domains (Tier 1) or 8 comprehensive domains (Tier 2/3).
-5. **Patient assistance navigation** — Generic Bridge and/or PAP pursuit.
+#### Human review and provenance
 
-See [`CarePlanExampleTier2`](CarePlan-CarePlanExampleTier2.html) for a complete worked example.
-
-#### Remote Monitoring Observations
-
-The [`HeartlandRemoteMonitoringObservation`](StructureDefinition-heartland-remote-monitoring-observation.html) profile constrains `Observation` for the four parameters captured by the basic monitoring kit (~$50-150):
-
-| Observation | LOINC | Default red-flag threshold |
-|-|-|-|
-| Body weight | 29463-7 | Gain >=2 lb (~0.9 kg)/24h or >=5 lb (~2.3 kg)/7d |
-| Systolic BP | 8480-6 | <90 mmHg |
-| Diastolic BP | 8481-4 | None defined |
-| Oxygen saturation | 59408-5 | <90% on room air |
-
-Thresholds are encoded via `Observation.referenceRange` with `referenceRange.text` describing the rule.
-
-The weight and oxygen saturation values above are **configurable program defaults, not HEARTLAND Protocol rules**: the protocol's own table uses different weight windows and a different resting SpO2 cutoff, so a program should set these from its copy of the protocol and treat the numbers here as a starting configuration. Programs operating at altitudes above 5,000 ft, for instance, may justify a lower SpO2 threshold. No diastolic threshold is stated because the protocol defines none; the value set still carries the LOINC code so diastolic readings can be exchanged.
-
-See [`ObservationExampleWeightRedFlag`](Observation-ObservationExampleWeightRedFlag.html) for a worked example.
-
-#### Human Filter
-
-> All non-emergency alerts pass through licensed clinician telephone assessment before emergency department referral.
-
-This principle prevents alert fatigue and false-positive ED cascades from raw device data. A single weight gain of 1.0 kg overnight does not auto-trigger ED transfer; it triggers a clinician call to assess the full clinical picture (intake, symptoms, recent diuretic adherence) before any escalation.
+Resource creation, a queue event, notification intent, provider acceptance, transport delivery and clinical resolution are distinct events. Do not infer one from another. This draft is not evidence that any real-world workflow or clinical review has occurred.
