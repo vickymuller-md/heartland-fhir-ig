@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/Observation/ObservationExampleWeightRedFlag> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ObservationExampleWeightRedFlag"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation" ;
+       fhir:index -1 ;
+       fhir:link <https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationExampleWeightRedFlag</b></p><a name=\"ObservationExampleWeightRedFlag\"> </a><a name=\"hcObservationExampleWeightRedFlag\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-heartland-remote-monitoring-observation.html\">HEARTLAND Remote Monitoring Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-PatientExampleRural.html\">Rural Patient Example  Female, DoB: 1947-06-15 ( https://fhir.heartlandprotocol.org/sid/example-mrn#EXAMPLE-001)</a></p><p><b>effective</b>: 2026-04-16 08:15:00-0500</p><p><b>value</b>: 79.4 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>note</b>: </p><blockquote><div><p>This single synthetic reading does not establish a change over time. Compare dated source measurements in compatible units under a separately governed clinical policy; no alert threshold or clinical action is asserted here.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:29463-7 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "29463-7" ] ;
+       fhir:Coding.display [ fhir:value "Body weight" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhir.heartlandprotocol.org/Patient/PatientExampleRural> ;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExampleRural" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-04-16T08:15:00-05:00"^^xsd:dateTime] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "79.4"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "kg" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "kg" ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index -1 ;
+     fhir:Annotation.text [ fhir:value "This single synthetic reading does not establish a change over time. Compare dated source measurements in compatible units under a separately governed clinical policy; no alert threshold or clinical action is asserted here." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/Observation/ObservationExampleWeightRedFlag.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

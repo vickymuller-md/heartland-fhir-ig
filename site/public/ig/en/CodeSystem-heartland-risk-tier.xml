@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="heartland-risk-tier"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem heartland-risk-tier</b></p><a name="heartland-risk-tier"> </a><a name="hcheartland-risk-tier"> </a><p>This case-sensitive code system <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">low<a name="heartland-risk-tier-low"> </a></td><td>Low Risk</td><td>Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2.</td></tr><tr><td style="white-space:nowrap">moderate<a name="heartland-risk-tier-moderate"> </a></td><td>Moderate Risk</td><td>Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2.</td></tr><tr><td style="white-space:nowrap">high<a name="heartland-risk-tier-high"> </a></td><td>High Risk</td><td>High Risk (&gt;=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2.</td></tr></table></div>
+  </text>
+  <url value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"/>
+  <version value="0.3.0"/>
+  <name value="HeartlandRiskTier"/>
+  <title value="HEARTLAND Risk Tier"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-09-29T19:00:36-04:00"/>
+  <publisher value="Vicky Muller Ferreira, MD"/>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Vicky Muller Ferreira, MD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="vickymuller@heartlandprotocol.org"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://heartlandprotocol.org"/>
+    </telecom>
+  </contact>
+  <description value="Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY 4.0"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="low"/>
+    <display value="Low Risk"/>
+    <definition value="Low Risk (0-4 points). Standard monitoring per HEARTLAND Protocol v3.2."/>
+  </concept>
+  <concept>
+    <code value="moderate"/>
+    <display value="Moderate Risk"/>
+    <definition value="Moderate Risk (5-8 points). Enhanced monitoring bundle per HEARTLAND Protocol v3.2."/>
+  </concept>
+  <concept>
+    <code value="high"/>
+    <display value="High Risk"/>
+    <definition value="High Risk (&gt;=9 points). Intensive monitoring bundle per HEARTLAND Protocol v3.2."/>
+  </concept>
+</CodeSystem>

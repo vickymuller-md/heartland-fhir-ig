@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "heartland-implementation-tier",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem heartland-implementation-tier</b></p><a name=\"heartland-implementation-tier\"> </a><a name=\"hcheartland-implementation-tier\"> </a><p>This case-sensitive code system <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">tier-1-minimal<a name=\"heartland-implementation-tier-tier-1-minimal\"> </a></td><td>Tier 1 - Minimal</td><td>Resource-constrained capacity. Adapt format, sequence and support; document gaps, named coverage, alternatives and escalation without omitting required care or relevant education.</td></tr><tr><td style=\"white-space:nowrap\">tier-2-standard<a name=\"heartland-implementation-tier-tier-2-standard\"> </a></td><td>Tier 2 - Standard</td><td>Intermediate implementation capacity with locally documented staffing, monitoring routes and navigation support. Capacity alone does not establish treatment sequence or deadlines.</td></tr><tr><td style=\"white-space:nowrap\">tier-3-advanced<a name=\"heartland-implementation-tier-tier-3-advanced\"> </a></td><td>Tier 3 - Advanced</td><td>Expanded implementation capacity, potentially including multidisciplinary and digital support. The label alone does not prove availability, coverage, patient access or better outcomes.</td></tr></table></div>"
+  },
+  "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
+  "version" : "0.3.0",
+  "name" : "HeartlandImplementationTier",
+  "title" : "HEARTLAND Implementation Tier",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-09-29T19:00:36-04:00",
+  "publisher" : "Vicky Muller Ferreira, MD",
+  "contact" : [{
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    },
+    {
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org"
+    }]
+  },
+  {
+    "name" : "Vicky Muller Ferreira, MD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "vickymuller@heartlandprotocol.org",
+      "use" : "work"
+    },
+    {
+      "system" : "url",
+      "value" : "https://heartlandprotocol.org"
+    }]
+  }],
+  "description" : "Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "CC-BY 4.0",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "tier-1-minimal",
+    "display" : "Tier 1 - Minimal",
+    "definition" : "Resource-constrained capacity. Adapt format, sequence and support; document gaps, named coverage, alternatives and escalation without omitting required care or relevant education."
+  },
+  {
+    "code" : "tier-2-standard",
+    "display" : "Tier 2 - Standard",
+    "definition" : "Intermediate implementation capacity with locally documented staffing, monitoring routes and navigation support. Capacity alone does not establish treatment sequence or deadlines."
+  },
+  {
+    "code" : "tier-3-advanced",
+    "display" : "Tier 3 - Advanced",
+    "definition" : "Expanded implementation capacity, potentially including multidisciplinary and digital support. The label alone does not prove availability, coverage, patient access or better outcomes."
+  }]
+}

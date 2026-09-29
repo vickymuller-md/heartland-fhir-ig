@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="heartland-implementation-tier"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem heartland-implementation-tier</b></p><a name="heartland-implementation-tier"> </a><a name="hcheartland-implementation-tier"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">tier-1-minimal<a name="heartland-implementation-tier-tier-1-minimal"> </a></td><td>Tier 1 - Minimal</td><td>Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation.</td></tr><tr><td style="white-space:nowrap">tier-2-standard<a name="heartland-implementation-tier-tier-2-standard"> </a></td><td>Tier 2 - Standard</td><td>Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days.</td></tr><tr><td style="white-space:nowrap">tier-3-advanced<a name="heartland-implementation-tier-tier-3-advanced"> </a></td><td>Tier 3 - Advanced</td><td>Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem heartland-implementation-tier</b></p><a name="heartland-implementation-tier"> </a><a name="hcheartland-implementation-tier"> </a><p>This case-sensitive code system <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">tier-1-minimal<a name="heartland-implementation-tier-tier-1-minimal"> </a></td><td>Tier 1 - Minimal</td><td>Resource-constrained capacity. Adapt format, sequence and support; document gaps, named coverage, alternatives and escalation without omitting required care or relevant education.</td></tr><tr><td style="white-space:nowrap">tier-2-standard<a name="heartland-implementation-tier-tier-2-standard"> </a></td><td>Tier 2 - Standard</td><td>Intermediate implementation capacity with locally documented staffing, monitoring routes and navigation support. Capacity alone does not establish treatment sequence or deadlines.</td></tr><tr><td style="white-space:nowrap">tier-3-advanced<a name="heartland-implementation-tier-tier-3-advanced"> </a></td><td>Tier 3 - Advanced</td><td>Expanded implementation capacity, potentially including multidisciplinary and digital support. The label alone does not prove availability, coverage, patient access or better outcomes.</td></tr></table></div>
   </text>
   <url value="https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="HeartlandImplementationTier"/>
   <title value="HEARTLAND Implementation Tier"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2026-09-17T14:11:14-04:00"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-09-29T19:00:36-04:00"/>
   <publisher value="Vicky Muller Ferreira, MD"/>
   <contact>
     <name value="Vicky Muller Ferreira, MD"/>
@@ -36,7 +36,7 @@
       <value value="https://heartlandprotocol.org"/>
     </telecom>
   </contact>
-  <description value="Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."/>
+  <description value="Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -50,16 +50,16 @@
   <concept>
     <code value="tier-1-minimal"/>
     <display value="Tier 1 - Minimal"/>
-    <definition value="Severely constrained settings, such as a small Critical Access Hospital with one to two nurses. Analog monitoring (Track B), condensed education domains, prioritized GDMT initiation."/>
+    <definition value="Resource-constrained capacity. Adapt format, sequence and support; document gaps, named coverage, alternatives and escalation without omitting required care or relevant education."/>
   </concept>
   <concept>
     <code value="tier-2-standard"/>
     <display value="Tier 2 - Standard"/>
-    <definition value="Moderate-resource settings, such as a Federally Qualified Health Center (FQHC) or community hospital. Dual-track monitoring (A/B), full education, target all GDMT classes within 14 days."/>
+    <definition value="Intermediate implementation capacity with locally documented staffing, monitoring routes and navigation support. Capacity alone does not establish treatment sequence or deadlines."/>
   </concept>
   <concept>
     <code value="tier-3-advanced"/>
     <display value="Tier 3 - Advanced"/>
-    <definition value="Well-resourced settings, such as a regional referral center. Track A primary with RPM, full multidisciplinary team, rapid-sequence GDMT initiation."/>
+    <definition value="Expanded implementation capacity, potentially including multidisciplinary and digital support. The label alone does not prove availability, coverage, patient access or better outcomes."/>
   </concept>
 </CodeSystem>

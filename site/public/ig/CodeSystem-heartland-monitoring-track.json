@@ -3,15 +3,15 @@
   "id" : "heartland-monitoring-track",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem heartland-monitoring-track</b></p><a name=\"heartland-monitoring-track\"> </a><a name=\"hcheartland-monitoring-track\"> </a><p>Este case-sensitive sistema de código <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">digital-track-a<a name=\"heartland-monitoring-track-digital-track-a\"> </a></td><td>Digital Track A</td><td>App-based symptom tracking, Bluetooth-enabled devices, automated data transmission.</td></tr><tr><td style=\"white-space:nowrap\">analog-track-b<a name=\"heartland-monitoring-track-analog-track-b\"> </a></td><td>Analog Track B</td><td>Voice telephone calls, paper symptom diaries, manual data entry by staff.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem heartland-monitoring-track</b></p><a name=\"heartland-monitoring-track\"> </a><a name=\"hcheartland-monitoring-track\"> </a><p>This case-sensitive code system <code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">digital-track-a<a name=\"heartland-monitoring-track-digital-track-a\"> </a></td><td>Digital Track A</td><td>A planned digital route, such as app-based entries. This code alone does not assert Bluetooth devices, automatic transmission or reliable connectivity.</td></tr><tr><td style=\"white-space:nowrap\">analog-track-b<a name=\"heartland-monitoring-track-analog-track-b\"> </a></td><td>Analog Track B</td><td>A planned analog route, such as telephone contact and a paper diary. This code alone does not assert telephone access, staff entry, successful contact or review.</td></tr></table></div>"
   },
   "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "HeartlandMonitoringTrack",
   "title" : "HEARTLAND Monitoring Track",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2026-09-17T14:11:14-04:00",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-09-29T19:00:36-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -36,7 +36,7 @@
       "value" : "https://heartlandprotocol.org"
     }]
   }],
-  "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method.",
+  "description" : "Documented monitoring routes with stable Track A and Track B codes. A route does not establish equivalent outcomes, successful contact, device availability or completed monitoring. Clinical requirements are not reduced by the route; access, preference and the supported local plan require separate documentation.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -50,11 +50,11 @@
   "concept" : [{
     "code" : "digital-track-a",
     "display" : "Digital Track A",
-    "definition" : "App-based symptom tracking, Bluetooth-enabled devices, automated data transmission."
+    "definition" : "A planned digital route, such as app-based entries. This code alone does not assert Bluetooth devices, automatic transmission or reliable connectivity."
   },
   {
     "code" : "analog-track-b",
     "display" : "Analog Track B",
-    "definition" : "Voice telephone calls, paper symptom diaries, manual data entry by staff."
+    "definition" : "A planned analog route, such as telephone contact and a paper diary. This code alone does not assert telephone access, staff entry, successful contact or review."
   }]
 }

@@ -78,6 +78,35 @@ Publisher 2.3.4 adds two internal annotations (`resource-information` and `imple
 
 ## Remaining integration boundary
 
+### Preparing the static website
+
+The child template also supplies a language-redirect override and a local resource finder. The pinned base's redirect returned before falling back to English for unsupported browser languages. The override preserves query and fragment; the finder sends no search terms to external services. Generated R4B conversions are outside this candidate's evaluated R4-only scope and are excluded from website downloads, including the offline archive.
+
+Use the verified SUSHI version explicitly, then run Publisher **locally** with its public target URL. Publisher 2.3.4's `-publish` option prepares local files; it is not `-go-publish` and does not upload them. It changes package metadata and the local package cache, so repeat the package validation and retain the new hash. In this mode Publisher normally requires the latest SUSHI; `-no-sushi` below skips only that automatic compiler invocation, after the pinned compiler has succeeded. It does not skip FHIR validation.
+
+```sh
+sushi .
+java -Duser.language=en -Duser.country=US -Xmx4g -jar input-cache/publisher-2.3.4.jar -ig . -no-sushi -tx https://tx.fhir.org/r4 -publish https://fhir.heartlandprotocol.org/ig
+python3 -m unittest discover -s tests -p 'test_prepare_publication.py'
+FHIR_IG_OUTPUT=output node --test tests/*.test.mjs
+```
+
+Preserve the raw output first. `tools/prepare_publication.py` uses Python 3.9+ standard libraries. All inventory, stage, receipt and backup paths below must be new, explicit locations outside the public tree:
+
+```sh
+python3 tools/prepare_publication.py inventory --inventory /absolute/evidence/inventory.json
+# Review the complete file inventory before proceeding.
+python3 tools/prepare_publication.py prepare --inventory /absolute/evidence/inventory.json --stage /absolute/evidence/stage --receipt /absolute/evidence/receipt.json
+# Review the receipt's exact additions, changes, removals, QA and hashes.
+python3 tools/prepare_publication.py apply --inventory /absolute/evidence/inventory.json --stage /absolute/evidence/stage --receipt /absolute/evidence/receipt.json --backup /absolute/evidence/prior-public
+```
+
+Preparation fixes only inventoried presentation contexts: the Publisher's local prefix before embedded CSS data images, local source-directory prefixes/paired anchors in QA diagnostics, and a non-rendered Inkscape export-path attribute in the upstream globe SVG. Diagnostic text, severity and counts remain intact; `qa.json` and every retained FHIR resource/package remain byte-identical to the raw regenerated build. Release banners are explicitly labeled **candidate**, not clinical approval or a completed release. The offline ZIP is deterministically rebuilt from the same prepared files and includes the QA reports; its canonical package matches the separate download byte-for-byte.
+
+The tool rejects changed inventories, symlinks, unknown file extensions, unsafe/duplicate archive entries, malformed/truncated archives, nonzero data after the TAR end, bounded archive overflows, residual local paths and selected credential-like patterns. It requires zero Publisher errors **and** zero broken links, without suppressed diagnostics. This is a packaging safeguard, not a comprehensive secret, PHI or security certification. Original output, old public content and unfiltered validator evidence remain outside the served tree. Applying checks the full current destination against the receipt and verifies a recoverable backup before changing exact file targets; it does not deploy. Repeat preparation into another new directory to establish identical hashes, then verify the integrated site and downloads. Do not use an unreviewed `rsync --delete`.
+
+The landing page exposes the main R4 package, offline guide, resource finder and QA report with the manifest limitation alongside them. `/ig` redirects temporarily to `/ig/index.html`; the guide's language redirect then selects English without dropping query or fragment. With a local production server running, `FHIR_SITE_ORIGIN=http://127.0.0.1:4179 FHIR_IG_OUTPUT=site/public/ig node --test tests/*.test.mjs` verifies every landing-page guide link and the served download bytes. The prepared candidate retains 14 Publisher warnings: the 13 documented above plus the deliberate omission of the automatic cross-version fragment. No diagnostic is hidden to obtain a clean report.
+
 Resource mapping and the tier/care-plan content are aligned at the documented design level. No Task, ServiceRequest, Communication or Provenance exporter/profile is added. Lossless operational exchange requires a separately specified producer/consumer contract and actual receiver testing; it is not established by this guide or the app's narrower Patient/Observation/MedicationStatement collection export.
 
 `workflow-contract.test.mjs` checks the generated plan, preserved identities, changed questionnaire semantics and the five synthetic examples' common patient and 11-point risk calculation. Ten deliberately invalid mutations exercise example-specific rejection checks. These tests are not general FHIR invariants or an operational round trip. A generic `RiskAssessment.basis` reference still does not certify its target or recompute a score. Generic QuestionnaireResponse and Observation representations remain permitted for compatibility; only the specialized risk response expresses the complete Boolean capture contract.

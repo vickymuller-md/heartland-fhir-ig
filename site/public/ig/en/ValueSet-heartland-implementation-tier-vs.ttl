@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "heartland-implementation-tier-vs"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet heartland-implementation-tier-vs</b></p><a name=\"heartland-implementation-tier-vs\"> </a><a name=\"hcheartland-implementation-tier-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-heartland-implementation-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.3.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.3.0"] ;
+  fhir:ValueSet.name [ fhir:value "HeartlandImplementationTierVS"] ;
+  fhir:ValueSet.title [ fhir:value "HEARTLAND Implementation Tier Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-29T19:00:36-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Vicky Muller Ferreira, MD"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Vicky Muller Ferreira, MD" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://heartlandprotocol.org" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "vickymuller@heartlandprotocol.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Vicky Muller Ferreira, MD" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "vickymuller@heartlandprotocol.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://heartlandprotocol.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/ValueSet/heartland-implementation-tier-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

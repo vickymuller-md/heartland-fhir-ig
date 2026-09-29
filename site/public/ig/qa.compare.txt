@@ -1,89 +1,110 @@
 HeartlandProtocolIG : Validation Results
 =========================================
 
-err = 1, warn = 11, info = 9
+err = 0, warn = 14, info = 23
 $--
 Generated $--. FHIR version $-- for heartland.fhir.us.protocol#$-- (canonical = https://fhir.heartlandprotocol.org)
- Build Errors : 0 / 5 / 0
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CarePlan-CarePlanExampleTier2 : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-evidence-level : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-implementation-tier : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-monitoring-track : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-risk-score : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/CodeSystem-heartland-risk-tier : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol : 0 / 1 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Observation-ObservationExampleWeightRedFlag : 0 / 3 / 4
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Patient-PatientExampleRural : 0 / 2 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-careplan : 0 / 0 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-facility-tier : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-patient : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-questionnaire-response : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation : 0 / 0 / 3
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-risk-assessment : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-risk-score-total : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/StructureDefinition-heartland-social-support-score : 0 / 0 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-evidence-level-vs : 0 / 0 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-implementation-tier-vs : 0 / 0 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs : 1 / 1 / 1
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-monitoring-track-vs : 0 / 0 / 2
- /Users/rodrigocosta/NIW-project/fhir-ig/fsh-generated/resources/ValueSet-heartland-risk-tier-vs : 0 / 0 / 2
+ Build Errors : 0 / 1 / 0
+ fsh-generated/resources/CarePlan-CarePlanExampleTier2 : 0 / 0 / 3
+ fsh-generated/resources/CodeSystem-heartland-evidence-level : 0 / 1 / 1
+ fsh-generated/resources/CodeSystem-heartland-implementation-tier : 0 / 1 / 1
+ fsh-generated/resources/CodeSystem-heartland-monitoring-track : 0 / 1 / 1
+ fsh-generated/resources/CodeSystem-heartland-risk-score : 0 / 1 / 1
+ fsh-generated/resources/CodeSystem-heartland-risk-tier : 0 / 1 / 1
+ fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol : 0 / 1 / 2
+ fsh-generated/resources/Observation-ObservationExampleWeightRedFlag : 0 / 1 / 2
+ fsh-generated/resources/Patient-PatientExampleRural : 0 / 1 / 2
+ fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire : 0 / 0 / 2
+ fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire : 0 / 0 / 2
+ fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire : 0 / 0 / 2
+ fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs : 0 / 0 / 4
+ fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh : 0 / 0 / 1
+ fsh-generated/resources/StructureDefinition-heartland-careplan : 0 / 0 / 3
+ fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-facility-tier : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-patient : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-questionnaire-response : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation : 0 / 0 / 4
+ fsh-generated/resources/StructureDefinition-heartland-risk-assessment : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-risk-input-response : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-risk-score-total : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-risk-true-points : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-social-support-score : 0 / 0 / 2
+ fsh-generated/resources/StructureDefinition-heartland-synthetic-county-code : 0 / 0 / 2
+ fsh-generated/resources/ValueSet-heartland-evidence-level-vs : 0 / 1 / 1
+ fsh-generated/resources/ValueSet-heartland-implementation-tier-vs : 0 / 1 / 1
+ fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs : 0 / 1 / 1
+ fsh-generated/resources/ValueSet-heartland-monitoring-track-vs : 0 / 1 / 1
+ fsh-generated/resources/ValueSet-heartland-risk-tier-vs : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: index.html#/html/body/div/div/div/div/div/p/a at Line 502, column 55: The link 'https://fhir.heartlandprotocol.org' for "fhir.heartlandprotocol.org" is a canonical link and is therefore unsafe with regard to versions
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-CarePlanExampleTier2.json ==
+INFORMATION: CarePlan/CarePlanExampleTier2: CarePlan.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier|0.3.0
+INFORMATION: CarePlan/CarePlanExampleTier2: CarePlan.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track|0.3.0
 == fsh-generated/resources/CodeSystem-heartland-evidence-level.json ==
+WARNING: Resource: The resource CodeSystem/heartland-evidence-level should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-heartland-implementation-tier.json ==
+WARNING: Resource: The resource CodeSystem/heartland-implementation-tier should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-heartland-monitoring-track.json ==
+WARNING: Resource: The resource CodeSystem/heartland-monitoring-track should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-heartland-risk-score.json ==
+WARNING: Resource: The resource CodeSystem/heartland-risk-score should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-heartland-risk-tier.json ==
+WARNING: Resource: The resource CodeSystem/heartland-risk-tier should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json ==
-WARNING: ImplementationGuide/heartland.fhir.us.protocol: ImplementationGuide.dependsOn[2]: O Guia de Implementação utiliza o pacote hl7.fhir.us.core#6.1.0 lançado em 2023-06-30, mas a versão apropriada mais recente é 9.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/heartland.fhir.us.protocol: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
+INFORMATION: Resource: The resource ImplementationGuide/heartland.fhir.us.protocol could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json ==
-INFORMATION: Observation/ObservationExampleWeightRedFlag: Observation.code: Não foi possível confirmar que os códigos fornecidos pertencem ao conjunto de valores extensíveis https://fhir.heartlandprotocol.org/ValueSet/heartland-monitoring-observation-code-vs porque não existe um serviço de terminologia
-WARNING: Observation/ObservationExampleWeightRedFlag: Observation.value.ofType(Quantity): Não é possível validar o código 'kg' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
-WARNING: Observation/ObservationExampleWeightRedFlag: Observation.referenceRange[0].high: Não é possível validar o código 'kg/d' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
-INFORMATION: Observation/ObservationExampleWeightRedFlag: Observation.code: Não foi possível confirmar que os códigos fornecidos pertencem ao conjunto de valores extensíveis http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 porque não existe um serviço de terminologia
-WARNING: Observation/ObservationExampleWeightRedFlag: Observation: Recomendação de boas práticas: Em geral, todas as observações devem ter um executante
+WARNING: Observation/ObservationExampleWeightRedFlag: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-PatientExampleRural.json ==
-WARNING: Patient/PatientExampleRural: Patient.extension[0].value.ofType(Quantity): Não é possível validar o código '[mi_us]' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia
-WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://fhir.heartlandprotocol.org/sid/example-mrn'
+WARNING: Patient/PatientExampleRural: Patient.identifier[0].system: No definition could be found for URL value 'https://fhir.heartlandprotocol.org/sid/example-mrn'
+INFORMATION: Patient/PatientExampleRural: Patient.address[0].extension[0].value.ofType(Coding).system: A definition for CodeSystem 'https://fhir.heartlandprotocol.org/sid/synthetic-county-code' could not be found, so the code cannot be validated
 == fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json ==
+INFORMATION: Resource: The resource Questionnaire/heartland-facility-tier-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json ==
+INFORMATION: Resource: The resource Questionnaire/heartland-patient-track-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json ==
+INFORMATION: Resource: The resource Questionnaire/heartland-risk-input-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json ==
 == fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json ==
 == fsh-generated/resources/StructureDefinition-heartland-careplan.json ==
-INFORMATION: StructureDefinition/heartland-careplan: StructureDefinition.snapshot.element[4].binding.extension[0]: O extensão http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 está obsoleto com a nota Use additionalBinding extension or element instead
+INFORMATION: StructureDefinition/heartland-careplan: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: Resource: The resource StructureDefinition/heartland-careplan could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-distance-to-cardiology could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-facility-tier.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-facility-tier could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-monitoring-track-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-patient.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-questionnaire-response.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-questionnaire-response could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json ==
-INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.differential.element[2].slicing.discriminator[0]: O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado)
-INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: O tipo de discriminador 'pattern' está obsoleto no R5+. Para compatibilidade futura, pode considerar a utilização de type=value com um pattern[x] (se este não for um corte herdado)
+INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/heartland-remote-monitoring-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/heartland-remote-monitoring-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-risk-assessment.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-risk-assessment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-heartland-risk-input-response.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-risk-input-response could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-risk-score-total.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-risk-score-total could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-heartland-risk-true-points.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-risk-true-points could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-heartland-social-support-score.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-social-support-score could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-heartland-synthetic-county-code.json ==
+INFORMATION: Resource: The resource StructureDefinition/heartland-synthetic-county-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-heartland-evidence-level-vs.json ==
-INFORMATION: ValueSet/heartland-evidence-level-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: Resource: The resource ValueSet/heartland-evidence-level-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json ==
-INFORMATION: ValueSet/heartland-implementation-tier-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: Resource: The resource ValueSet/heartland-implementation-tier-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json ==
-WARNING: ValueSet/heartland-monitoring-observation-code-vs: ValueSet.compose.include[0]: O conjunto de valores faz referência ao CodeSystem 'http://loinc.org' que tem o estatuto 'not-present'
-ERROR: ValueSet.where(id = 'heartland-monitoring-observation-code-vs'): No server available
+WARNING: Resource: The resource ValueSet/heartland-monitoring-observation-code-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-heartland-monitoring-track-vs.json ==
-INFORMATION: ValueSet/heartland-monitoring-track-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: Resource: The resource ValueSet/heartland-monitoring-track-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json ==
-INFORMATION: ValueSet/heartland-risk-tier-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: Resource: The resource ValueSet/heartland-risk-tier-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

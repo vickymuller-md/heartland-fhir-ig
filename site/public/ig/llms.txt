@@ -1,61 +1,65 @@
-# heartland.fhir.us.protocol#0.2.0: HEARTLAND Protocol FHIR Implementation Guide
+# heartland.fhir.us.protocol#0.3.0: HEARTLAND Protocol FHIR Implementation Guide(en)
 
 ## Pages
 
-* [Home](index.md)
-* [Artifacts Summary](artifacts.md)
-* [Tiers and Tracks](implementation.md)
-* [Background](background.md)
-* [Risk Assessment](risk-assessment.md)
+* [Home](en/index.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Tiers and Tracks](en/implementation.md)
+* [Background](en/background.md)
+* [Workflow Mapping](en/workflow.md)
+* [Risk Assessment](en/risk-assessment.md)
 
 ## Resources
 
 ### CodeSystems
 
-* [HEARTLAND Evidence Level](CodeSystem-heartland-evidence-level.md)
-* [HEARTLAND Implementation Tier](CodeSystem-heartland-implementation-tier.md)
-* [HEARTLAND Monitoring Track](CodeSystem-heartland-monitoring-track.md)
-* [HEARTLAND Risk Score Codes](CodeSystem-heartland-risk-score.md)
-* [HEARTLAND Risk Tier](CodeSystem-heartland-risk-tier.md)
+* [HEARTLAND Evidence Level](en/CodeSystem-heartland-evidence-level.md)
+* [HEARTLAND Implementation Tier](en/CodeSystem-heartland-implementation-tier.md)
+* [HEARTLAND Monitoring Track](en/CodeSystem-heartland-monitoring-track.md)
+* [HEARTLAND Risk Score Codes](en/CodeSystem-heartland-risk-score.md)
+* [HEARTLAND Risk Tier](en/CodeSystem-heartland-risk-tier.md)
 
 ### ValueSets
 
-* [HEARTLAND Evidence Level Value Set](ValueSet-heartland-evidence-level-vs.md)
-* [HEARTLAND Implementation Tier Value Set](ValueSet-heartland-implementation-tier-vs.md)
-* [HEARTLAND Monitoring Observation Code Value Set](ValueSet-heartland-monitoring-observation-code-vs.md)
-* [HEARTLAND Monitoring Track Value Set](ValueSet-heartland-monitoring-track-vs.md)
-* [HEARTLAND Risk Tier Value Set](ValueSet-heartland-risk-tier-vs.md)
+* [HEARTLAND Evidence Level Value Set](en/ValueSet-heartland-evidence-level-vs.md)
+* [HEARTLAND Implementation Tier Value Set](en/ValueSet-heartland-implementation-tier-vs.md)
+* [HEARTLAND Monitoring Observation Code Value Set](en/ValueSet-heartland-monitoring-observation-code-vs.md)
+* [HEARTLAND Monitoring Track Value Set](en/ValueSet-heartland-monitoring-track-vs.md)
+* [HEARTLAND Risk Tier Value Set](en/ValueSet-heartland-risk-tier-vs.md)
 
 ### Resource Profiles
 
-* [HEARTLAND Care Plan](StructureDefinition-heartland-careplan.md)
-* [HEARTLAND Patient](StructureDefinition-heartland-patient.md)
-* [HEARTLAND Questionnaire Response](StructureDefinition-heartland-questionnaire-response.md)
-* [HEARTLAND Remote Monitoring Observation](StructureDefinition-heartland-remote-monitoring-observation.md)
-* [HEARTLAND Risk Assessment](StructureDefinition-heartland-risk-assessment.md)
+* [HEARTLAND Care Plan](en/StructureDefinition-heartland-careplan.md)
+* [HEARTLAND Patient](en/StructureDefinition-heartland-patient.md)
+* [HEARTLAND Questionnaire Response](en/StructureDefinition-heartland-questionnaire-response.md)
+* [HEARTLAND Remote Monitoring Observation](en/StructureDefinition-heartland-remote-monitoring-observation.md)
+* [HEARTLAND Risk Assessment](en/StructureDefinition-heartland-risk-assessment.md)
+* [HEARTLAND Complete Risk Input Response](en/StructureDefinition-heartland-risk-input-response.md)
 
 ### Extensions
 
-* [HEARTLAND Distance to Cardiology](StructureDefinition-heartland-distance-to-cardiology.md)
-* [HEARTLAND Facility Implementation Tier](StructureDefinition-heartland-facility-tier.md)
-* [HEARTLAND Monitoring Track Assignment](StructureDefinition-heartland-monitoring-track-ext.md)
-* [HEARTLAND Risk Score Total](StructureDefinition-heartland-risk-score-total.md)
-* [HEARTLAND Social Support Score](StructureDefinition-heartland-social-support-score.md)
+* [HEARTLAND Distance to Cardiology](en/StructureDefinition-heartland-distance-to-cardiology.md)
+* [HEARTLAND Facility Implementation Tier](en/StructureDefinition-heartland-facility-tier.md)
+* [HEARTLAND Monitoring Track Assignment](en/StructureDefinition-heartland-monitoring-track-ext.md)
+* [HEARTLAND Risk Score Total](en/StructureDefinition-heartland-risk-score-total.md)
+* [HEARTLAND Points for a True Answer](en/StructureDefinition-heartland-risk-true-points.md)
+* [HEARTLAND Social Support Score](en/StructureDefinition-heartland-social-support-score.md)
+* [HEARTLAND Synthetic County Identifier](en/StructureDefinition-heartland-synthetic-county-code.md)
 
 ### ImplementationGuides
 
-* [HEARTLAND Protocol FHIR Implementation Guide](index.md)
+* [HEARTLAND Protocol FHIR Implementation Guide](en/ImplementationGuide-heartland.fhir.us.protocol.md)
 
 ### Questionnaires
 
-* [HEARTLAND Facility Tier Questionnaire](Questionnaire-heartland-facility-tier-questionnaire.md)
-* [HEARTLAND Patient Track Assignment Questionnaire](Questionnaire-heartland-patient-track-questionnaire.md)
-* [HEARTLAND Risk Input Questionnaire](Questionnaire-heartland-risk-input-questionnaire.md)
+* [HEARTLAND Facility Tier Questionnaire](en/Questionnaire-heartland-facility-tier-questionnaire.md)
+* [HEARTLAND Monitoring Access Questionnaire](en/Questionnaire-heartland-patient-track-questionnaire.md)
+* [HEARTLAND Risk Input Questionnaire](en/Questionnaire-heartland-risk-input-questionnaire.md)
 
 ### Examples
 
-* [CarePlanExampleTier2 (CarePlan)](CarePlan-CarePlanExampleTier2.md)
-* [ObservationExampleWeightRedFlag (Observation)](Observation-ObservationExampleWeightRedFlag.md)
-* [PatientExampleRural (Patient)](Patient-PatientExampleRural.md)
-* [QuestionnaireResponseExampleRiskInputs (QuestionnaireResponse)](QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.md)
-* [RiskAssessmentExampleHigh (RiskAssessment)](RiskAssessment-RiskAssessmentExampleHigh.md)
+* [CarePlanExampleTier2 (CarePlan)](en/CarePlan-CarePlanExampleTier2.md)
+* [ObservationExampleWeightRedFlag (Observation)](en/Observation-ObservationExampleWeightRedFlag.md)
+* [PatientExampleRural (Patient)](en/Patient-PatientExampleRural.md)
+* [QuestionnaireResponseExampleRiskInputs (QuestionnaireResponse)](en/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.md)
+* [RiskAssessmentExampleHigh (RiskAssessment)](en/RiskAssessment-RiskAssessmentExampleHigh.md)

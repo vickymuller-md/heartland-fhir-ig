@@ -1,41 +1,45 @@
-Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json	18458	-	0	0	0	0	0	0	7	59	0	0	0	0	0	0	0	0	0	0	52	109	0	0	0	0	2	0	2
-fsh-generated/resources/CarePlan-CarePlanExampleTier2.json	3506	3	0	0	1	0	0	0	1	230	0	0	0	0	0	0	0	0	0	0	12	15	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-heartland-evidence-level.json	1313	1	0	0	0	0	0	0	0	4	0	0	1	0	0	0	0	0	0	0	6	33	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-heartland-implementation-tier.json	1557	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	6	29	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-heartland-monitoring-track.json	1025	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	5	25	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-heartland-risk-score.json	1399	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	28	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-heartland-risk-tier.json	1114	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	6	29	0	0	0	0	0	0	0
-fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json	1194	1	0	0	0	0	0	0	0	34	0	0	0	0	0	0	0	0	0	0	5	15	0	0	0	0	0	0	0
-fsh-generated/resources/Patient-PatientExampleRural.json	1031	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	9	0	0	0	0	0	0	0
-fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json	2894	0	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	22	20	0	0	0	0	1	0	0
-fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json	1229	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	16	10	0	0	0	0	0	0	0
-fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json	2145	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	44	14	0	0	0	0	1	0	0
-fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json	2191	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	22	14	0	0	0	0	0	0	0
-fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json	1119	2	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	5	11	0	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-heartland-careplan.json	4148	5	0	28	0	0	0	0	0	26	0	0	0	0	0	0	0	0	0	0	140	548	0	0	0	0	10	1	2
-fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology.json	2606	3	0	7	0	0	0	0	0	10	0	0	0	0	0	0	0	1	0	0	42	71	0	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-heartland-facility-tier.json	2209	18	0	38	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	30	69	0	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext.json	2101	4	0	3	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	25	45	0	0	0	0	0	0	1
-fsh-generated/resources/StructureDefinition-heartland-patient.json	2012	3	0	30	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	95	108	0	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-heartland-questionnaire-response.json	1999	3	0	15	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	82	88	0	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json	4107	6	0	60	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	153	122	0	0	0	0	6	0	1
-fsh-generated/resources/StructureDefinition-heartland-risk-assessment.json	4206	7	0	26	1	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	97	105	0	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-heartland-risk-score-total.json	2530	3	0	2	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	31	57	0	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-heartland-social-support-score.json	1994	7	0	2	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	24	42	0	0	0	0	0	1	0
-fsh-generated/resources/ValueSet-heartland-evidence-level-vs.json	589	2	0	0	0	0	0	0	1	25	0	0	0	0	0	0	0	0	0	0	4	125	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json	644	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	21	0	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json	1228	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	4	18	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-heartland-monitoring-track-vs.json	606	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	3	15	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json	576	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	17	0	0	0	0	0	0	0
-/input/includes/fragment-header.html	1640	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/includes/fragment-css.html	7905	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
-/fsh-generated/includes/fsh-link-references.md	2206	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/fsh-generated/includes/menu.xml	1243	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/implementation.md	6059	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/risk-assessment.md	4561	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
-/input/pagecontent/index.md	2921	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/background.md	3933	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	21415	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0	0
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-heartland.fhir.us.protocol.json	20399	-	0	0	0	0	0	0	4	32	0	0	0	0	0	0	0	1	0	0	0	99	205	0	0	0	0	2	0	0
+fsh-generated/resources/CarePlan-CarePlanExampleTier2.json	6031	2	0	0	1	0	0	0	0	337	0	0	0	0	0	0	0	0	0	0	0	30	31	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-heartland-evidence-level.json	1311	0	0	0	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	12	47	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-heartland-implementation-tier.json	1725	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	14	42	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-heartland-monitoring-track.json	1312	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	28	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-heartland-risk-score.json	1397	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	24	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-heartland-risk-tier.json	1112	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	20	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-ObservationExampleWeightRedFlag.json	1100	1	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	0	11	13	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExampleRural.json	1437	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	12	11	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-heartland-facility-tier-questionnaire.json	3114	0	0	0	0	0	0	0	0	43	0	0	0	0	0	0	0	0	0	0	0	43	16	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-heartland-patient-track-questionnaire.json	1387	1	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	27	12	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-heartland-risk-input-questionnaire.json	4212	0	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	0	48	14	0	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.json	2285	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	38	14	0	0	0	0	0	0	0
+fsh-generated/resources/RiskAssessment-RiskAssessmentExampleHigh.json	1126	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	9	15	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-heartland-careplan.json	4260	1	0	21	0	0	0	0	0	24	0	0	0	0	0	0	0	1	0	0	0	223	823	0	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-heartland-distance-to-cardiology.json	2604	0	0	8	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	68	110	0	0	0	0	1	1	0
+fsh-generated/resources/StructureDefinition-heartland-facility-tier.json	2459	1	0	2	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	39	81	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-heartland-monitoring-track-ext.json	2323	0	0	2	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	36	81	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-heartland-patient.json	2444	0	0	18	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	0	192	244	0	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-heartland-questionnaire-response.json	1997	0	0	12	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	121	164	0	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-heartland-remote-monitoring-observation.json	3815	1	0	16	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	0	213	368	0	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-heartland-risk-assessment.json	4302	0	0	12	0	0	0	0	0	8	0	0	0	0	0	0	0	1	0	0	0	136	158	0	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-heartland-risk-input-response.json	6767	1	0	59	0	0	0	0	0	23	0	0	0	0	0	0	0	0	0	0	0	503	464	0	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-heartland-risk-score-total.json	2536	0	0	7	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	37	70	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-heartland-risk-true-points.json	2575	1	0	8	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	37	71	0	0	1	0	0	0	0
+fsh-generated/resources/StructureDefinition-heartland-social-support-score.json	1992	0	0	24	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	33	72	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-heartland-synthetic-county-code.json	2750	0	0	15	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	60	86	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-heartland-evidence-level-vs.json	587	1	0	0	0	0	0	0	0	35	0	0	0	0	0	0	0	0	0	0	0	7	103	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-heartland-implementation-tier-vs.json	642	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	25	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-heartland-monitoring-observation-code-vs.json	1226	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	8	25	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-heartland-monitoring-track-vs.json	604	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	43	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-heartland-risk-tier-vs.json	574	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	7	20	0	0	0	0	0	0	0
+/input/includes/fragment-header.html	1640	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/includes/fragment-css.html	7905	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	2459	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1307	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/implementation.md	7080	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/risk-assessment.md	6210	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/workflow.md	11425	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
+/input/pagecontent/index.md	3279	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/background.md	2853	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	29135	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0	0

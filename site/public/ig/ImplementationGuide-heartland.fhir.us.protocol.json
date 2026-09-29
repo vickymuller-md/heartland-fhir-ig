@@ -1,16 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "heartland.fhir.us.protocol",
+  "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide heartland.fhir.us.protocol</b></p><a name=\"heartland.fhir.us.protocol\"> </a><a name=\"hcheartland.fhir.us.protocol\"> </a><h2>HeartlandProtocolIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide heartland.fhir.us.protocol</b></p><a name=\"heartland.fhir.us.protocol\"> </a><a name=\"hcheartland.fhir.us.protocol\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>HeartlandProtocolIG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol</pre><div><p>Draft FHIR R4 educational implementation-support specification for the HEARTLAND ecosystem. Profiles, extensions, questionnaires and synthetic examples support technical evaluation; clinical validation, vendor interoperability and full Toolkit V3.4 workflow coverage are not established.</p>\n</div></div>"
   },
   "url" : "https://fhir.heartlandprotocol.org/ImplementationGuide/heartland.fhir.us.protocol",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "HeartlandProtocolIG",
   "title" : "HEARTLAND Protocol FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-17T14:11:14-04:00",
+  "date" : "2026-09-29T19:00:36-04:00",
   "publisher" : "Vicky Muller Ferreira, MD",
   "contact" : [{
     "name" : "Vicky Muller Ferreira, MD",
@@ -35,7 +36,7 @@
       "value" : "https://heartlandprotocol.org"
     }]
   }],
-  "description" : "FHIR R4 Implementation Guide for the HEARTLAND Protocol v3.2 — a clinical implementation toolkit for primary care-led heart failure management in rural and resource-limited US settings. Defines profiles, extensions, questionnaires, and value sets enabling EHR vendors to exchange HEARTLAND-structured data (risk assessments, care plans, remote monitoring observations).",
+  "description" : "Draft FHIR R4 educational implementation-support specification for the HEARTLAND ecosystem. Profiles, extensions, questionnaires and synthetic examples support technical evaluation; clinical validation, vendor interoperability and full Toolkit V3.4 workflow coverage are not established.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -53,7 +54,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -359,6 +360,17 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
@@ -647,18 +659,29 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "Observation/ObservationExampleWeightRedFlag"
+        "reference" : "CarePlan/CarePlanExampleTier2"
       },
-      "name" : "Example: Body Weight Observation with Red-Flag Threshold",
-      "description" : "Body weight observation for PatientExampleRural captured via Track B (telephone-reported) showing a +1.2 kg gain in 24 hours. Reference range encodes a configurable program default rather than a protocol rule (>=0.9 kg in 24 hours triggers clinician outreach per the human filter principle).",
-      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"
+      "name" : "Example: Draft Tier 2 Plan with Track B Context",
+      "description" : "Synthetic planning illustration aligned with the Toolkit V3.4 candidate. The historical resource identifier is retained, but no activity is scheduled or completed, no clinician is fabricated and no patient-specific prescription is issued. Tier 2 and Track B are illustrative declared context, not questionnaire-derived decisions or evidence of actual resources.",
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"
     },
     {
       "extension" : [{
@@ -669,7 +692,7 @@
         "reference" : "RiskAssessment/RiskAssessmentExampleHigh"
       },
       "name" : "Example: High-Risk HEARTLAND Risk Assessment",
-      "description" : "Risk assessment for PatientExampleRural scoring 11/18 points (>=9 = High Risk tier). Inputs: age >=75 (+2), prior HF hosp 6mo (+3), eGFR <45 (+2), BP <100 (+2), distance >50 mi (+1), limited social support (+1). Triggers Intensive Bundle per HEARTLAND v3.2.",
+      "description" : "Synthetic risk assessment scoring 11/18 points (>=9 = High Risk tier). Inputs: age >=75 (+2), prior HF hosp 6mo (+3), CKM Stage 3-4 (+2), BP <100 (+2), distance >50 mi (+1), limited social support (+1). Demonstrates a proposed heuristic, not a treatment instruction or validated outcome prediction.",
       "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-assessment"
     },
     {
@@ -682,7 +705,7 @@
       },
       "name" : "Example: Risk Input Questionnaire Response (score 11)",
       "description" : "Responses to the HeartlandRiskInputQuestionnaire for PatientExampleRural. Six items answered true (age >=75, prior HF hosp 6mo, SBP <100, CKM Stage 3-4, distance >50 mi, limited social support) totaling 11 points -> High Risk tier. Referenced by RiskAssessmentExampleHigh.basis[0].",
-      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-questionnaire-response"
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-risk-input-response"
     },
     {
       "extension" : [{
@@ -699,14 +722,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "CarePlan/CarePlanExampleTier2"
+        "reference" : "Observation/ObservationExampleWeightRedFlag"
       },
-      "name" : "Example: Tier 2 Care Plan with Track B Monitoring",
-      "description" : "Care plan for PatientExampleRural at a Tier 2 (Standard) FQHC. Patient was assigned Track B (analog) because rural broadband is unreliable. Plan includes target initiation of all 4 GDMT classes within 14 days, weekly follow-up calls for 4 weeks, 7-day in-person visit, and full 8-domain teach-back education.",
-      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-careplan"
+      "name" : "Example: Synthetic Body Weight Observation",
+      "description" : "Single synthetic body-mass reading. Historical resource ID retained for compatibility; this example does not establish a weight change, alert, delivery, or clinical response. A rate-of-change threshold is not a numeric reference range for body mass.",
+      "exampleCanonical" : "https://fhir.heartlandprotocol.org/StructureDefinition/heartland-remote-monitoring-observation"
     },
     {
       "extension" : [{
@@ -717,7 +740,19 @@
         "reference" : "StructureDefinition/heartland-careplan"
       },
       "name" : "HEARTLAND Care Plan",
-      "description" : "Heart failure care plan structured per HEARTLAND Protocol v3.2. Activities are organized around five domains: GDMT initiation/titration, remote monitoring schedule, post-discharge follow-up (calls and visits), discharge education (3 condensed or 8 comprehensive domains), and patient assistance navigation. Two extensions identify the facility implementation tier and the assigned monitoring track (A digital / B analog).",
+      "description" : "Draft planned-activity representation aligned with the HEARTLAND Toolkit V3.4 candidate. Facility tier describes delivery capacity, not clinical eligibility, treatment timing or exclusion of education domains. All eight educational domains are offered at every tier; format, sequence and support can differ. Planned activities are not evidence of professional review, completed teach-back, contact or care. Tier and monitoring-track extensions retain their existing identities. The profile does not encode the full operational journal.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/heartland-risk-input-response"
+      },
+      "name" : "HEARTLAND Complete Risk Input Response",
+      "description" : "Complete, flat, explicitly answered Boolean input contract for the candidate risk questionnaire. Link IDs identify the ten weighted criteria; response order must also match the Questionnaire. This profile does not resolve unknown clinical inputs, validate the risk heuristic, or prove a referenced RiskAssessment total.",
       "exampleBoolean" : false
     },
     {
@@ -765,7 +800,7 @@
         "reference" : "StructureDefinition/heartland-facility-tier"
       },
       "name" : "HEARTLAND Facility Implementation Tier",
-      "description" : "Identifies the HEARTLAND Protocol v3.2 implementation tier (1 Minimal, 2 Standard, 3 Advanced) at which a facility, organization, or care plan operates. Drives which protocol activities (monitoring, GDMT cadence, education, follow-up) are operationally feasible.",
+      "description" : "Records the declared implementation capacity tier (1 Minimal, 2 Standard, 3 Advanced) for a facility, organization or care plan. Tier guides delivery format, sequence and support; it does not authorize reduced clinical requirements, delayed risk-led follow-up or exclusion of an educational domain. A recorded tier is not validated readiness, staffing coverage or an automatic assignment.",
       "exampleBoolean" : false
     },
     {
@@ -777,7 +812,7 @@
         "reference" : "Questionnaire/heartland-facility-tier-questionnaire"
       },
       "name" : "HEARTLAND Facility Tier Questionnaire",
-      "description" : "Five categorical items derived from HEARTLAND Protocol v3.2 Table 2 to support facility self-assessment for implementation tier assignment (Tier 1 Minimal / Tier 2 Standard / Tier 3 Advanced). Items cover staffing model, PharmD availability, CHW program, monitoring technology, and financial navigation capacity. Tier assignment is qualitative: predominance of 'minimal' answers maps to Tier 1; 'standard' to Tier 2; 'advanced' to Tier 3. This is an operational instrument derived from Table 2; the source protocol does not provide a formal scored tool.",
+      "description" : "Five capacity-capture items (four choices and one Boolean) for staffing, pharmacy, community health workers, monitoring and financial navigation. This descriptive instrument does not assign a tier, establish clinical eligibility or verify readiness. Capacity gaps, responsible professionals, coverage and an agreed implementation tier require separate documentation. Candidate 0.3.0 revises four answer strings; historical responses retain their original version and values.",
       "exampleBoolean" : false
     },
     {
@@ -789,7 +824,7 @@
         "reference" : "CodeSystem/heartland-implementation-tier"
       },
       "name" : "HEARTLAND Implementation Tier",
-      "description" : "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site.",
+      "description" : "Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage.",
       "exampleBoolean" : false
     },
     {
@@ -802,6 +837,18 @@
       },
       "name" : "HEARTLAND Implementation Tier Value Set",
       "description" : "All facility implementation tier codes (tier-1-minimal | tier-2-standard | tier-3-advanced).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/heartland-patient-track-questionnaire"
+      },
+      "name" : "HEARTLAND Monitoring Access Questionnaire",
+      "description" : "Three Boolean items capture smartphone/connectivity, app comfort and telephone access. They do not capture patient preference or automatically assign a monitoring route. Choice, supported alternatives and an unresolved access gap require separate documentation. Existing questionnaire identity and item link IDs are preserved.",
       "exampleBoolean" : false
     },
     {
@@ -825,7 +872,7 @@
         "reference" : "CodeSystem/heartland-monitoring-track"
       },
       "name" : "HEARTLAND Monitoring Track",
-      "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method.",
+      "description" : "Documented monitoring routes with stable Track A and Track B codes. A route does not establish equivalent outcomes, successful contact, device availability or completed monitoring. Clinical requirements are not reduced by the route; access, preference and the supported local plan require separate documentation.",
       "exampleBoolean" : false
     },
     {
@@ -837,7 +884,7 @@
         "reference" : "StructureDefinition/heartland-monitoring-track-ext"
       },
       "name" : "HEARTLAND Monitoring Track Assignment",
-      "description" : "Assigns a CarePlan to either Track A (digital, app-based) or Track B (analog, telephone/paper) per HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms; the choice reflects patient access to technology and facility implementation tier.",
+      "description" : "Records a documented CarePlan monitoring route: Track A (digital) or Track B (analog, telephone/paper). Access, patient preference and the supported local plan inform the choice; facility tier alone does not select a route. The code does not prove contact, completed monitoring or equivalent outcomes, and does not change clinical requirements. No third hybrid code is defined.",
       "exampleBoolean" : false
     },
     {
@@ -867,13 +914,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Questionnaire/heartland-patient-track-questionnaire"
+        "reference" : "StructureDefinition/heartland-risk-true-points"
       },
-      "name" : "HEARTLAND Patient Track Assignment Questionnaire",
-      "description" : "Three boolean items derived from HEARTLAND Protocol v3.2 Table 4 (Track Assignment Form) to determine whether a patient should be enrolled in Track A (digital, app-based) or Track B (analog, telephone) remote monitoring. Decision logic: smartphone with reliable connectivity AND comfortable using apps -> Track A; reliable telephone access only -> Track B; smartphone without app comfort -> Hybrid. Both tracks follow identical clinical algorithms per Module 3.",
+      "name" : "HEARTLAND Points for a True Answer",
+      "description" : "Positive weight for an explicitly true Boolean answer to a risk questionnaire item. False contributes zero. Missing or unknown is not false and must not be scored by omission. This extension records a weight, not a validated outcome probability or an executable calculation.",
       "exampleBoolean" : false
     },
     {
@@ -897,7 +944,7 @@
         "reference" : "StructureDefinition/heartland-remote-monitoring-observation"
       },
       "name" : "HEARTLAND Remote Monitoring Observation",
-      "description" : "Observation captured via the HEARTLAND remote monitoring kit (Module 5): body weight, blood pressure (systolic/diastolic), or oxygen saturation. Red-flag thresholds are encoded via Observation.referenceRange with meaning.text identifying the rule. The weight and oxygen saturation values a program configures here are starting defaults, not HEARTLAND Protocol rules: weight gain >=2 lb (0.9 kg)/24h or >=5 lb (2.3 kg)/7d, and SpO2 <90% on room air, all configurable per program. Systolic BP <90 mmHg is the only blood pressure red flag; this guide states no diastolic threshold and no high systolic threshold. Per the human filter principle, all non-emergency alerts pass through licensed clinician telephone assessment before ED referral.",
+      "description" : "Draft representation of body weight, blood pressure, or oxygen saturation. This profile does not encode or validate a clinical alert algorithm. A body-mass observation must not use a rate-of-change threshold as its numeric reference range. Time-window comparisons need dated source observations, matching units, and a separately governed clinical policy. Synthetic examples do not establish alert delivery, clinical assessment, or clinical outcomes.",
       "exampleBoolean" : false
     },
     {
@@ -909,7 +956,7 @@
         "reference" : "StructureDefinition/heartland-risk-assessment"
       },
       "name" : "HEARTLAND Risk Assessment",
-      "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across 10 binary inputs and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. The basis SHALL reference a HeartlandRiskInputQuestionnaire QuestionnaireResponse capturing the 10 input variables, or an Observation carrying the point total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome.",
+      "description" : "Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across ten weighted criteria and maps to three qualitative tiers: low (0-4), moderate (5-8), high (>=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. For the complete Boolean capture contract use HeartlandRiskInputResponse. Legacy Observation and generic QuestionnaireResponse basis references remain allowed for compatibility; this profile alone does not validate their content or recompute the total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome.",
       "exampleBoolean" : false
     },
     {
@@ -921,7 +968,7 @@
         "reference" : "Questionnaire/heartland-risk-input-questionnaire"
       },
       "name" : "HEARTLAND Risk Input Questionnaire",
-      "description" : "Captures the 10 binary inputs to the HEARTLAND Protocol v3.2 risk score. Each item carries an itemWeight extension with its point contribution. Total score (0-18) maps to qualitative tiers: low (0-4), moderate (5-8), high (>=9). Item text is verbatim from manuscript/tables.R Table 1 (HEARTLAND v3.2).",
+      "description" : "Captures ten weighted criteria using Boolean answers for the historical HEARTLAND risk-score definition. Each item carries HeartlandRiskTruePoints for the contribution of an explicit true answer; false contributes zero, and an absent answer is not false. Total score (0-18) maps to qualitative tiers: low (0-4), moderate (5-8), high (>=9). Item text is verbatim from manuscript/tables.R Table 1 (HEARTLAND v3.2).",
       "exampleBoolean" : false
     },
     {
@@ -945,7 +992,7 @@
         "reference" : "StructureDefinition/heartland-risk-score-total"
       },
       "name" : "HEARTLAND Risk Score Total",
-      "description" : "Total of the HEARTLAND risk score: an integer count of 0 to 18 points summed from ten binary inputs. This is a non-validated implementation heuristic used to assign monitoring intensity; it is a point total, not a probability, not a predicted event rate and not a validated prognostic estimate. It is carried in this extension rather than in RiskAssessment.prediction.probabilityDecimal because that element is defined in FHIR R4 as the likelihood of a specified outcome, expressed as a percentage.",
+      "description" : "Total of the HEARTLAND risk score: an integer count of 0 to 18 points summed from ten weighted criteria. This is a non-validated implementation heuristic used to assign monitoring intensity; it is a point total, not a probability, not a predicted event rate and not a validated prognostic estimate. It is carried in this extension rather than in RiskAssessment.prediction.probabilityDecimal because that element is defined in FHIR R4 as the likelihood of a specified outcome, expressed as a percentage.",
       "exampleBoolean" : false
     },
     {
@@ -982,6 +1029,18 @@
       },
       "name" : "HEARTLAND Social Support Score",
       "description" : "Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/heartland-synthetic-county-code"
+      },
+      "name" : "HEARTLAND Synthetic County Identifier",
+      "description" : "Opaque synthetic identifier emitted by HEARTLAND Synthetic, not an ANSI/FIPS county GEOID, postal code, or evidence of real residence. Preserve the code as supplied; no real-geography lookup or linkage is implied.",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -1026,6 +1085,15 @@
         }],
         "nameUrl" : "implementation.html",
         "title" : "Tiers and Tracks",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "workflow.html"
+        }],
+        "nameUrl" : "workflow.html",
+        "title" : "Workflow Mapping",
         "generation" : "markdown"
       }]
     },

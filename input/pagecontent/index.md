@@ -56,6 +56,6 @@ Narrative and generated resources: CC-BY 4.0. Build tooling: MIT.
 {% include dependency-table.xhtml %}
 </div>
 
-{% include cross-version-analysis.xhtml %}
+This candidate's evaluated contract is **FHIR R4 4.0.1 only**. The Publisher can automatically produce R4B conversions; these are not evaluated deliverables and are not included in the prepared website downloads. Automatic conversion is not evidence of R4B interoperability.
 
 {% include globals-table.xhtml %}

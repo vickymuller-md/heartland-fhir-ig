@@ -16,4 +16,20 @@
       <sch:assert test="count(f:extension[@url = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score']) &lt;= 1">extension with URL = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-social-support-score': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:address</sch:title>
+    <sch:rule context="f:Patient/f:address">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-synthetic-county-code']) &lt;= 1">extension with URL = 'https://fhir.heartlandprotocol.org/StructureDefinition/heartland-synthetic-county-code': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+      <sch:assert test="count(f:city) &lt;= 1">city: maximum cardinality of 'city' is 1</sch:assert>
+      <sch:assert test="count(f:district) &lt;= 1">district: maximum cardinality of 'district' is 1</sch:assert>
+      <sch:assert test="count(f:state) &lt;= 1">state: maximum cardinality of 'state' is 1</sch:assert>
+      <sch:assert test="count(f:postalCode) &lt;= 1">postalCode: maximum cardinality of 'postalCode' is 1</sch:assert>
+      <sch:assert test="count(f:country) &lt;= 1">country: maximum cardinality of 'country' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

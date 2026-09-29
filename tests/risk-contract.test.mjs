@@ -136,7 +136,8 @@ if (!['--fixtures', '--results', '--parity', '--package-results'].some(flag => p
     assert(ig.definition.extension.some(e => e.url === 'http://hl7.org/fhir/tools/StructureDefinition/ig-parameter'));
     const riskPage = readFileSync(join(output, 'en/risk-assessment.html'), 'utf8');
     assert.equal([...riskPage.matchAll(/<table\b/g)].length, 2, 'only input weights and tier cutoffs are tables');
-    assert.match(riskPage, /Local Development build/);
+    // Raw formal-target builds and prepared pages are still release candidates.
+    assert.match(riskPage, /Local Development build|Downloaded Version 0\.3\.0|HEARTLAND FHIR candidate 0\.3\.0/);
     assert.doesNotMatch(riskPage, /Compilação de desenvolvimento local/);
   });
 } else if (process.argv.includes('--fixtures')) {

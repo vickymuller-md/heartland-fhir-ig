@@ -1,5 +1,29 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "oids" : ["2.16.840.1.113883.4.642.4.70"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "oids" : ["2.16.840.1.113883.4.642.4.68"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+  },
+  {
     "url" : "http://hl7.org/fhir/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -116,8 +140,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-heartland-monitoring-observation-code-vs.html" : "HEARTLAND Monitoring Observation Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "ValueSet-heartland-monitoring-observation-code-vs.html" : "HEARTLAND Monitoring Observation Code Value Set"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -129,15 +153,15 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
     "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes"
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -225,8 +249,8 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandEvidenceLevel",
     "title" : "HEARTLAND Evidence Level",
     "description" : "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions.",
@@ -236,30 +260,30 @@
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandImplementationTier",
     "title" : "HEARTLAND Implementation Tier",
-    "description" : "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site.",
+    "description" : "Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage.",
     "uses" : {
     },
     "ValueSet-heartland-implementation-tier-vs.html" : "HEARTLAND Implementation Tier Value Set"
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandMonitoringTrack",
     "title" : "HEARTLAND Monitoring Track",
-    "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method.",
+    "description" : "Documented monitoring routes with stable Track A and Track B codes. A route does not establish equivalent outcomes, successful contact, device availability or completed monitoring. Clinical requirements are not reduced by the route; access, preference and the supported local plan require separate documentation.",
     "uses" : {
     },
     "ValueSet-heartland-monitoring-track-vs.html" : "HEARTLAND Monitoring Track Value Set"
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandRiskTier",
     "title" : "HEARTLAND Risk Tier",
     "description" : "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk.",

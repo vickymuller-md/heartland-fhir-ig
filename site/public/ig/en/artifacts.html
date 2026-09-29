@@ -1,0 +1,977 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - HEARTLAND Protocol FHIR Implementation Guide v0.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- HEARTLAND Brand override for fhir.base.template
+     Palette mirrors heartland-app (app.heartlandprotocol.org):
+     terminal #faf6ee | navy #0f2544 | signal #2e6f5e | alert #ff6b55 -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+  :root {
+    --hl-terminal: #faf6ee;
+    --hl-terminal-deep: #f2ecde;
+    --hl-panel: #ffffff;
+    --hl-panel-hi: #efe9dd;
+    --hl-grid: #e3dcd0;
+    --hl-grid-hi: #c5bcac;
+    --hl-cool: #0f2544;
+    --hl-cool-soft: #1f3354;
+    --hl-stone: #7a8593;
+    --hl-stone-soft: #9aa3b0;
+    --hl-signal: #2e6f5e;
+    --hl-signal-deep: #1e4e41;
+    --hl-signal-soft: #4a8f7c;
+    --hl-alert: #ff6b55;
+    --hl-alert-deep: #e04a35;
+    --hl-critical: #d63a20;
+    --hl-radius: 6px;
+  }
+
+  html, body {
+    background: var(--hl-terminal) !important;
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-feature-settings: 'cv11','ss01','ss03';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 {
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-weight: 700 !important; letter-spacing: -0.02em; }
+
+  p, li, td, th, dt, dd { color: var(--hl-cool); }
+  small, .text-muted, .small { color: var(--hl-stone) !important; }
+
+  a, a:visited {
+    color: var(--hl-signal) !important;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 120ms ease;
+  }
+  a:hover, a:focus {
+    color: var(--hl-signal-deep) !important;
+    border-bottom-color: var(--hl-signal-deep);
+    text-decoration: none;
+  }
+
+  code, pre, kbd, samp, tt {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace !important;
+    background: var(--hl-terminal-deep) !important;
+    border-radius: 4px;
+    color: var(--hl-cool);
+  }
+  pre {
+    border: 1px solid var(--hl-grid);
+    padding: 12px 16px;
+  }
+  code { padding: 1px 5px; font-size: 0.92em; }
+  pre code { background: transparent !important; padding: 0; }
+
+  blockquote {
+    border-left: 4px solid var(--hl-signal);
+    background: var(--hl-panel);
+    color: var(--hl-cool);
+    padding: 12px 18px;
+    margin: 18px 0;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+  }
+  blockquote em, blockquote i { color: var(--hl-cool-soft); }
+
+  table, .table, .grid {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-collapse: collapse;
+  }
+  table th, .table th {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    border-bottom: 1px solid var(--hl-grid-hi) !important;
+    font-weight: 600;
+  }
+  table td, .table td {
+    border-color: var(--hl-grid) !important;
+  }
+  table tr:hover { background: var(--hl-terminal-deep); }
+
+  hr { border-color: var(--hl-grid); border-top-style: solid; }
+
+  /* IG Publisher chrome */
+  .navbar, .navbar-default, .navbar-fixed-top {
+    background: var(--hl-cool) !important;
+    border-color: var(--hl-cool) !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  }
+  .navbar a, .navbar .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: var(--hl-terminal) !important;
+    border-bottom: none !important;
+  }
+  .navbar a:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff !important;
+    background: var(--hl-cool-soft) !important;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background: var(--hl-signal) !important;
+    color: #ffffff !important;
+  }
+
+  /* Container */
+  .container, .container-fluid {
+    background: transparent;
+  }
+
+  /* Cards / panels */
+  .panel, .well, .alert {
+    background: var(--hl-panel) !important;
+    border: 1px solid var(--hl-grid) !important;
+    border-radius: var(--hl-radius);
+    color: var(--hl-cool);
+  }
+  .panel-heading {
+    background: var(--hl-panel-hi) !important;
+    border-bottom: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    font-weight: 600;
+  }
+  .alert-info { border-left: 4px solid var(--hl-signal); }
+  .alert-warning { border-left: 4px solid var(--hl-alert); }
+  .alert-danger { border-left: 4px solid var(--hl-critical); }
+
+  /* Buttons */
+  .btn, .btn-default {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    border-radius: var(--hl-radius);
+    font-weight: 500;
+  }
+  .btn:hover, .btn-default:hover {
+    background: var(--hl-panel-hi);
+    border-color: var(--hl-stone);
+    color: var(--hl-cool);
+  }
+  .btn-primary {
+    background: var(--hl-signal) !important;
+    border-color: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background: var(--hl-signal-deep) !important;
+    border-color: var(--hl-signal-deep) !important;
+  }
+
+  /* HEARTLAND landing page hero & sections */
+  .hl-hero {
+    background: linear-gradient(135deg, var(--hl-terminal) 0%, var(--hl-terminal-deep) 100%);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 40px 36px 32px;
+    margin: 24px 0 28px;
+  }
+  .hl-hero h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+  .hl-tagline {
+    color: var(--hl-signal);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .hl-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .hl-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: var(--hl-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: none !important;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+  .hl-cta-primary {
+    background: var(--hl-signal);
+    color: #ffffff !important;
+    border: 1px solid var(--hl-signal-deep);
+  }
+  .hl-cta-primary:hover {
+    background: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -8px rgba(46,111,94,0.5);
+  }
+  .hl-cta-secondary {
+    background: var(--hl-panel);
+    color: var(--hl-cool) !important;
+    border: 1px solid var(--hl-grid-hi);
+  }
+  .hl-cta-secondary:hover {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    transform: translateY(-1px);
+  }
+
+  .hl-disclaimer {
+    background: var(--hl-panel-hi);
+    border-left: 4px solid var(--hl-alert);
+    padding: 14px 18px;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+    margin: 18px 0;
+    font-size: 0.94rem;
+  }
+  .hl-disclaimer em, .hl-disclaimer i { color: var(--hl-cool-soft); }
+
+  .hl-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .hl-feature {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 16px 18px;
+  }
+  .hl-feature-title {
+    color: var(--hl-cool);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .hl-feature-desc {
+    color: var(--hl-stone);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .ig-footer, footer, .footer {
+    background: var(--hl-cool) !important;
+    color: var(--hl-terminal) !important;
+    padding: 18px 0;
+    margin-top: 40px;
+  }
+  .ig-footer a, footer a, .footer a {
+    color: var(--hl-terminal) !important;
+    border-bottom: 1px solid rgba(250,246,238,0.35);
+  }
+  .ig-footer a:hover, footer a:hover {
+    color: #ffffff !important;
+    border-bottom-color: var(--hl-terminal);
+  }
+</style>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- HEARTLAND Brand header bar (above IG Publisher's auto-generated nav) -->
+<div style="background: #0f2544; color: #faf6ee; border-bottom: 1px solid #1f3354;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; max-width: 1200px;">
+    <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.02em; font-family: 'Inter', sans-serif;">
+      <span style="display: inline-block; width: 22px; height: 22px; background: #2e6f5e; border-radius: 4px; position: relative;">
+        <span style="position: absolute; inset: 5px; background: #faf6ee; clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);"></span>
+      </span>
+      <span>HEARTLAND <span style="opacity: 0.7; font-weight: 500;">Protocol</span></span>
+    </a>
+    <nav style="display: flex; gap: 18px; align-items: center; font-size: 0.88rem;">
+      <a href="https://heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">Site</a>
+      <a href="https://app.heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">App</a>
+      <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; background: #2e6f5e; padding: 4px 10px; border-radius: 4px; font-weight: 600;">FHIR IG</a>
+    </nav>
+  </div>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HEARTLAND Protocol FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - 
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="risk-assessment.html">Risk Assessment</a>
+  </li>
+  <li>
+    <a href="implementation.html">Tiers and Tracks</a>
+  </li>
+  <li>
+    <a href="workflow.html">Workflow Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HEARTLAND FHIR candidate 0.3.0 &mdash; draft, experimental R4 4.0.1 reference. Prepared for technical review; not evidence of clinical validation or vendor interoperability.</p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-heartland-facility-tier-questionnaire.html"
+                  title="Questionnaire/heartland-facility-tier-questionnaire">
+                  <span title="Questionnaire/heartland-facility-tier-questionnaire">HEARTLAND Facility Tier Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Five capacity-capture items (four choices and one Boolean) for staffing, pharmacy, community health workers, monitoring and financial navigation. This descriptive instrument does not assign a tier, establish clinical eligibility or verify readiness. Capacity gaps, responsible professionals, coverage and an agreed implementation tier require separate documentation. Candidate 0.3.0 revises four answer strings; historical responses retain their original version and values.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-heartland-patient-track-questionnaire.html"
+                  title="Questionnaire/heartland-patient-track-questionnaire">
+                  <span title="Questionnaire/heartland-patient-track-questionnaire">HEARTLAND Monitoring Access Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Three Boolean items capture smartphone/connectivity, app comfort and telephone access. They do not capture patient preference or automatically assign a monitoring route. Choice, supported alternatives and an unresolved access gap require separate documentation. Existing questionnaire identity and item link IDs are preserved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-heartland-risk-input-questionnaire.html"
+                  title="Questionnaire/heartland-risk-input-questionnaire">
+                  <span title="Questionnaire/heartland-risk-input-questionnaire">HEARTLAND Risk Input Questionnaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Captures ten weighted criteria using Boolean answers for the historical HEARTLAND risk-score definition. Each item carries HeartlandRiskTruePoints for the contribution of an explicit true answer; false contributes zero, and an absent answer is not false. Total score (0-18) maps to qualitative tiers: low (0-4), moderate (5-8), high (&gt;=9). Item text is verbatim from manuscript/tables.R Table 1 (HEARTLAND v3.2).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-careplan.html"
+                  title="StructureDefinition/heartland-careplan">
+                  <span title="StructureDefinition/heartland-careplan">HEARTLAND Care Plan
+</span>
+               </a>
+            </td>
+            <td>
+<p>Draft planned-activity representation aligned with the HEARTLAND Toolkit V3.4 candidate. Facility tier describes delivery capacity, not clinical eligibility, treatment timing or exclusion of education domains. All eight educational domains are offered at every tier; format, sequence and support can differ. Planned activities are not evidence of professional review, completed teach-back, contact or care. Tier and monitoring-track extensions retain their existing identities. The profile does not encode the full operational journal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-risk-input-response.html"
+                  title="StructureDefinition/heartland-risk-input-response">
+                  <span title="StructureDefinition/heartland-risk-input-response">HEARTLAND Complete Risk Input Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Complete, flat, explicitly answered Boolean input contract for the candidate risk questionnaire. Link IDs identify the ten weighted criteria; response order must also match the Questionnaire. This profile does not resolve unknown clinical inputs, validate the risk heuristic, or prove a referenced RiskAssessment total.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-patient.html"
+                  title="StructureDefinition/heartland-patient">
+                  <span title="StructureDefinition/heartland-patient">HEARTLAND Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Patient profile carrying HEARTLAND-specific extensions used by the risk score: distance to cardiology and social support status. Constrains the base FHIR R4 Patient resource for use within HEARTLAND Protocol v3.2 workflows.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-questionnaire-response.html"
+                  title="StructureDefinition/heartland-questionnaire-response">
+                  <span title="StructureDefinition/heartland-questionnaire-response">HEARTLAND Questionnaire Response
+</span>
+               </a>
+            </td>
+            <td>
+<p>Captures responses to any HEARTLAND-defined Questionnaire (risk inputs, facility tier self-assessment, or patient track assignment). Used as the basis reference for HeartlandRiskAssessment when the questionnaire is HeartlandRiskInputQuestionnaire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-remote-monitoring-observation.html"
+                  title="StructureDefinition/heartland-remote-monitoring-observation">
+                  <span title="StructureDefinition/heartland-remote-monitoring-observation">HEARTLAND Remote Monitoring Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Draft representation of body weight, blood pressure, or oxygen saturation. This profile does not encode or validate a clinical alert algorithm. A body-mass observation must not use a rate-of-change threshold as its numeric reference range. Time-window comparisons need dated source observations, matching units, and a separately governed clinical policy. Synthetic examples do not establish alert delivery, clinical assessment, or clinical outcomes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-risk-assessment.html"
+                  title="StructureDefinition/heartland-risk-assessment">
+                  <span title="StructureDefinition/heartland-risk-assessment">HEARTLAND Risk Assessment
+</span>
+               </a>
+            </td>
+            <td>
+<p>Heart failure risk stratification per the HEARTLAND Protocol v3.2 risk score. The score sums up to 18 points across ten weighted criteria and maps to three qualitative tiers: low (0-4), moderate (5-8), high (&gt;=9). It is a non-validated implementation heuristic that assigns monitoring intensity; it does not predict an outcome and has not been validated against outcome data. For the complete Boolean capture contract use HeartlandRiskInputResponse. Legacy Observation and generic QuestionnaireResponse basis references remain allowed for compatibility; this profile alone does not validate their content or recompute the total. The tier travels in prediction.qualitativeRisk and the point total in the heartland-risk-score-total extension; probability[x] is prohibited, because a point count is not a likelihood of an outcome.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-distance-to-cardiology.html"
+                  title="StructureDefinition/heartland-distance-to-cardiology">
+                  <span title="StructureDefinition/heartland-distance-to-cardiology">HEARTLAND Distance to Cardiology
+</span>
+               </a>
+            </td>
+            <td>
+<p>Driving distance in miles from the patient's residence to the nearest cardiologist. Used by the HEARTLAND risk score: distance &gt;50 miles contributes 1 point. Rural counties without a cardiologist average 87 miles to nearest cardiology care vs 16 miles in counties with one (HEARTLAND Protocol v3.2, Module 2).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-facility-tier.html"
+                  title="StructureDefinition/heartland-facility-tier">
+                  <span title="StructureDefinition/heartland-facility-tier">HEARTLAND Facility Implementation Tier
+</span>
+               </a>
+            </td>
+            <td>
+<p>Records the declared implementation capacity tier (1 Minimal, 2 Standard, 3 Advanced) for a facility, organization or care plan. Tier guides delivery format, sequence and support; it does not authorize reduced clinical requirements, delayed risk-led follow-up or exclusion of an educational domain. A recorded tier is not validated readiness, staffing coverage or an automatic assignment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-monitoring-track-ext.html"
+                  title="StructureDefinition/heartland-monitoring-track-ext">
+                  <span title="StructureDefinition/heartland-monitoring-track-ext">HEARTLAND Monitoring Track Assignment
+</span>
+               </a>
+            </td>
+            <td>
+<p>Records a documented CarePlan monitoring route: Track A (digital) or Track B (analog, telephone/paper). Access, patient preference and the supported local plan inform the choice; facility tier alone does not select a route. The code does not prove contact, completed monitoring or equivalent outcomes, and does not change clinical requirements. No third hybrid code is defined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-risk-true-points.html"
+                  title="StructureDefinition/heartland-risk-true-points">
+                  <span title="StructureDefinition/heartland-risk-true-points">HEARTLAND Points for a True Answer
+</span>
+               </a>
+            </td>
+            <td>
+<p>Positive weight for an explicitly true Boolean answer to a risk questionnaire item. False contributes zero. Missing or unknown is not false and must not be scored by omission. This extension records a weight, not a validated outcome probability or an executable calculation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-risk-score-total.html"
+                  title="StructureDefinition/heartland-risk-score-total">
+                  <span title="StructureDefinition/heartland-risk-score-total">HEARTLAND Risk Score Total
+</span>
+               </a>
+            </td>
+            <td>
+<p>Total of the HEARTLAND risk score: an integer count of 0 to 18 points summed from ten weighted criteria. This is a non-validated implementation heuristic used to assign monitoring intensity; it is a point total, not a probability, not a predicted event rate and not a validated prognostic estimate. It is carried in this extension rather than in RiskAssessment.prediction.probabilityDecimal because that element is defined in FHIR R4 as the likelihood of a specified outcome, expressed as a percentage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-social-support-score.html"
+                  title="StructureDefinition/heartland-social-support-score">
+                  <span title="StructureDefinition/heartland-social-support-score">HEARTLAND Social Support Score
+</span>
+               </a>
+            </td>
+            <td>
+<p>Boolean indicator of limited social support per the HEARTLAND risk score: true = patient lives alone or has limited social support, contributing 1 point. Perceived social isolation has been independently associated with a 3.74-fold increase in mortality among HF patients (HEARTLAND Protocol v3.2, Module 2).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heartland-synthetic-county-code.html"
+                  title="StructureDefinition/heartland-synthetic-county-code">
+                  <span title="StructureDefinition/heartland-synthetic-county-code">HEARTLAND Synthetic County Identifier
+</span>
+               </a>
+            </td>
+            <td>
+<p>Opaque synthetic identifier emitted by HEARTLAND Synthetic, not an ANSI/FIPS county GEOID, postal code, or evidence of real residence. Preserve the code as supplied; no real-geography lookup or linkage is implied.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heartland-evidence-level-vs.html"
+                  title="ValueSet/heartland-evidence-level-vs">
+                  <span title="ValueSet/heartland-evidence-level-vs">HEARTLAND Evidence Level Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>All evidence level codes (established</td>
+      <td>emerging</td>
+      <td>pragmatic).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heartland-implementation-tier-vs.html"
+                  title="ValueSet/heartland-implementation-tier-vs">
+                  <span title="ValueSet/heartland-implementation-tier-vs">HEARTLAND Implementation Tier Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>All facility implementation tier codes (tier-1-minimal</td>
+      <td>tier-2-standard</td>
+      <td>tier-3-advanced).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heartland-monitoring-observation-code-vs.html"
+                  title="ValueSet/heartland-monitoring-observation-code-vs">
+                  <span title="ValueSet/heartland-monitoring-observation-code-vs">HEARTLAND Monitoring Observation Code Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<p>LOINC codes for the four observations captured by the HEARTLAND remote monitoring kit per Module 5: body weight (digital scale), systolic and diastolic blood pressure (BP monitor), and oxygen saturation (pulse oximeter, when indicated).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heartland-monitoring-track-vs.html"
+                  title="ValueSet/heartland-monitoring-track-vs">
+                  <span title="ValueSet/heartland-monitoring-track-vs">HEARTLAND Monitoring Track Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>All remote monitoring track codes (digital-track-a</td>
+      <td>analog-track-b).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-heartland-risk-tier-vs.html"
+                  title="ValueSet/heartland-risk-tier-vs">
+                  <span title="ValueSet/heartland-risk-tier-vs">HEARTLAND Risk Tier Value Set
+</span>
+               </a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>All risk tier codes from the HEARTLAND risk score (low</td>
+      <td>moderate</td>
+      <td>high).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-heartland-evidence-level.html"
+                  title="CodeSystem/heartland-evidence-level">
+                  <span title="CodeSystem/heartland-evidence-level">HEARTLAND Evidence Level
+</span>
+               </a>
+            </td>
+            <td>
+<p>Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-heartland-implementation-tier.html"
+                  title="CodeSystem/heartland-implementation-tier">
+                  <span title="CodeSystem/heartland-implementation-tier">HEARTLAND Implementation Tier
+</span>
+               </a>
+            </td>
+            <td>
+<p>Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-heartland-monitoring-track.html"
+                  title="CodeSystem/heartland-monitoring-track">
+                  <span title="CodeSystem/heartland-monitoring-track">HEARTLAND Monitoring Track
+</span>
+               </a>
+            </td>
+            <td>
+<p>Documented monitoring routes with stable Track A and Track B codes. A route does not establish equivalent outcomes, successful contact, device availability or completed monitoring. Clinical requirements are not reduced by the route; access, preference and the supported local plan require separate documentation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-heartland-risk-score.html"
+                  title="CodeSystem/heartland-risk-score">
+                  <span title="CodeSystem/heartland-risk-score">HEARTLAND Risk Score Codes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Codes identifying the HEARTLAND risk score and its tier when either is carried on an Observation rather than on a RiskAssessment — for example an Observation referenced from HeartlandRiskAssessment.basis holding the point total. The score is a non-validated implementation heuristic: the total is a point count, not a probability, and the tier assigns monitoring intensity rather than predicting an outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-heartland-risk-tier.html"
+                  title="CodeSystem/heartland-risk-tier">
+                  <span title="CodeSystem/heartland-risk-tier">HEARTLAND Risk Tier
+</span>
+               </a>
+            </td>
+            <td>
+<p>Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-CarePlanExampleTier2.html"
+                  title="CarePlan/CarePlanExampleTier2">
+                  <span title="CarePlan/CarePlanExampleTier2">Example: Draft Tier 2 Plan with Track B Context
+</span>
+               </a>
+            </td>
+            <td>
+<p>Synthetic planning illustration aligned with the Toolkit V3.4 candidate. The historical resource identifier is retained, but no activity is scheduled or completed, no clinician is fabricated and no patient-specific prescription is issued. Tier 2 and Track B are illustrative declared context, not questionnaire-derived decisions or evidence of actual resources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssessmentExampleHigh.html"
+                  title="RiskAssessment/RiskAssessmentExampleHigh">
+                  <span title="RiskAssessment/RiskAssessmentExampleHigh">Example: High-Risk HEARTLAND Risk Assessment
+</span>
+               </a>
+            </td>
+            <td>
+<p>Synthetic risk assessment scoring 11/18 points (&gt;=9 = High Risk tier). Inputs: age &gt;=75 (+2), prior HF hosp 6mo (+3), CKM Stage 3-4 (+2), BP &lt;100 (+2), distance &gt;50 mi (+1), limited social support (+1). Demonstrates a proposed heuristic, not a treatment instruction or validated outcome prediction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponseExampleRiskInputs.html"
+                  title="QuestionnaireResponse/QuestionnaireResponseExampleRiskInputs">
+                  <span title="QuestionnaireResponse/QuestionnaireResponseExampleRiskInputs">Example: Risk Input Questionnaire Response (score 11)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Responses to the HeartlandRiskInputQuestionnaire for PatientExampleRural. Six items answered true (age &gt;=75, prior HF hosp 6mo, SBP &lt;100, CKM Stage 3-4, distance &gt;50 mi, limited social support) totaling 11 points -&gt; High Risk tier. Referenced by RiskAssessmentExampleHigh.basis[0].</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExampleRural.html"
+                  title="Patient/PatientExampleRural">
+                  <span title="Patient/PatientExampleRural">Example: Rural HF Patient (high-distance, limited support)
+</span>
+               </a>
+            </td>
+            <td>
+<p>A 78-year-old patient living alone in a rural county without a local cardiologist (87 miles to nearest cardiology care). Demonstrates use of HeartlandDistanceToCardiology and HeartlandSocialSupportScore extensions. Modeled on the cohort described in HEARTLAND Protocol v3.2 background data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationExampleWeightRedFlag.html"
+                  title="Observation/ObservationExampleWeightRedFlag">
+                  <span title="Observation/ObservationExampleWeightRedFlag">Example: Synthetic Body Weight Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Single synthetic body-mass reading. Historical resource ID retained for compatibility; this example does not establish a weight change, alert, delivery, or clinical response. A rate-of-change threshold is not a numeric reference range for body mass.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  
+          Package heartland.fhir.us.protocol#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 29, 2026 19:00-0400">2026-09-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

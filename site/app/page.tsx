@@ -52,6 +52,7 @@ export default function Home() {
       <WhyExists />
       <Modules />
       <Status />
+      <Downloads />
       <OpenScience />
       <Colophon
         currentSite="fhir"
@@ -75,6 +76,39 @@ export default function Home() {
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
+
+function Downloads() {
+  return (
+    <section aria-labelledby="downloads-heading" className="border-b border-grid bg-terminal">
+      <div className="mx-auto max-w-[1200px] px-6 py-16">
+        <h2 id="downloads-heading" className="font-editorial text-3xl font-semibold tracking-tight text-cool">
+          Explore the candidate files
+        </h2>
+        <p className="mt-4 max-w-3xl font-editorial leading-relaxed text-cool/75">
+          Version 0.3.0 is draft and experimental, for technical evaluation with synthetic examples.
+          These files are separate from the historical Zenodo archives. R4B conversions are not included.
+        </p>
+        <div className="mt-7 flex flex-wrap gap-4">
+          <a href="/ig/package.tgz" download className="rounded-full bg-cool px-6 py-3 font-editorial text-sm font-medium text-terminal hover:bg-signal focus-visible:outline-2 focus-visible:outline-offset-4">
+            Download R4 package (.tgz)
+          </a>
+          <a href="/ig/full-ig.zip" download className="rounded-full border border-cool px-6 py-3 font-editorial text-sm font-medium text-cool hover:bg-panel focus-visible:outline-2 focus-visible:outline-offset-4">
+            Download offline guide (.zip)
+          </a>
+          <a href="/ig/searchform.html" className="rounded-full border border-grid px-6 py-3 font-editorial text-sm font-medium text-cool hover:bg-panel focus-visible:outline-2 focus-visible:outline-offset-4">
+            Find a resource
+          </a>
+        </div>
+        <p className="mt-6 max-w-3xl font-editorial text-sm leading-relaxed text-cool/70">
+          The <a href="/ig/qa.html" className="underline">Publisher QA report</a> is included.
+          The standalone validator separately reports unresolved tooling annotations in the IG manifest;
+          see the <a href="https://github.com/vickymuller-md/heartland-fhir-ig#build-and-structural-checks" className="underline">documented limitation</a>.
+          Neither check establishes clinical validation or vendor interoperability.
+        </p>
+      </div>
+    </section>
+  );
+}
 
 function Hero() {
   return (

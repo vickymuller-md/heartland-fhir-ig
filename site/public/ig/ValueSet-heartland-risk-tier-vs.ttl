@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,60 +7,65 @@
 
 <https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "heartland-risk-tier-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet heartland-risk-tier-vs</b></p><a name=\"heartland-risk-tier-vs\"> </a><a name=\"hcheartland-risk-tier-vs\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-heartland-risk-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão ?0.2.0</span></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"^^xsd:anyURI ;
-     fhir:l <https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs>
-  ] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
-  fhir:name [ fhir:v "HeartlandRiskTierVS"] ; # 
-  fhir:title [ fhir:v "HEARTLAND Risk Tier Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-17T14:11:14-04:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Vicky Muller Ferreira, MD"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Vicky Muller Ferreira, MD" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "vickymuller@heartlandprotocol.org" ] ;
-       fhir:use [ fhir:v "work" ]
-     ] [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://heartlandprotocol.org" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "All risk tier codes from the HEARTLAND risk score (low | moderate | high)."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
-       ] ;
-       fhir:code [ fhir:v "US" ]
-     ] )
-  ] ) ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier"^^xsd:anyURI ;
-         fhir:l <https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier>
-       ]
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "heartland-risk-tier-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet heartland-risk-tier-vs</b></p><a name=\"heartland-risk-tier-vs\"> </a><a name=\"hcheartland-risk-tier-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-heartland-risk-tier.html\"><code>https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.3.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.3.0"] ;
+  fhir:ValueSet.name [ fhir:value "HeartlandRiskTierVS"] ;
+  fhir:ValueSet.title [ fhir:value "HEARTLAND Risk Tier Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-29T19:00:36-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Vicky Muller Ferreira, MD"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Vicky Muller Ferreira, MD" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://heartlandprotocol.org" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "vickymuller@heartlandprotocol.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Vicky Muller Ferreira, MD" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "vickymuller@heartlandprotocol.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://heartlandprotocol.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "All risk tier codes from the HEARTLAND risk score (low | moderate | high)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.heartlandprotocol.org/ValueSet/heartland-risk-tier-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

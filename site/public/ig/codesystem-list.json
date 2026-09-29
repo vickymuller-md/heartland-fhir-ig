@@ -1,40 +1,40 @@
 {
   "codeSystems" : [{
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-evidence-level",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandEvidenceLevel",
     "title" : "HEARTLAND Evidence Level",
     "description" : "Three-tiered transparency labels distinguishing evidence strength behind HEARTLAND Protocol v3.2 recommendations, helping clinicians calibrate clinical decisions."
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-implementation-tier",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandImplementationTier",
     "title" : "HEARTLAND Implementation Tier",
-    "description" : "Facility implementation tiers from HEARTLAND Protocol v3.2 Module 8. Tiers reflect available resources (staffing, technology, financial navigation) and dictate which protocol components are operationally feasible at a given site."
+    "description" : "Declared facility implementation capacity tiers, retaining historical code identities. Capacity informs delivery format, sequence and support; it does not determine clinical eligibility, permit delayed risk-led care or exclude educational domains. All eight domains are offered at every tier. These labels are not a scored readiness instrument or proof of actual coverage."
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-monitoring-track",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandMonitoringTrack",
     "title" : "HEARTLAND Monitoring Track",
-    "description" : "Patient-level remote monitoring track assignment from HEARTLAND Protocol v3.2 Module 5. Both tracks follow identical clinical algorithms, differing only in data collection method."
+    "description" : "Documented monitoring routes with stable Track A and Track B codes. A route does not establish equivalent outcomes, successful contact, device availability or completed monitoring. Clinical requirements are not reduced by the route; access, preference and the supported local plan require separate documentation."
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-score",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandRiskScore",
     "title" : "HEARTLAND Risk Score Codes",
     "description" : "Codes identifying the HEARTLAND risk score and its tier when either is carried on an Observation rather than on a RiskAssessment — for example an Observation referenced from HeartlandRiskAssessment.basis holding the point total. The score is a non-validated implementation heuristic: the total is a point count, not a probability, and the tier assigns monitoring intensity rather than predicting an outcome."
   },
   {
     "url" : "https://fhir.heartlandprotocol.org/CodeSystem/heartland-risk-tier",
-    "version" : "0.2.0",
-    "status" : "active",
+    "version" : "0.3.0",
+    "status" : "draft",
     "name" : "HeartlandRiskTier",
     "title" : "HEARTLAND Risk Tier",
     "description" : "Qualitative risk stratification tiers from the HEARTLAND Protocol v3.2 risk score (0-18 points). Used in HeartlandRiskAssessment.prediction.qualitativeRisk."

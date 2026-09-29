@@ -1,0 +1,672 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Workflow Mapping - HEARTLAND Protocol FHIR Implementation Guide v0.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- HEARTLAND Brand override for fhir.base.template
+     Palette mirrors heartland-app (app.heartlandprotocol.org):
+     terminal #faf6ee | navy #0f2544 | signal #2e6f5e | alert #ff6b55 -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+  :root {
+    --hl-terminal: #faf6ee;
+    --hl-terminal-deep: #f2ecde;
+    --hl-panel: #ffffff;
+    --hl-panel-hi: #efe9dd;
+    --hl-grid: #e3dcd0;
+    --hl-grid-hi: #c5bcac;
+    --hl-cool: #0f2544;
+    --hl-cool-soft: #1f3354;
+    --hl-stone: #7a8593;
+    --hl-stone-soft: #9aa3b0;
+    --hl-signal: #2e6f5e;
+    --hl-signal-deep: #1e4e41;
+    --hl-signal-soft: #4a8f7c;
+    --hl-alert: #ff6b55;
+    --hl-alert-deep: #e04a35;
+    --hl-critical: #d63a20;
+    --hl-radius: 6px;
+  }
+
+  html, body {
+    background: var(--hl-terminal) !important;
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-feature-settings: 'cv11','ss01','ss03';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 {
+    color: var(--hl-cool) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-weight: 700 !important; letter-spacing: -0.02em; }
+
+  p, li, td, th, dt, dd { color: var(--hl-cool); }
+  small, .text-muted, .small { color: var(--hl-stone) !important; }
+
+  a, a:visited {
+    color: var(--hl-signal) !important;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 120ms ease;
+  }
+  a:hover, a:focus {
+    color: var(--hl-signal-deep) !important;
+    border-bottom-color: var(--hl-signal-deep);
+    text-decoration: none;
+  }
+
+  code, pre, kbd, samp, tt {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace !important;
+    background: var(--hl-terminal-deep) !important;
+    border-radius: 4px;
+    color: var(--hl-cool);
+  }
+  pre {
+    border: 1px solid var(--hl-grid);
+    padding: 12px 16px;
+  }
+  code { padding: 1px 5px; font-size: 0.92em; }
+  pre code { background: transparent !important; padding: 0; }
+
+  blockquote {
+    border-left: 4px solid var(--hl-signal);
+    background: var(--hl-panel);
+    color: var(--hl-cool);
+    padding: 12px 18px;
+    margin: 18px 0;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+  }
+  blockquote em, blockquote i { color: var(--hl-cool-soft); }
+
+  table, .table, .grid {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-collapse: collapse;
+  }
+  table th, .table th {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    border-bottom: 1px solid var(--hl-grid-hi) !important;
+    font-weight: 600;
+  }
+  table td, .table td {
+    border-color: var(--hl-grid) !important;
+  }
+  table tr:hover { background: var(--hl-terminal-deep); }
+
+  hr { border-color: var(--hl-grid); border-top-style: solid; }
+
+  /* IG Publisher chrome */
+  .navbar, .navbar-default, .navbar-fixed-top {
+    background: var(--hl-cool) !important;
+    border-color: var(--hl-cool) !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  }
+  .navbar a, .navbar .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: var(--hl-terminal) !important;
+    border-bottom: none !important;
+  }
+  .navbar a:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff !important;
+    background: var(--hl-cool-soft) !important;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background: var(--hl-signal) !important;
+    color: #ffffff !important;
+  }
+
+  /* Container */
+  .container, .container-fluid {
+    background: transparent;
+  }
+
+  /* Cards / panels */
+  .panel, .well, .alert {
+    background: var(--hl-panel) !important;
+    border: 1px solid var(--hl-grid) !important;
+    border-radius: var(--hl-radius);
+    color: var(--hl-cool);
+  }
+  .panel-heading {
+    background: var(--hl-panel-hi) !important;
+    border-bottom: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    font-weight: 600;
+  }
+  .alert-info { border-left: 4px solid var(--hl-signal); }
+  .alert-warning { border-left: 4px solid var(--hl-alert); }
+  .alert-danger { border-left: 4px solid var(--hl-critical); }
+
+  /* Buttons */
+  .btn, .btn-default {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid-hi);
+    color: var(--hl-cool);
+    border-radius: var(--hl-radius);
+    font-weight: 500;
+  }
+  .btn:hover, .btn-default:hover {
+    background: var(--hl-panel-hi);
+    border-color: var(--hl-stone);
+    color: var(--hl-cool);
+  }
+  .btn-primary {
+    background: var(--hl-signal) !important;
+    border-color: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background: var(--hl-signal-deep) !important;
+    border-color: var(--hl-signal-deep) !important;
+  }
+
+  /* HEARTLAND landing page hero & sections */
+  .hl-hero {
+    background: linear-gradient(135deg, var(--hl-terminal) 0%, var(--hl-terminal-deep) 100%);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 40px 36px 32px;
+    margin: 24px 0 28px;
+  }
+  .hl-hero h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+  .hl-tagline {
+    color: var(--hl-signal);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .hl-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .hl-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: var(--hl-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: none !important;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+  .hl-cta-primary {
+    background: var(--hl-signal);
+    color: #ffffff !important;
+    border: 1px solid var(--hl-signal-deep);
+  }
+  .hl-cta-primary:hover {
+    background: var(--hl-signal-deep) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -8px rgba(46,111,94,0.5);
+  }
+  .hl-cta-secondary {
+    background: var(--hl-panel);
+    color: var(--hl-cool) !important;
+    border: 1px solid var(--hl-grid-hi);
+  }
+  .hl-cta-secondary:hover {
+    background: var(--hl-panel-hi) !important;
+    color: var(--hl-cool) !important;
+    transform: translateY(-1px);
+  }
+
+  .hl-disclaimer {
+    background: var(--hl-panel-hi);
+    border-left: 4px solid var(--hl-alert);
+    padding: 14px 18px;
+    border-radius: 0 var(--hl-radius) var(--hl-radius) 0;
+    margin: 18px 0;
+    font-size: 0.94rem;
+  }
+  .hl-disclaimer em, .hl-disclaimer i { color: var(--hl-cool-soft); }
+
+  .hl-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .hl-feature {
+    background: var(--hl-panel);
+    border: 1px solid var(--hl-grid);
+    border-radius: var(--hl-radius);
+    padding: 16px 18px;
+  }
+  .hl-feature-title {
+    color: var(--hl-cool);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .hl-feature-desc {
+    color: var(--hl-stone);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .ig-footer, footer, .footer {
+    background: var(--hl-cool) !important;
+    color: var(--hl-terminal) !important;
+    padding: 18px 0;
+    margin-top: 40px;
+  }
+  .ig-footer a, footer a, .footer a {
+    color: var(--hl-terminal) !important;
+    border-bottom: 1px solid rgba(250,246,238,0.35);
+  }
+  .ig-footer a:hover, footer a:hover {
+    color: #ffffff !important;
+    border-bottom-color: var(--hl-terminal);
+  }
+</style>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- HEARTLAND Brand header bar (above IG Publisher's auto-generated nav) -->
+<div style="background: #0f2544; color: #faf6ee; border-bottom: 1px solid #1f3354;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; max-width: 1200px;">
+    <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.02em; font-family: 'Inter', sans-serif;">
+      <span style="display: inline-block; width: 22px; height: 22px; background: #2e6f5e; border-radius: 4px; position: relative;">
+        <span style="position: absolute; inset: 5px; background: #faf6ee; clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);"></span>
+      </span>
+      <span>HEARTLAND <span style="opacity: 0.7; font-weight: 500;">Protocol</span></span>
+    </a>
+    <nav style="display: flex; gap: 18px; align-items: center; font-size: 0.88rem;">
+      <a href="https://heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">Site</a>
+      <a href="https://app.heartlandprotocol.org" style="color: #faf6ee !important; border-bottom: none !important; opacity: 0.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">App</a>
+      <a href="index.html" style="color: #faf6ee !important; border-bottom: none !important; background: #2e6f5e; padding: 4px 10px; border-radius: 4px; font-weight: 600;">FHIR IG</a>
+    </nav>
+  </div>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HEARTLAND Protocol FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - 
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="risk-assessment.html">Risk Assessment</a>
+  </li>
+  <li>
+    <a href="implementation.html">Tiers and Tracks</a>
+  </li>
+  <li>
+    <a href="workflow.html">Workflow Mapping</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Workflow Mapping</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HEARTLAND FHIR candidate 0.3.0 &mdash; draft, experimental R4 4.0.1 reference. Prepared for technical review; not evidence of clinical validation or vendor interoperability.</p><!--EndReleaseHeader-->
+  <h2>Workflow Mapping</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<h3 id="workflow-mapping-and-evidence-boundaries">Workflow Mapping and Evidence Boundaries</h3>
+
+<p><strong>Design mapping, not an implemented workflow exporter.</strong> Candidate 0.3.0 selects the R4 resource families below and aligns the illustrative CarePlan with the Toolkit V3.4 candidate. It does not add Task, ServiceRequest, Communication or Provenance profiles, a FHIR server, an order interface, or a lossless exchange of the app's operational journal.</p>
+
+<p>The current app collection export contains Patient, vital-sign and effective laboratory Observations, and MedicationStatements. It does not export the operational resources discussed here. A local implementation or test is not evidence of hosted activation, clinical adoption or external interoperability.</p>
+
+<h4 id="resource-decisions">Resource decisions</h4>
+
+<div class="heartland-table-region" role="region" aria-label="Workflow resource decisions; scroll horizontally on narrow screens" tabindex="0">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Information to represent</th>
+        <th>Candidate R4 representation</th>
+        <th>Boundary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Planned activities</td>
+        <td>Existing <a href="StructureDefinition-heartland-careplan.html">HeartlandCarePlan</a></td>
+        <td>A plan is not an event, prescription or evidence of completion. Use either inline activity detail or an activity reference, not both on one activity.</td>
+      </tr>
+      <tr>
+        <td>Recorded laboratory or referral request</td>
+        <td>ServiceRequest, when the underlying request and its intent are evidenced</td>
+        <td>Recording a follow-up need does not establish an authorized order, ordering clinician, destination acceptance or transmission.</td>
+      </tr>
+      <tr>
+        <td>Coordination of a followed need</td>
+        <td>Task, linked to the relevant request or evidence</td>
+        <td>Operational stage, responsibility, exceptions and closure outcome are distinct dimensions; there is no direct app-status-to-Task-status conversion in this release.</td>
+      </tr>
+      <tr>
+        <td>An analyte result</td>
+        <td>Observation with actual collection time, units, source and missingness</td>
+        <td>Receipt, automated evaluation and clinical review are separate. The existing generic exporter does not claim a laboratory profile.</td>
+      </tr>
+      <tr>
+        <td>A source laboratory report</td>
+        <td>DiagnosticReport only when report identity, contents and status are known</td>
+        <td>An app grouping of results is not automatically a laboratory-issued report. Do not invent a final report from saved values.</td>
+      </tr>
+      <tr>
+        <td>Documented information exchange or failed attempt</td>
+        <td>Communication, with the evidenced participants, medium, outcome and times</td>
+        <td>This represents the communication record, not a messaging service or a patient's understanding. A planned request to communicate belongs to CommunicationRequest.</td>
+      </tr>
+      <tr>
+        <td>Resource creation or revision lineage</td>
+        <td>Provenance targeting the exact exported resource or version</td>
+        <td>It records the origin of a representation. It does not by itself certify a clinician's decision or provide a clinical-review payload.</td>
+      </tr>
+      <tr>
+        <td>Access and system processing audit</td>
+        <td>AuditEvent, separately governed</td>
+        <td>A read, delivery callback or acknowledgement is not clinical review or successful follow-up.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>These decisions use the base <a href="https://hl7.org/fhir/R4/careplan.html">R4 CarePlan</a>, <a href="https://hl7.org/fhir/R4/task.html">Task</a>, <a href="https://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>, <a href="https://hl7.org/fhir/R4/observation.html">Observation</a>, <a href="https://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="https://hl7.org/fhir/R4/communication.html">Communication</a>, <a href="https://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>, <a href="https://hl7.org/fhir/R4/provenance.html">Provenance</a> and <a href="https://hl7.org/fhir/R4/auditevent.html">AuditEvent</a> definitions. No R5 element or automatic US Core upgrade is introduced.</p>
+
+<h4 id="request-and-ownership-are-different-facts">Request and ownership are different facts</h4>
+
+<p>The app's request contract records <code class="language-plaintext highlighter-rouge">laboratory_order</code>, <code class="language-plaintext highlighter-rouge">referral</code> or <code class="language-plaintext highlighter-rouge">medication_access</code>, declared source, purpose, evidence, occurrence and next review time. Its receipt explicitly leaves external transmission and acceptance unconfirmed. The label <code class="language-plaintext highlighter-rouge">laboratory_order</code> is not sufficient to generate <code class="language-plaintext highlighter-rouge">ServiceRequest.intent = order</code>: the named ordering professional, actual authorization, request identity and intended service need their own evidence. A medication-access follow-up is not a MedicationRequest or proof of dispensing.</p>
+
+<p>For a future exporter, preserve an external request's identity separately from the app work identifier and command identifier. One ServiceRequest describes one service: an analyte set must not be turned into an invented panel code. Represent distinct services separately, or use an evidenced panel definition, with explicit grouping where appropriate. Do not substitute the recorder's identity for the requester. Unknown request status must not become active or completed simply because a record was saved.</p>
+
+<p>The work record holds organization, patient, current assignee, acceptance, pending transfer and an ownership revision. The clinical-workflow revision is a different sequence. A transfer offer does not discharge the current accepted owner. An app profile identifier is not independently verified professional licensure, and it must not be expanded into invented Practitioner or PractitionerRole credentials.</p>
+
+<h4 id="stages-exceptions-and-closure">Stages, exceptions and closure</h4>
+
+<div class="heartland-table-region" role="region" aria-label="Workflow stages and evidence; scroll horizontally on narrow screens" tabindex="0">
+
+  <table>
+    <thead>
+      <tr>
+        <th>App fact</th>
+        <th>Meaning that an exchange must preserve</th>
+        <th>Prohibited shortcut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">requested</code>, <code class="language-plaintext highlighter-rouge">scheduled</code>, <code class="language-plaintext highlighter-rouge">collected</code>, <code class="language-plaintext highlighter-rouge">result_received</code></td>
+        <td>Laboratory coordination stage, with dated evidence</td>
+        <td>Scheduled does not mean collected; a received result does not mean reviewed.</td>
+      </tr>
+      <tr>
+        <td>Referral <code class="language-plaintext highlighter-rouge">accepted</code>, <code class="language-plaintext highlighter-rouge">attended</code>, <code class="language-plaintext highlighter-rouge">report_received</code></td>
+        <td>Destination acceptance, attendance and report receipt are separate</td>
+        <td>Destination acceptance is not the work owner's acceptance or a completed consultation.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">assistance_requested</code>, <code class="language-plaintext highlighter-rouge">response_received</code>, <code class="language-plaintext highlighter-rouge">obtained</code></td>
+        <td>Assistance steps and the declared evidence of medication acquisition</td>
+        <td>Program approval is not medication obtained, adherence or therapeutic equivalence.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">record_review</code></td>
+        <td>Named authorized actor, decision, limitations and exact evidence basis</td>
+        <td>Queue acknowledgement is not review; a newer source can make an earlier basis stale.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">record_contact</code></td>
+        <td>Declared recipient, route, occurrence, outcome and optional exact reviewed decision</td>
+        <td>A reached person alone does not establish that a particular decision was addressed or understood.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">close_success</code></td>
+        <td>Explicit documented workflow-completion attestation with its current review/contact basis</td>
+        <td>Not independently established patient outcome, treatment success or comprehension.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">close_without_completion</code></td>
+        <td>Explicit non-success disposition, reason and outstanding obligations</td>
+        <td>Never map every closed item to Task.completed. Transfer disposition is not proof of accepted handoff.</td>
+      </tr>
+      <tr>
+        <td>Post-closure source change and routing</td>
+        <td>New linked follow-up need; unchanged prior closure and historical evidence</td>
+        <td>Routing is not review, clinical resolution, automatic acceptance or reopening the predecessor.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>Task can coordinate work with its own status, responsible party and history. A future mapping must specify the exact task scope before selecting status: completing an administrative routing task would not complete the patient's underlying care need. Preserve the app's factual stage separately from review currentness, unresolved exceptions, accepted ownership and completion outcome. Private command preparation is not Task.draft, receipt acknowledgement is not Task.accepted, and an overdue review is not automatically Task.failed. There is no new clinical urgency classification, response-time guarantee or universal laboratory-expiry interval here.</p>
+
+<h4 id="time-source-versions-and-human-evidence">Time, source versions and human evidence</h4>
+
+<p>Collection time, event occurrence, server recording, review and contact must remain distinguishable. A historic sample entered today must not acquire today's collection time. A date-only appointment must not become an invented midnight UTC appointment; preserve its precision and any actually recorded timezone. Large revision integers and laboratory decimals must not be rounded through a JavaScript number.</p>
+
+<p>Corrections preserve the previous values and the exact versions used for earlier decisions. An app workflow revision is not a FHIR server's <code class="language-plaintext highlighter-rouge">meta.versionId</code>; do not invent <code class="language-plaintext highlighter-rouge">/_history/</code> endpoints for a server that does not exist. Exported identifiers or references need an explicit, resolvable version strategy. Missing classification is not Normal, unknown status is not final, and a cancelled or missing source must not become a zero-valued observation.</p>
+
+<p>The app review basis includes exact source/composition identities, values, collection times, quality and processing evidence, or the exact referral/access fact. A future clinical-review representation needs a defined payload and link to that frozen basis; Provenance alone is insufficient. Its agent must distinguish the author or recorder from any actually evidenced reviewing professional. An Observation performer must not be filled with an unrelated reviewer solely to remove a warning.</p>
+
+<p>Communication records must distinguish recorder from actual sender and named recipient. Preserve <code class="language-plaintext highlighter-rouge">human_reached</code>, <code class="language-plaintext highlighter-rouge">no_answer</code>, <code class="language-plaintext highlighter-rouge">refused</code> and <code class="language-plaintext highlighter-rouge">unable_to_contact</code> and their evidence; no blind mapping of all applied commands to Communication.completed. The app command records contact but sends nothing. A transport receipt, read flag, audio playback or patient quiz is not a contact attestation. A clinical encounter or billable call must not be fabricated from a free-text contact reference.</p>
+
+<h4 id="compatibility-and-acceptance-before-operational-exchange">Compatibility and acceptance before operational exchange</h4>
+
+<p>The app's reviewed implementation contracts and <code class="language-plaintext highlighter-rouge">lib/care-workflow/{types,step-command,human-types,composition-types,postclosure-types}.ts</code> establish the source meanings above. The existing collection exporter is <code class="language-plaintext highlighter-rouge">lib/interoperability/fhir-r4.ts</code>; it intentionally has a narrower scope. This map does not replace those contracts or declare every Toolkit requirement implemented.</p>
+
+<p>Before adding operational profiles or an exporter, a separately versioned producer/consumer contract must define all of the following:</p>
+
+<ol>
+  <li>Stable identities, same-patient and same-organization references, exact source/version lineage, and what to do when references cannot be resolved.</li>
+  <li>Request intent and actor authority; ownership and transfer acceptance; status mapping that preserves non-completion and separate exceptions.</li>
+  <li>A clinical-review payload, contact evidence and actual participants, rather than inferring these from Provenance, message delivery or a closed flag.</li>
+  <li>Decimal, timestamp, date-only and revision precision; known missingness; complete pagination; consistent reads or an explicit non-snapshot boundary; no silent partial success.</li>
+  <li>Authorization, session changes, data minimization and retention at both ends. FHIR format, UUIDs and a collection Bundle do not provide access control or anonymization.</li>
+  <li>Positive and negative round trips covering correction, stale review, failed contact, refused transfer, non-success closure, unresolved barriers and post-closure changes. Test with the actual receiving implementation before claiming interoperability.</li>
+</ol>
+
+<p>The current guide tests its own generated structures, synthetic example references and selected risk arithmetic. It does not execute the proposed operational mapping or certify a third-party EHR. Technical review is not clinical acceptance. Patient-pilot validation remains a separate, unperformed activity.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://heartlandprotocol.org">Vicky Muller Ferreira, MD</a>.  
+          Package heartland.fhir.us.protocol#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 29, 2026 19:00-0400">2026-09-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
