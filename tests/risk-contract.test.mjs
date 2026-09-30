@@ -98,7 +98,12 @@ if (!['--fixtures', '--results', '--parity', '--package-results'].some(flag => p
     }
     const page = readFileSync(join(root, 'site/app/page.tsx'), 'utf8');
     assert.match(page, /0\.3\.0/); assert.doesNotMatch(page, /0\.2\.0/);
-    assert.match(page, /candidate not archived/); assert.match(page, /weighted criteria/);
+    assert.match(page, /10\.5281\/zenodo\.23050675/);
+    assert.match(page, /draft and experimental/);
+    assert.match(page, /not clinical validation/);
+    assert.match(page, /technical report 1\.0 remains a separate historical work/);
+    assert.doesNotMatch(page, /candidate not archived/);
+    assert.match(page, /weighted criteria/);
   });
   test('guide pins the replacement template rather than the retired base template', () => {
     const ini = readFileSync(join(root, 'ig.ini'), 'utf8');

@@ -82,11 +82,11 @@ function Downloads() {
     <section aria-labelledby="downloads-heading" className="border-b border-grid bg-terminal">
       <div className="mx-auto max-w-[1200px] px-6 py-16">
         <h2 id="downloads-heading" className="font-editorial text-3xl font-semibold tracking-tight text-cool">
-          Explore the candidate files
+          Explore the archived draft files
         </h2>
         <p className="mt-4 max-w-3xl font-editorial leading-relaxed text-cool/75">
           Version 0.3.0 is draft and experimental, for technical evaluation with synthetic examples.
-          These files are separate from the historical Zenodo archives. R4B conversions are not included.
+          Its source release is archived on Zenodo; publication is not clinical or EHR validation. R4B conversions are not included.
         </p>
         <div className="mt-7 flex flex-wrap gap-4">
           <a href="/ig/package.tgz" download className="rounded-full bg-cool px-6 py-3 font-editorial text-sm font-medium text-terminal hover:bg-signal focus-visible:outline-2 focus-visible:outline-offset-4">
@@ -165,7 +165,7 @@ function Hero() {
             <p className="mt-12 max-w-xl font-editorial text-[12.5px] leading-relaxed text-stone">
               For professional educational use, not direct patient care.
               Examples are synthetic. Do not enter real patient information.
-              Candidate 0.3.0 is separate from historical software archives.
+              Software v0.3.0 is archived; its draft and experimental status is unchanged.
             </p>
           </div>
 
@@ -458,8 +458,8 @@ function ModuleCard({ m }: { m: ModuleEntry }) {
 const STATUS_ROWS: Array<{ stream: string; state: string; tone: "ok" | "draft" | "pending" }> = [
   { stream: "Cureus article", state: "Published article; separate from software validation", tone: "ok" },
   { stream: "HEARTLAND Toolkit", state: "V3.3 published; V3.4 release candidate", tone: "draft" },
-  { stream: "FHIR IG", state: "v0.3.0 candidate — draft and experimental", tone: "draft" },
-  { stream: "Zenodo archives", state: "Historical software v0.1.1 and report 1.0; candidate not archived", tone: "draft" },
+  { stream: "FHIR IG", state: "v0.3.0 archived release — draft and experimental", tone: "draft" },
+  { stream: "Zenodo archives", state: "Software v0.3.0 archived; technical report 1.0 remains a separate historical work", tone: "ok" },
   { stream: "Pilot site EHR validation", state: "Phase 3 — not yet started", tone: "pending" },
 ];
 
@@ -479,7 +479,7 @@ function Status() {
               </span>
             </h2>
             <p className="mt-6 max-w-md font-editorial text-[15.5px] leading-relaxed text-cool/70">
-              v0.3.0 is a technical candidate, not an assertion of deployment
+              v0.3.0 is an archived technical draft, not an assertion of deployment
               readiness or clinical approval. Tier and education content is aligned
               with the Toolkit candidate; operational exchange and external EHR
               validation remain separate checks.
@@ -582,8 +582,8 @@ function OpenScience() {
             <DepositRow
               kind="FHIR IG"
               label="Zenodo software archive"
-              href="https://doi.org/10.5281/zenodo.19634998"
-              meta="Historical software v0.1.1 · not candidate 0.3.0"
+              href="https://doi.org/10.5281/zenodo.23050675"
+              meta="Archived draft software v0.3.0 · not clinical validation"
             />
             <DepositRow
               kind="Technical report"
