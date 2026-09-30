@@ -1,0 +1,7 @@
+# Keep local working instructions out of downloadable source archives.
+AGENTS.md export-ignore
+CLAUDE.md export-ignore
+HANDOFF.md export-ignore
+.claude export-ignore
+.codex export-ignore
+graphify-out export-ignore

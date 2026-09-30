@@ -1,6 +1,6 @@
 {
   "title": "HEARTLAND Protocol FHIR Implementation Guide",
-  "description": "FHIR R4 Implementation Guide defining interoperability resources for the HEARTLAND Protocol v3.2 — risk assessment, care plans, remote monitoring observations, questionnaires, value sets, and code systems — enabling EHR vendors and rural heart failure programs to exchange HEARTLAND-structured clinical data using US healthcare interoperability standards. Built with FHIR Shorthand (FSH) compiled via SUSHI; published as a navigable HTML site via the HL7 IG Publisher. Depends on US Core 6.1.0. Contents: 4 CodeSystems (risk tier, implementation tier, monitoring track, evidence level), 5 ValueSets, 9 StructureDefinitions (5 profiles + 4 extensions), 3 Questionnaires (risk input, facility tier, patient track), and 5 examples plus narrative pages on background, risk assessment workflow, and tier/track implementation. Synthetic example data only; no PHI. For professional use only; not a medical device, not FDA-cleared, not HIPAA-certified.",
+  "description": "Draft FHIR R4 (4.0.1) educational implementation-support specification for the HEARTLAND ecosystem, version 0.3.0. Profiles, extensions, questionnaires, code systems, value sets and synthetic examples support technical evaluation. The guide represents the proposed HEARTLAND point score as an integer from 0 to 18 and a qualitative tier, not a calibrated outcome probability. It includes a synthetic county-code extension, explicit risk-input criteria and a bounded mapping of planned laboratory, follow-up and education workflows to R4 resources. Built with FHIR Shorthand, SUSHI and the HL7 IG Publisher; depends on US Core 6.1.0. The Toolkit V3.4 mapping describes candidate content, not clinical approval or a live exporter. The reviewed Publisher build has no errors or broken links; independent CLI checks retain 93 known diagnostics in the generated implementation-guide manifest. These are disclosed in the repository and do not establish universal conformance or vendor interoperability. No real patient records are included. Intended for research, education and synthetic integration testing only; no patient-care authorization or regulatory, privacy or efficacy determination is made.",
   "creators": [
     {
       "name": "Muller Ferreira, Vicky",
@@ -16,7 +16,7 @@
     "FHIR Shorthand",
     "rural health",
     "interoperability",
-    "clinical decision support",
+    "educational implementation support",
     "GDMT",
     "remote patient monitoring",
     "HEARTLAND",
@@ -30,7 +30,7 @@
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.18566403",
+      "identifier": "10.5281/zenodo.19101219",
       "relation": "isSupplementTo",
       "resource_type": "publication-article",
       "scheme": "doi"
@@ -51,5 +51,5 @@
   "communities": [
     { "identifier": "open-science" }
   ],
-  "notes": "Disclaimer: This Implementation Guide is a clinical decision support specification for healthcare professionals. It does not provide medical diagnoses, treatment recommendations for individual patients, or replace clinical judgment. Not intended for direct patient care. For professional use only. The HEARTLAND Risk Stratification Framework is a proposed tool under development; formal validation against clinical outcomes data is a defined research objective."
+  "notes": "This is a draft technical specification, not a clinically approved protocol, deployment receipt, live clinical workflow or certification of interoperability. The proposed HEARTLAND framework remains pending validation against clinical outcomes. Existing warnings and unresolved manifest annotations are preserved, not suppressed. Narrative and generated resources use CC BY 4.0; build tooling uses MIT. The historical v0.1.1 archive contained package metadata 0.1.0; that historical record is preserved. Software and its separate technical report have distinct version histories. Do not submit real patient information or use these examples for patient-specific diagnosis or treatment."
 }
